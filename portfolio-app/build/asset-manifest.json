@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Openclassrooms_Projet_08/static/css/main.f855e6bc.css",
-    "main.js": "/Openclassrooms_Projet_08/static/js/main.ccf75185.js",
+    "main.js": "/Openclassrooms_Projet_08/static/js/main.c6ff7e67.js",
     "static/js/453.f4fbaa6d.chunk.js": "/Openclassrooms_Projet_08/static/js/453.f4fbaa6d.chunk.js",
     "index.html": "/Openclassrooms_Projet_08/index.html",
     "main.f855e6bc.css.map": "/Openclassrooms_Projet_08/static/css/main.f855e6bc.css.map",
-    "main.ccf75185.js.map": "/Openclassrooms_Projet_08/static/js/main.ccf75185.js.map",
+    "main.c6ff7e67.js.map": "/Openclassrooms_Projet_08/static/js/main.c6ff7e67.js.map",
     "453.f4fbaa6d.chunk.js.map": "/Openclassrooms_Projet_08/static/js/453.f4fbaa6d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.ccf75185.js"
+    "static/js/main.c6ff7e67.js"
   ]
 }

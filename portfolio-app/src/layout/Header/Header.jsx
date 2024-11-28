@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../../components/LanguageSwitch/LanguageSwitch";
-import NavigationBar from "../../components/NavigationBar/NavigationBar";
+import NavigationBar from '../../components/NavigationBar/TempNavigationBar';
 
 function Header() {
 

@@ -7,12 +7,11 @@ import BlogPage from './pages/Blog/blogPage';
 import ErrorPage from './pages/Error/errorPage';
 
 import './utils/i18nConfig'
-import './styles/App.scss';
 
 function App() {
 
   return (
-    <Router basename='Portfolio/'>
+    <Router basename='/'>
       <Layout>
         <Routes>
           <Route path='/' element={<HomePage />}></Route>

@@ -3,5 +3,10 @@
     "welcome": "Welcome to my portfolio",
     "aboutMe": "About Me",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "navBar": {
+        "home": "Home",
+        "about": "About",
+        "blog": "Blog"
+    }
 }

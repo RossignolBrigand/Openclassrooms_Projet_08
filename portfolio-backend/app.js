@@ -2,6 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
+const dotenv = require('dotenv');
+
+//----------------
+//Environment config
+dotenv.config();
+const envFile = `.env.${process.env.NODE_ENV || ''}`
+dotenv.config({ path: envFile });
+console.log(`Running in ${process.env.NODE_ENV || ''} mode`);
 
 //---------------------------------
 //Routes
@@ -11,6 +19,7 @@ const app = express();
 //---------------------------------
 
 // Connect to MongoDB Database 
+
 mongoose.connect(`${process.env.DB_SECRET_KEY}`)
     .then(() => console.log('Connexion à MongoDB réussie !'))
     .catch(() => console.log('Connexion à MongoDB échouée !'));

@@ -10,11 +10,13 @@ function Header() {
 
     return (
         <header>
-            <h1>Rossignol Brigand</h1>
-            <h2>{t('welcome')}</h2>
+            <div>
+                <h1>Rossignol Brigand</h1>
+                <h2>{t('welcome')}</h2>
+            </div>
             <NavigationBar />
+
             <LanguageSwitcher />
-            <button>Test</button>
         </header>
     );
 };

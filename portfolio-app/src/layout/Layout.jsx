@@ -10,7 +10,8 @@ function Layout({ children }) {
         <>
             <Header />
             <main>
-                {children}
+                <Outlet />
+                {/* {children} */}
             </main>
             <Footer />
         </>

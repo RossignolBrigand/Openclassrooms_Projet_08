@@ -1,16 +1,26 @@
-:root {
-	--font-body: Arial, sans-serif;
-}
+//Fonts
+$font_body: 'Crimson Text', 'Courier New', Courier, monospace;
+$font_title: 'Chivo Mono', Arial, sans-serif;
+$font_sizes: (
+	small: 16px,
+	medium: 20px,
+	large: 24px,
+	xlarge: 36px,
+);
 
 h1,
 h2,
 h3 {
 	margin-top: 0;
 	line-height: 1.1;
+	font-family: $font_title;
+	font-size: map-get($font_sizes, xlarge);
 }
 
 a,
 a:visited,
 a:active {
+	font-family: $font_title;
 	text-decoration: none;
+	color: inherit;
 }

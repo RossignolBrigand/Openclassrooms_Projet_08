@@ -1,6 +1,12 @@
+@use '../../sassStyles/abstracts/variables' as v;
+
 header {
     height: 150px;
     width: 100%;
-    background-color: black;
+    background-color: v.$primary_color;
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }

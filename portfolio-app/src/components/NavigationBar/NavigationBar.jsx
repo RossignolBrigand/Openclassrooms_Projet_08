@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import './_navigationBar.scss';
+
 function NavigationBar() {
 
     const { t } = useTranslation();

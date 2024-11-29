@@ -11,7 +11,7 @@ const app = express();
 //---------------------------------
 
 // Connect to MongoDB Database 
-mongoose.connect(`${process.env.DB_SECRET}`)
+mongoose.connect(`${process.env.DB_SECRET_KEY}`)
     .then(() => console.log('Connexion à MongoDB réussie !'))
     .catch(() => console.log('Connexion à MongoDB échouée !'));
 

@@ -1,4 +1,6 @@
 // 640px, 1150px, 1400px
+
+
 $breakpoints-up: (
 	'medium': '40em',
 	'large': '71.875em',
@@ -22,4 +24,19 @@ $breakpoints-down: (
 	@media (max-width: map-get($breakpoints-down, $size)) {
 		@content;
 	}
+}
+
+// Colors
+
+@mixin gradient-background {
+	background: rgb(152, 223, 175);
+	background: linear-gradient(315deg, rgba(152, 223, 175, 1) 50%, rgba(67, 189, 107, 1) 100%);
+}
+
+// Display
+
+@mixin center($display: flex) {
+	display: $display;
+	justify-content: center;
+	align-items: center;
 }

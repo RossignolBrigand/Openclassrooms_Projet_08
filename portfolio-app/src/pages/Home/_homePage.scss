@@ -1,0 +1,12 @@
+@use '../../scss/abstracts/_mixins' as m;
+
+.home-container {
+    width: 100vh;
+    height: 400px;
+    @include m.gradient-background;
+
+    h1,
+    h2 {
+        color: black;
+    }
+}

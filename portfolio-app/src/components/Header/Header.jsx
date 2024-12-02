@@ -11,7 +11,7 @@ function Header() {
     return (
         <header>
             <div>
-                <h1>Rossignol Brigand</h1>
+                <h1>Portfolio</h1>
                 <h2>{t('welcome')}</h2>
             </div>
             <NavigationBar />

@@ -11,15 +11,15 @@ import './utils/i18nConfig'
 function App() {
 
   return (
-    <Router basename='/'>
-      <Layout>
-        <Routes>
-          <Route path='/' element={<HomePage />}></Route>
-          <Route path='/about' element={<AboutPage />}></Route>
-          <Route path='/blog' element={<BlogPage />}></Route>
-          <Route path='*' element={<ErrorPage />}></Route>
-        </Routes>
-      </Layout>
+    <Router basename='/Portfolio'>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route path='/home' element=<HomePage /> />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/blog' element={<BlogPage />} />
+          <Route path='/error' element={<ErrorPage />} />
+        </Route>
+      </Routes>
     </Router>
   );
 }

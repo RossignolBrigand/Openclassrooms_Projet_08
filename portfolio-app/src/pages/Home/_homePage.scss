@@ -2,9 +2,7 @@
 
 .home-container {
     width: auto;
-    height: 400px;
-
-    @include m.gradient-background;
+    height: auto;
 
     @include m.marginBottom;
 

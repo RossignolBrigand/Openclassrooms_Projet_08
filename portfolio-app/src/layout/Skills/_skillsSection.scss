@@ -1,0 +1,5 @@
+@use '../../scss/abstracts/mixins' as m;
+
+.skills-section {
+    @include m.gradient-background;
+}

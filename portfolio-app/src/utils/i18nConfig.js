@@ -7,10 +7,12 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // English (Default)
 import headerEn from '../locales/en/header.json';
 import heroSectionEn from '../locales/en/heroSection.json';
+import skillSectionEn from '../locales/en/skills.json';
 
 // French 
 import headerFr from '../locales/fr/header.json';
 import heroSectionFr from '../locales/fr/heroSection.json';
+import skillSectionFr from '../locales/fr/skills.json';
 
 i18n
     .use(LanguageDetector) // Detects user's language
@@ -20,14 +22,17 @@ i18n
             en: {
                 header: headerEn,
                 heroSection: heroSectionEn,
+                skillSection: skillSectionEn,
+
             },
             fr: {
                 header: headerFr,
                 heroSection: heroSectionFr,
+                skillSection: skillSectionFr,
             },
         },
         fallbackLng: 'en', // Default language
-        ns: ['header', 'translation'], // Define namespaces
+        ns: ['header', 'heroSection', 'skillSection'], // Define namespaces
         defaultNS: 'header', // Default namespace
         interpolation: { escapeValue: false }, // React already escapes
     });

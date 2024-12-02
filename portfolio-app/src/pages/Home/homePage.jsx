@@ -1,6 +1,7 @@
 import React from "react";
 
-import HeroSection from "../../components/Hero/HeroSection";
+import HeroSection from "../../layout/Hero/HeroSection";
+import SkillsSection from "../../layout/Skills/SkillsSection";
 
 import './_homePage.scss'
 
@@ -12,6 +13,7 @@ function HomePage() {
         <div className="home-container">
             <h1>HOME PAGE</h1>
             <HeroSection />
+            <SkillsSection />
         </div>
     )
 };

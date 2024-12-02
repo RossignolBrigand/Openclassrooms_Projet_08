@@ -6,7 +6,7 @@ import './_header.scss'
 
 function Header() {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation('header');
 
     return (
         <header>

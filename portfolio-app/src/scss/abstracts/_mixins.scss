@@ -40,3 +40,9 @@ $breakpoints-down: (
 	justify-content: center;
 	align-items: center;
 }
+
+// Margins
+
+@mixin marginBottom {
+	margin-bottom: 60px;
+}

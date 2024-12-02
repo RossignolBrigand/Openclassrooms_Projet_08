@@ -1,4 +1,5 @@
 @use '../../scss/abstracts/variables' as v;
+@use '../../scss/abstracts/mixins' as m;
 
 header {
     height: 150px;
@@ -9,4 +10,6 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+
+    @include m.marginBottom;
 }

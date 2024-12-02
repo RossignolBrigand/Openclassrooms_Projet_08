@@ -1,0 +1,9 @@
+@use '../../scss/abstracts/mixins';
+
+.heroSection {
+
+    @include mixins.marginBottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}

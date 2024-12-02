@@ -3,10 +3,14 @@
 .home-container {
     width: auto;
     height: 400px;
+
     @include m.gradient-background;
+
+    @include m.marginBottom;
 
     h1,
     h2 {
         color: black;
     }
+
 }

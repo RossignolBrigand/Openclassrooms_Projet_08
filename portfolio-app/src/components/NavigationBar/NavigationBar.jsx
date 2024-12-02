@@ -6,7 +6,7 @@ import './_navigationBar.scss';
 
 function NavigationBar() {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation('header');
 
     return (
         <nav>
@@ -15,21 +15,28 @@ function NavigationBar() {
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
                 }>
-                {t('navBar.home')}
+                {t('navigation.home')}
             </NavLink>
             <NavLink
                 to="/about"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
                 }>
-                {t('navBar.about')}
+                {t('navigation.about')}
             </NavLink>
             <NavLink
                 to="/blog"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
                 }>
-                {t('navBar.blog')}
+                {t('navigation.blog')}
+            </NavLink>
+            <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                }>
+                {t('navigation.contact')}
             </NavLink>
         </nav>
     );

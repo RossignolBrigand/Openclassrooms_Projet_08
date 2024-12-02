@@ -1,7 +1,7 @@
 @use '../../scss/abstracts/_mixins' as m;
 
 .home-container {
-    width: 100vh;
+    width: auto;
     height: 400px;
     @include m.gradient-background;
 

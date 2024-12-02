@@ -4,12 +4,13 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 // Import translations
 
-import en from '../locales/en/translation.json';
+// English (Default)
 import headerEn from '../locales/en/header.json';
+import heroSectionEn from '../locales/en/heroSection.json';
 
-
-import fr from '../locales/fr/translation.json';
-import headerFr from '../locales/en/header.json';
+// French 
+import headerFr from '../locales/fr/header.json';
+import heroSectionFr from '../locales/fr/heroSection.json';
 
 i18n
     .use(LanguageDetector) // Detects user's language
@@ -18,11 +19,11 @@ i18n
         resources: {
             en: {
                 header: headerEn,
-                translation: en
+                heroSection: heroSectionEn,
             },
             fr: {
                 header: headerFr,
-                translation: fr
+                heroSection: heroSectionFr,
             },
         },
         fallbackLng: 'en', // Default language

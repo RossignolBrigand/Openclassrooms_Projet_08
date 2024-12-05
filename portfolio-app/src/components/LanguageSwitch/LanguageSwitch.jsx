@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router';
 import { languages } from '../../utils/i18nConfig';
 
 import './languageSwitch.scss';
@@ -8,17 +7,21 @@ import './languageSwitch.scss';
 const LanguageSwitcher = () => {
 
     const { i18n } = useTranslation();
-    const navigate = useNavigate();
 
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
         localStorage.setItem('preferredLanguage', lang);
     };
 
+    // Fetch language prefs from local storage
     useEffect(() => {
         const savedLanguage = localStorage.getItem('preferredLanguage');
+        const browserLanguage = navigator.language.split('-')[0];
+
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage); // Load saved language
+        } else {
+            i18n.changeLanguage(browserLanguage); // Fallback to browser prefs and default i18n
         }
     }, [i18n]);
 

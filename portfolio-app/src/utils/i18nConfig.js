@@ -14,6 +14,7 @@ import headerFr from '../locales/fr/header.json';
 import heroSectionFr from '../locales/fr/heroSection.json';
 import skillSectionFr from '../locales/fr/skills.json';
 
+// Log all available languages as a const
 export const languages = [
     { code: 'en', name: 'English' },
     { code: 'fr', name: 'Français' },

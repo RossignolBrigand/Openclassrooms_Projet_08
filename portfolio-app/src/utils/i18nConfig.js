@@ -14,6 +14,11 @@ import headerFr from '../locales/fr/header.json';
 import heroSectionFr from '../locales/fr/heroSection.json';
 import skillSectionFr from '../locales/fr/skills.json';
 
+export const languages = [
+    { code: 'en', name: 'English' },
+    { code: 'fr', name: 'Français' },
+];
+
 i18n
     .use(LanguageDetector) // Detects user's language
     .use(initReactI18next) // Passes i18n instance to react-i18next

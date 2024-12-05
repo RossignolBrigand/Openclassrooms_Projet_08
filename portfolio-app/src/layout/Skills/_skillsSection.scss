@@ -1,5 +1,27 @@
 @use '../../scss/abstracts/mixins' as m;
 
 .skills-section {
+
     @include m.gradient-background;
+    @include m.margin-bottom;
+    @include m.padding-standard;
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .skills-block {
+            @include m.padding-standard;
+
+            &__content {
+
+                &--list {
+                    margin-top: 1rem;
+                    list-style: none;
+                }
+
+            }
+        }
+    }
+
 }

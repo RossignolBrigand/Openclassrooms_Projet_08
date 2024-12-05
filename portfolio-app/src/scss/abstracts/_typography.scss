@@ -1,3 +1,6 @@
+@use './variables' as v;
+
+
 //Fonts
 $font_body: 'Crimson Text', 'Courier New', Courier, monospace;
 $font_title: 'Chivo Mono', Arial, sans-serif;
@@ -12,15 +15,43 @@ h1,
 h2,
 h3 {
 	margin-top: 0;
+	margin-bottom: 1.5rem;
 	line-height: 1.1;
 	font-family: $font_title;
-	font-size: map-get($font_sizes, xlarge);
+	// font-size: map-get($font_sizes, xlarge);
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.2rem;
 }
 
 a,
 a:visited,
 a:active {
+	font-size: 1.5rem;
 	font-family: $font_title;
 	text-decoration: none;
 	color: inherit;
+}
+
+select,
+option,
+button {
+	color: inherit;
+	font-size: 1.5rem;
+	font-family: $font_title;
+}
+
+p,
+em,
+strong {
+	color: v.$font-black;
 }

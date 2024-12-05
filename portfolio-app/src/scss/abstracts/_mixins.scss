@@ -43,6 +43,11 @@ $breakpoints-down: (
 
 // Margins
 
-@mixin marginBottom {
+@mixin margin-bottom {
 	margin-bottom: 60px;
+}
+
+// Paddings
+@mixin padding-standard {
+	padding: 1.5rem;
 }

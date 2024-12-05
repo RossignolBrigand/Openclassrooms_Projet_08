@@ -1,6 +1,22 @@
+nav {
+
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        gap: 1rem;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
 .active {
     color: inherit;
-    text-decoration: underline;
+    font-weight: 600;
 }
 
 .pending {

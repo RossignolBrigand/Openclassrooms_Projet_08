@@ -1,0 +1,7 @@
+@use '../../scss/abstracts/mixins' as m;
+
+.projects-section {
+
+    @include m.margin-bottom;
+
+}

@@ -1,0 +1,7 @@
+@use '../../scss/abstracts/mixins' as m;
+
+.testimonials-section {
+
+    @include m.margin-bottom;
+
+}

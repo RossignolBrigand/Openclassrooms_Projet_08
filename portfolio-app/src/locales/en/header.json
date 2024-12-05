@@ -4,6 +4,9 @@
         "home": "Home",
         "contact": "Contact",
         "about": "About",
-        "blog": "Blog"
+        "blog": "Blog",
+        "services": "Services",
+        "projects": "My projects",
+        "skills": "skills"
     }
 }

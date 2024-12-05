@@ -1,1 +1,13 @@
-footer {}
+@use '../../scss/abstracts/variables' as v;
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    color: v.$primary_color;
+    background-color: v.$font-black;
+
+    .footer-block {
+        margin: 60px;
+    }
+}

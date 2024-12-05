@@ -1,0 +1,9 @@
+@use '../../scss/abstracts/mixins' as m;
+
+.contact-section {
+
+    @include m.margin-bottom;
+
+    display: flex;
+    flex-direction: column;
+}

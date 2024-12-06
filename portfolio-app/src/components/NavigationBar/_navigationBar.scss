@@ -5,16 +5,15 @@ nav {
     align-items: center;
 
     a {
-        gap: 1rem;
+        padding: 0.8rem;
 
-        a:hover {
+        &:hover {
             text-decoration: underline;
         }
     }
 }
 
-
-
+// remnants of nav link to delete most likely on clean up 
 .active {
     color: inherit;
     font-weight: 600;

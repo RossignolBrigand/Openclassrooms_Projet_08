@@ -10,25 +10,10 @@ export default function Header() {
     // Localisation
     const { t } = useTranslation('header');
 
-
-    // Navbar movement gimmick
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    useEffect(() => {
-
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     return (
-        <header className={`header ${isScrolled ? "vertical" : ""}`}>
+        <header className={`header`}>
             <div className="header-title">
-                <h1>Rossignol Brigand - Portfolio</h1>
-                <h2>{t('welcome')}</h2>
+                <h1>Thomas PINEAU - Portfolio</h1>
             </div>
             <div className="header-content">
                 <NavigationBar />

@@ -12,11 +12,11 @@ function NavigationBar() {
     return (
         <nav>
             <HashLink
-                smooth to="#hero-section"
+                smooth to="#skills-section"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
                 }>
-                {t('navigation.home')}
+                {t('navigation.skills')}
             </HashLink>
             <HashLink
                 smooth to="#services-section"

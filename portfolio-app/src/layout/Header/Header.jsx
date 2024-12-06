@@ -13,7 +13,10 @@ export default function Header() {
     return (
         <header className={`header`}>
             <div className="header-title">
-                <h1>Thomas PINEAU - Portfolio</h1>
+                <a
+                    href="#hero-section">
+                    <h1>Thomas PINEAU - Portfolio</h1>
+                </a>
             </div>
             <div className="header-content">
                 <NavigationBar />

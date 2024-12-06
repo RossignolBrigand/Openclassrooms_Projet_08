@@ -1,0 +1,25 @@
+.progress-bar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-bar-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    position: relative;
+}
+
+.progress-bar-filled {
+    transition: width 0.3s ease-in-out;
+}
+
+.progress-bar-rating {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 8px;
+}

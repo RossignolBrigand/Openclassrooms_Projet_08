@@ -1,7 +1,12 @@
 @use '../../scss/abstracts/mixins' as m;
+@use '../../scss/abstracts/variables' as v;
 
 .projects-section {
 
     @include m.margin-bottom;
+
+    &__title {
+        background-color: v.$primary-color;
+    }
 
 }

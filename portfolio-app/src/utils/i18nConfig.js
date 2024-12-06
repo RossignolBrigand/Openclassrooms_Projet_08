@@ -54,7 +54,7 @@ i18n
             },
         },
         fallbackLng: 'en', // Default language
-        ns: ['header', 'footer', 'heroSection', 'skillSection', 'servicesSection', 'projectsSection', 'contactSection'], // Define namespaces
+        ns: ['header', 'footer', 'heroSection', 'skillSection', 'serviceSection', 'projectSection', 'contactSection'], // Define namespaces
         defaultNS: 'header', // Default namespace
         interpolation: { escapeValue: false }, // React already escapes
     });

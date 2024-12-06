@@ -18,13 +18,17 @@ function HeroSection() {
 
     return (
         <section className='heroSection' id='hero-section'>
-            <div className='resume-container'>
+            <div className='about-container'>
                 <h2>{t('presentation')}</h2>
                 <p>{t('summary')}</p>
                 <div className='btn-container'>
+                    {/* Button to download CV */}
                     <Button
                         label={t('cta.cv')}
-                        onclick={""}
+                        href='/portfolio-app/src/downloads/HCMS Mixing Cheatsheet.pdf'
+                        target='_blank'
+                        download
+                        variant='default'
                     />
                     <Button
                         label={t('cta.contact')}

@@ -1,7 +1,21 @@
+@use '../../scss/abstracts/typography' as t;
+@use '../../scss/abstracts/variables' as v;
+
+.custom-language-select {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    span {
+        color: v.$font-white;
+        font-family: t.$font-title;
+    }
+}
+
 .translation-button {
-    border: 2px solid white;
-    border-radius: 25px;
+    border: 2px solid v.$font-white;
     min-width: fit-content;
     padding: 0 0.5rem;
     background-color: transparent;
+    font-size: 1rem;
 }

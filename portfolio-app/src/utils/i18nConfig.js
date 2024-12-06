@@ -6,13 +6,22 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 // English (Default)
 import headerEn from '../locales/en/header.json';
+import footerEn from '../locales/en/footer.json';
 import heroSectionEn from '../locales/en/heroSection.json';
 import skillSectionEn from '../locales/en/skills.json';
+import serviceSectionEn from '../locales/en/services.json';
+import projectSectionEn from '../locales/en/services.json';
+import contactSectionEn from '../locales/en/contact.json';
 
 // French 
 import headerFr from '../locales/fr/header.json';
+import footerFr from '../locales/fr/footer.json';
 import heroSectionFr from '../locales/fr/heroSection.json';
 import skillSectionFr from '../locales/fr/skills.json';
+import serviceSectionFr from '../locales/fr/services.json';
+import projectSectionFr from '../locales/fr/projects.json';
+import contactSectionFr from '../locales/fr/contact.json';
+
 
 // Log all available languages as a const
 export const languages = [
@@ -27,18 +36,25 @@ i18n
         resources: {
             en: {
                 header: headerEn,
+                footer: footerEn,
                 heroSection: heroSectionEn,
                 skillSection: skillSectionEn,
-
+                serviceSection: serviceSectionEn,
+                projectSection: projectSectionEn,
+                contactSection: contactSectionEn,
             },
             fr: {
                 header: headerFr,
+                footer: footerFr,
                 heroSection: heroSectionFr,
                 skillSection: skillSectionFr,
+                serviceSection: serviceSectionFr,
+                projectSection: projectSectionFr,
+                contactSection: contactSectionFr,
             },
         },
         fallbackLng: 'en', // Default language
-        ns: ['header', 'heroSection', 'skillSection'], // Define namespaces
+        ns: ['header', 'footer', 'heroSection', 'skillSection', 'servicesSection', 'projectsSection', 'contactSection'], // Define namespaces
         defaultNS: 'header', // Default namespace
         interpolation: { escapeValue: false }, // React already escapes
     });

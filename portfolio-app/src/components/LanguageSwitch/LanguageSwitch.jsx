@@ -25,17 +25,22 @@ const LanguageSwitcher = () => {
         }
     }, [i18n]);
 
-    return (
-        <select
-            className='translation-button'
-            value={i18n.language}
-            onChange={(e) => changeLanguage(e.target.value)}
-        >
-            {languages.map((lang) => (
-                <option key={lang.code} value={lang.code}>{lang.name}</option>
-            ))}
+    const { t } = useTranslation('header')
 
-        </select>
+    return (
+        <div className='custom-language-select'>
+            <span>{t('language')}</span>
+            <select
+                className='translation-button'
+                value={i18n.language}
+                onChange={(e) => changeLanguage(e.target.value)}
+            >
+                {languages.map((lang) => (
+                    <option key={lang.code} value={lang.code}>{lang.name}</option>
+                ))}
+
+            </select>
+        </div>
     );
 };
 

@@ -4,7 +4,22 @@ import './_Button.scss'
 
 //------------------------------------------------
 
-function Button({ label, onClick, variant, disabled }) {
+export default function Button({ label = "", onClick = () => { }, variant = "default", disabled = false, href = "", target = "", download }) {
+    const isLink = !!href;
+
+    if (isLink) {
+        return (
+            <a
+                className={`btn btn-${variant}`}
+                href={href}
+                target={target} // Open in a new tab if target = "_blank"
+                rel={target === '_blank' ? "noopener noreferrer" : undefined} // for security purposes in new tabs 
+                download={download} // if downloading a file 
+            >
+                {label}
+            </a>
+        )
+    }
 
     return (
         <button
@@ -16,5 +31,3 @@ function Button({ label, onClick, variant, disabled }) {
         </button>
     );
 };
-
-export default Button;

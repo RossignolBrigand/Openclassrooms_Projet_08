@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import { useTranslation } from "react-i18next";
 
 import './_navigationBar.scss';
 
-function NavigationBar() {
+//-----------------------------------------------------------
+
+export default function NavigationBar() {
 
     const { t } = useTranslation('header');
 
@@ -13,37 +14,27 @@ function NavigationBar() {
         <nav>
             <HashLink
                 smooth to="#skills-section"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                }>
+                className="navLink--anchored">
                 {t('navigation.skills')}
             </HashLink>
             <HashLink
                 smooth to="#services-section"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                }
+                className="navLink--anchored"
             >
                 {t('navigation.services')}
             </HashLink>
             <HashLink
                 smooth to="#projects-section"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                }
+                className="navLink--anchored"
             >
                 {t('navigation.projects')}
             </HashLink>
             <HashLink
                 smooth to="#contact-section"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                }
+                className="navLink--anchored"
             >
                 {t('navigation.contact')}
             </HashLink>
         </nav>
     );
 };
-
-export default NavigationBar;

@@ -1,13 +1,15 @@
+// Creates a progress bar which lets us visually rate something. 
 
-import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import './_progressBar.scss';
 
+
+//--------------------------------------------------------
 export default function ProgressBar({ label, rating, color, height = "10px", backgroundColor = "#e0e0e0", }) {
 
     return (
-        <div className="progress-bar-container" style={{ marginBottom: "16px" }}>
+        <div className="progress-bar-container">
             {label && (
                 <span
                     className="progress-bar-label"
@@ -15,7 +17,7 @@ export default function ProgressBar({ label, rating, color, height = "10px", bac
                     {label}
                 </span>
             )}
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div>
                 <div
                     className="progress-bar"
                     role="progressbar"
@@ -25,9 +27,11 @@ export default function ProgressBar({ label, rating, color, height = "10px", bac
                     aria-label={`${label || "Progress"}: ${rating}%`}
                     style={{
                         flexGrow: 1,
-                        height,
+                        height: "24px",
+                        width: "auto",
                         backgroundColor,
                         borderRadius: "4px",
+                        border: "double transparent",
                         overflow: "hidden",
                         position: "relative",
                         marginRight: "8px",
@@ -39,16 +43,14 @@ export default function ProgressBar({ label, rating, color, height = "10px", bac
                             height: "100%",
                             width: `${Math.min(Math.max(rating, 0), 100)}%`,
                             backgroundColor: color,
-                            transition: "width 0.3s ease-in-out",
+                            transition: "all 0.3s ease-in-out",
                         }}
                     ></div>
                 </div>
                 <div
                     className="progress-bar-rating"
                     style={{
-                        fontSize: "14px",
-                        fontWeight: "bold",
-                        minWidth: "40px",
+                        fontSize: "16px",
                         textAlign: "right",
                     }}
                 >

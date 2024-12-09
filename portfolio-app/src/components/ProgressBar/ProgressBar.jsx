@@ -9,16 +9,11 @@ export default function ProgressBar({ label, rating, color, height = "10px", bac
     return (
         <div className="progress-bar-container" style={{ marginBottom: "16px" }}>
             {label && (
-                <div
+                <span
                     className="progress-bar-label"
-                    style={{
-                        fontSize: "14px",
-                        fontWeight: "bold",
-                        marginBottom: "8px",
-                    }}
                 >
                     {label}
-                </div>
+                </span>
             )}
             <div style={{ display: "flex", alignItems: "center" }}>
                 <div

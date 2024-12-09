@@ -1,11 +1,13 @@
+@use '../../scss/abstracts/typography' as t;
+
 .progress-bar-container {
     display: flex;
     flex-direction: column;
 }
 
 .progress-bar-label {
-    font-size: 14px;
-    font-weight: bold;
+    font-family: t.$font-title;
+    font-size: 1rem;
     margin-bottom: 8px;
 }
 

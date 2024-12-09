@@ -18,11 +18,11 @@ function SkillsSection() {
                 < div className='skills-block' >
                     <h3 className='skills-block__title'>FRONTEND</h3>
                     <ul className='skills-block__content--list'>
-                        <li>HTML, CSS, JS</li>
-                        <li><ProgressBar label={"HTML, CSS, JS"} rating={"70"} color={"blue"} /></li>
-                        <li>Sass</li>
-                        <li>React</li>
-                        <li></li>
+                        <li><ProgressBar label={"HTML"} rating={"90"} color={"blue"} /></li>
+                        <li><ProgressBar label={"CSS"} rating={"80"} color={"orange"} /></li>
+                        <li><ProgressBar label={"JS"} rating={"60"} color={"yellow"} /></li>
+                        <li><ProgressBar label={"Sass"} rating={"60"} color={"pink"} /></li>
+                        <li><ProgressBar label={"React"} rating={"60"} color={"teal"} /></li>
                     </ul>
                 </div >
                 <div className='skills-block'>

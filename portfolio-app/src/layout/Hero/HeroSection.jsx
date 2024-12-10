@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { DiGithubBadge } from "react-icons/di";
 import { BsLinkedin } from "react-icons/bs";
 
-import ProfilePic from '../../assets/images/picography-autumn-leaves-ground.jpg';
+import ProfilePic from '../../assets/images/Profile.png';
 
 import ImgContainer from '../../components/ImgContainer/ImgContainer';
 import Button from '../../components/Button/Button';

@@ -5,7 +5,12 @@ footer {
     grid-template-columns: auto auto auto;
     justify-items: center;
     color: v.$primary_color;
+
     background-color: v.$font-black;
+
+    p {
+        color: white;
+    }
 
     .footer-block {
         margin: 60px;

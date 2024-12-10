@@ -4,7 +4,7 @@ import './_Button.scss'
 
 //------------------------------------------------
 
-export default function Button({ label = "", onClick = () => { }, variant = "default", disabled = false, href = "", target = "", download }) {
+export default function Button({ onClick, variant = "default", disabled = false, href = "", target = "", download, children }) {
 
     const isLink = !!href;
 
@@ -17,7 +17,7 @@ export default function Button({ label = "", onClick = () => { }, variant = "def
                 rel={target === '_blank' ? "noopener noreferrer" : undefined} // for security purposes in new tabs 
                 download={download} // if downloading a file 
             >
-                {label}
+                {children}
             </a>
         )
     }
@@ -28,7 +28,7 @@ export default function Button({ label = "", onClick = () => { }, variant = "def
             onClick={onClick}
             disabled={disabled}
         >
-            {label}
+            {children}
         </button>
     );
 };

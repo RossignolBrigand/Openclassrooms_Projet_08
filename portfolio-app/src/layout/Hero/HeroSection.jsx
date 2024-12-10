@@ -24,24 +24,22 @@ function HeroSection() {
                 <div className='btn-container'>
                     {/* Button to download CV */}
                     <Button
-                        label={t('cta.cv')}
                         href='/portfolio-app/src/downloads/HCMS Mixing Cheatsheet.pdf'
                         target='_blank'
                         download
                         variant='default'
-                    />
+                    >{t('cta.cv')}
+                    </Button>
                     <Button
-                        label={t('cta.contact')}
+                        href='#contact-section'
                         onClick={''}
-                    />
+                    >{t('cta.contact')}</Button>
                     <Button
-                        label={"Github"}
                         onClick={''}
-                    />
+                    >{"GitHub"}</Button>
                     <Button
-                        label={"Linkedin"}
                         onClick={''}
-                    />
+                    >{"Linkedin"}</Button>
                 </div>
             </div>
             <ImgContainer

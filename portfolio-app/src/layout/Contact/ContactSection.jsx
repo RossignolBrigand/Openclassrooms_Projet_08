@@ -25,17 +25,20 @@ export default function ContactSection() {
     }
 
     return (
-        <div className='contact-section' id='contact-section'>
+        <section className='contact-section' >
+            <h2 className='contact-section__title' id='contact-section'>CONTACT</h2>
             <div>
                 <p> Voilà mon mail ! </p>
                 <Button
-                    label={"thomas" + <SlNote />}
                     onClick={copyToClipboard}
-                />
+                >
+                    {"thomas.pineau.webdev@protonmail.com"}
+                    <SlNote />
+                </Button>
                 {isButtonClicked ? <span>Copié dans le presse-papier !</span> : null}
             </div>
             <p> Où si vous préférez un formulaire ! </p>
             <ContactForm />
-        </div>
+        </section>
     )
 };

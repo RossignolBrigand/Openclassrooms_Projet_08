@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { DiGithubBadge } from "react-icons/di";
+import { BsLinkedin } from "react-icons/bs";
 
 import ProfilePic from '../../assets/images/picography-autumn-leaves-ground.jpg';
 
@@ -15,6 +17,13 @@ import './_hero.scss';
 function HeroSection() {
 
     const { t } = useTranslation('heroSection');
+
+    const goToGithub = () => {
+        window.location.href = process.env.REACT_APP_GITHUB_LINK
+    }
+    const goToLinkedin = () => {
+        window.location.href = process.env.REACT_APP_LINKEDIN_LINK
+    }
 
     return (
         <section className='heroSection' id='hero-section'>
@@ -32,14 +41,19 @@ function HeroSection() {
                     </Button>
                     <Button
                         href='#contact-section'
-                        onClick={''}
                     >{t('cta.contact')}</Button>
                     <Button
-                        onClick={''}
-                    >{"GitHub"}</Button>
+                        onClick={goToGithub}
+                    >
+                        Github
+                        <DiGithubBadge />
+                    </Button>
                     <Button
-                        onClick={''}
-                    >{"Linkedin"}</Button>
+                        onClick={goToLinkedin}
+                    >
+                        Linkedin
+                        <BsLinkedin />
+                    </Button>
                 </div>
             </div>
             <ImgContainer

@@ -12,4 +12,10 @@
     // border-radius: 50px;
 
     .resume-container {}
+
+    .btn-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 }

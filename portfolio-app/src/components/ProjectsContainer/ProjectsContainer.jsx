@@ -11,14 +11,40 @@ import ProjectsData from '../../data/projects.json';
 import './_projectsContainer.scss';
 //------------------------------------------------------------
 
-export default function ProjectsContainer({ children }) {
+export default function ProjectsContainer() {
 
-    const { t } = useTranslation('projectSection');
+    const { i18n } = useTranslation();
+    const language = i18n.language;
+
+    const localizedProjects = ProjectsData.map((project) => ({
+        ...project,
+        name: project.name[language],
+        description: project.description[language],
+        detailedDescription: project.detailedDescription[language]
+    }));
+
+    const [selectedProject, setSelectedProject] = useState(null);
+    const openModal = (project) => setSelectedProject(project);
+    const closeModal = () => setSelectedProject(null);
+
+    console.log(selectedProject);
 
     return (
-        ProjectsData.map((project) => {
-
-        })
+        <div>
+            {localizedProjects.map((project) => (
+                <ProjectCard
+                    key={project.id}
+                    name={project.name}
+                    description={project.description}
+                    image={project.image}
+                    onClick={() => openModal(project)} // Pass the project to the Modal
+                />
+            ))}
+            <ProjectModal
+                isOpen={!!selectedProject}
+                project={selectedProject}
+                closeModal={closeModal}
+            />
+        </div>
     )
-
 };

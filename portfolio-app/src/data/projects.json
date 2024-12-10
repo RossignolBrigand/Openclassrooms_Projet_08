@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "name": {
+            "en": "Portfolio Website",
+            "fr": "Site Portfolio"
+        },
+        "description": {
+            "en": "A personal portfolio showcasing my projects and skills.",
+            "fr": "Un site personnel mettant en valeur mes projets passés"
+        },
+        "detailedDescription": {
+            "en": "This project uses React, Sass, and optimized SEO strategies.",
+            "fr": "Ce projet utilise React, Sass et une stratégie de référencement local optimisée"
+        },
+        "image": "portfolio.jpg",
+        "tags": [
+            "React",
+            "Sass",
+            "SEO"
+        ],
+        "website": "https://myportfolio.com",
+        "codebase": "https://github.com/username/portfolio"
+    },
+    {
+        "id": 2,
+        "name": {
+            "en": "Booki Landing Page",
+            "fr": "Page d'accueil de Booki"
+        },
+        "description": {
+            "en": "The landing page of the renting website Booki",
+            "fr": "La page d'accueil du site de location Booki"
+        },
+        "detailedDescription": {
+            "en": "This project is built with HTML and CSS and is entirely responsive",
+            "fr": "Ce projet est construit purement en HTML et CSS et est totalement responsive"
+        },
+        "image": "../assets/images/projects/Projet-Booki-HTML-Responsive.png",
+        "tags": [
+            "HTML",
+            "CSS",
+            "Responsive Design"
+        ],
+        "website": "https://myportfolio.com",
+        "codebase": "https://github.com/username/portfolio"
+    },
+    {
+        "id": 3,
+        "name": {
+            "en": "Architect's Portfolio",
+            "fr": "Portfolio d'architecte"
+        },
+        "description": {
+            "en": "The portfolio website of the architect Sophie Bluel.",
+            "fr": "Le site portfolio de l'architecte Sophie Bluel."
+        },
+        "detailedDescription": {
+            "en": "This project is built and rendered dynamically with JavaScript, has a secured, if basic, login system and a backend to handle and hold data.",
+            "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
+        },
+        "image": "../assets/images/projects/Projet-Bluel-JS.png",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JS"
+        ],
+        "website": "https://myportfolio.com",
+        "codebase": "https://github.com/username/portfolio"
+    }
+]

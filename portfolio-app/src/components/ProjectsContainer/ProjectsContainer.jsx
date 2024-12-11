@@ -35,7 +35,8 @@ export default function ProjectsContainer() {
                     name={project.name}
                     description={project.description}
                     image={project.image}
-                    onClick={() => openModal(project)} // Pass the project to the Modal
+                    onClick={() => openModal(project)}
+                    tags={project.tags} // Pass the project to the Modal
                 />
             ))}
             <ProjectModal

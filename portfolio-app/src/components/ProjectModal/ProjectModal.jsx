@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Modal from 'react-modal';
 
 import './_projectModal.scss';
+import TagSystem from "../TagSystem/TagSystem";
 
 //-------------------------------------------------
 
@@ -30,6 +31,7 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
                 <div className='modal-content'>
                     <h2>{name}</h2>
                     <p>{detailedDescription}</p>
+                    <TagSystem data={tags} />
                     <div className="modal-content__links">
                         <a href={website} target="_blank" rel="noopener noreferrer">
                             {t('visitWebsite')}

@@ -10,7 +10,7 @@ export default function ServicesSection() {
     const { t } = useTranslation('serviceSection')
 
     return (
-        <div className="services-section" id='services-section'>
+        <section className="services-section" id='services-section'>
             <h2>{t('title')}</h2>
             <div className="services-wrapper">
                 <div className="services-container">
@@ -25,6 +25,6 @@ export default function ServicesSection() {
 
 
             </div>
-        </div>
+        </section>
     )
 };

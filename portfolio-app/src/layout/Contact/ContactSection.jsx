@@ -25,8 +25,8 @@ export default function ContactSection() {
     }
 
     return (
-        <section className='contact-section' >
-            <h2 className='contact-section__title' id='contact-section'>CONTACT</h2>
+        <section className='contact-section' id='contact-section' >
+            <h2 className='contact-section__title' >CONTACT</h2>
             <div>
                 <p> Voilà mon mail ! </p>
                 <Button

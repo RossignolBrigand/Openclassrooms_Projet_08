@@ -27,10 +27,8 @@ export default function ProjectsContainer() {
     const openModal = (project) => setSelectedProject(project);
     const closeModal = () => setSelectedProject(null);
 
-    console.log(selectedProject);
-
     return (
-        <div>
+        <div className='projects-container'>
             {localizedProjects.map((project) => (
                 <ProjectCard
                     key={project.id}

@@ -38,7 +38,7 @@ export default function ProgressBar({ label, rating, color, height = "10px", bac
                     }}
                 >
                     <div
-                        className="progress-bar-filled"
+                        className={`progress-bar-filled ${color}`}
                         style={{
                             height: "100%",
                             width: `${Math.min(Math.max(rating, 0), 100)}%`,

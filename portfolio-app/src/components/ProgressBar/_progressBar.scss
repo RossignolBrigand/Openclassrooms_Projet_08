@@ -1,5 +1,7 @@
 @use '../../scss/abstracts/typography' as t;
 
+//TODO: Create classes for each color of the progress bar and assign it to background color 
+
 .progress-bar-container {
     display: flex;
     flex-direction: column;

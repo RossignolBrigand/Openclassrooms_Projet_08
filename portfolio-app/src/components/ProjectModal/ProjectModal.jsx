@@ -3,8 +3,9 @@ import { FaTimes } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
 import Modal from 'react-modal';
 
-import './_projectModal.scss';
 import TagSystem from "../TagSystem/TagSystem";
+
+import './_projectModal.scss';
 
 //-------------------------------------------------
 
@@ -14,7 +15,7 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
 
     if (!project) return null;
 
-    const { name, detailedDescription, website, codebase, image, imageAlt, tags } = project;
+    const { name, detailedDescription, website, codebase, imageUrl, imageAlt, tags } = project;
 
     return (
         <Modal
@@ -22,7 +23,7 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
             onRequestClose={closeModal}
             contentLabel='Project Details'
             overlayClassName="modal-overlay"
-            className={"modal-overlay"}
+            className={"modal-projects"}
         >
             <div className='modal-wrapper'>
                 <button className="close-button" onClick={closeModal}>
@@ -41,7 +42,9 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
                         </a>
                     </div>
                     <div className='modal-content__image'>
-                        <img src={image} alt={imageAlt} />
+                        {imageUrl ? 
+                        <img src={process.env.PUBLIC_URL + imageUrl} alt={imageAlt} /> : <p>Loading...</p>
+                        }
                     </div>
                 </div>
             </div>

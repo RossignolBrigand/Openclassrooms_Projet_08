@@ -4,6 +4,7 @@
 .heroSection {
 
     @include m.margin-bottom;
+    @include m.margin-sides;
     @include m.padding-standard;
 
     display: grid;

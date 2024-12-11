@@ -1,20 +1,20 @@
+import PropTypes from 'prop-types';
 
 import TagSystem from '../TagSystem/TagSystem';
+
 import './_projectCard.scss';
 
 //------------------------------------------------------
 
-export default function ProjectCard({ name, description, image, imageAlt, onClick, tags }) {
+export default function ProjectCard({ name, description, imageUrl, imageAlt, onClick, tags}) {
 
     return (
         <div className='card-wrapper' onClick={onClick}>
-            {console.log(image)}
-            {image ?
+            {imageUrl ?
                 < div className='card-image'>
-                    <img src={image} alt={imageAlt}></img>
-                </div> : null
+                    <img src={imageUrl} alt={imageAlt}></img>
+                </div> : <p>Loading...</p>
             }
-
             <div className='card-content'>
                 <h3>{name}</h3>
                 <p>{description}</p>
@@ -23,3 +23,12 @@ export default function ProjectCard({ name, description, image, imageAlt, onClic
         </div >
     )
 };
+
+ProjectCard.propTypes = {
+    name: PropTypes.string,
+    description: PropTypes.string,
+    image: PropTypes.string,
+    imageAlt: PropTypes.string,
+    onClick: PropTypes.func,
+    tags: PropTypes.array,
+}

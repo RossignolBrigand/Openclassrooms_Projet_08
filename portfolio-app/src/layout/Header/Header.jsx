@@ -14,7 +14,7 @@ export default function Header() {
         <header className={`header`}>
             <div className="header-title">
                 <a
-                    href="#hero-section">
+                    href="/Portfolio/home">
                     <h1>Thomas PINEAU - Portfolio</h1>
                 </a>
             </div>

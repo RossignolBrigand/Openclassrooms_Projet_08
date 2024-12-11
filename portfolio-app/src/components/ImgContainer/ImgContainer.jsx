@@ -11,7 +11,6 @@ function ImgContainer({ src, alt, size, variant, loading }) {
                 alt={alt}
                 loading={loading}
             />
-
         </div>
     );
 

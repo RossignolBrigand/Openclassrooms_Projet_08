@@ -2,4 +2,20 @@
 
 .services-section {
     @include m.margin-bottom;
+    @include m.margin-sides;
+
+    h2{
+        border-top: 2px solid inherit;
+    }
+    .services-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+
+        .services-container {
+            padding: 1rem;
+            background-color: rgb(228, 228, 228);
+            border-radius: 4px;
+        }
+    }
 }

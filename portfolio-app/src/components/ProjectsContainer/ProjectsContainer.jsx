@@ -20,7 +20,8 @@ export default function ProjectsContainer() {
         ...project,
         name: project.name[language],
         description: project.description[language],
-        detailedDescription: project.detailedDescription[language]
+        detailedDescription: project.detailedDescription[language],
+        imageAlt: project.imageAlt[language]
     }));
 
     const [selectedProject, setSelectedProject] = useState(null);
@@ -34,7 +35,8 @@ export default function ProjectsContainer() {
                     key={project.id}
                     name={project.name}
                     description={project.description}
-                    image={project.image}
+                    imageUrl= {process.env.PUBLIC_URL + project.imageUrl}
+                    imageAlt={project.imageAlt}
                     onClick={() => openModal(project)}
                     tags={project.tags} // Pass the project to the Modal
                 />

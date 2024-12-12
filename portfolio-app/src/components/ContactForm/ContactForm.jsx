@@ -32,7 +32,7 @@ export default function ContactForm() {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <label htmlFor='name'>Name : </label>
+            <label htmlFor='name'>{t('form.name')}</label>
             <input
                 type='text'
                 id='name'
@@ -44,9 +44,9 @@ export default function ContactForm() {
                 )}
             />
             {errors.name && (
-                <p className='error'>{errors.name.message}</p>
+                <p className='errorMsg'>{errors.name.message}</p>
             )}
-            <label htmlFor='email'>E-mail : </label>
+            <label htmlFor='email'>{t('form.email')}</label>
             <input
                 type='email'
                 id='email'
@@ -58,9 +58,9 @@ export default function ContactForm() {
                 )}
             />
             {errors.email && (
-                <p className='error'>{errors.email.message}</p>
+                <p className='errorMsg'>{errors.email.message}</p>
             )}
-            <label htmlFor='mailBody'>Message : </label>
+            <label htmlFor='mailBody'>{t('form.message')}</label>
             <textarea
                 id='mailBody'
                 {...register('mailBody',
@@ -78,17 +78,20 @@ export default function ContactForm() {
                 )}
             />
             {errors.mailBody && (
-                <p className='error'>{errors.mailBody.message}</p>
+                <p className='errorMsg'>{errors.mailBody.message}</p>
             )}
 
             <input
                 disabled={isSubmitting}
                 type='submit'
+                value={t('form.submit')}
+                
             />
 
             {isSubmitting && (
                 <span>Placeholder for icon animation</span>
             )}
+
         </form>
     );
 } 

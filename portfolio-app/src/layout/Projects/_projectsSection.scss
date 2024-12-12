@@ -3,7 +3,6 @@
 
 .projects-section {
 
-    @include m.margin-sides;
     @include m.margin-bottom;
 
     display: grid;

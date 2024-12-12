@@ -29,7 +29,8 @@ function HeroSection() {
         <section className='heroSection' id='hero-section'>
             <div className='about-container'>
                 <h2>{t('presentation')}</h2>
-                <p>{t('summary')}</p>
+                <p>{t('summary.paragraph1')}</p>
+                <p>{t('summary.paragraph2')}</p>
                 <div className='btn-container'>
                     {/* Button to download CV */}
                     <Button
@@ -45,13 +46,13 @@ function HeroSection() {
                     <Button
                         onClick={goToGithub}
                     >
-                        Github
+                        {t('cta.github')}
                         <DiGithubBadge />
                     </Button>
                     <Button
                         onClick={goToLinkedin}
                     >
-                        Linkedin
+                        {t('cta.linkedin')}
                         <BsLinkedin />
                     </Button>
                 </div>

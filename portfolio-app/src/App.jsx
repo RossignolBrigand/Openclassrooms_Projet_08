@@ -14,7 +14,7 @@ function App() {
     <Router basename='/Portfolio'>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route path='/home' element=<HomePage /> />
+          <Route path='/home' element= {<HomePage/>}/>
           <Route path='/about' element={<AboutPage />} />
           <Route path='/blog' element={<BlogPage />} />
           <Route path='/error' element={<ErrorPage />} />

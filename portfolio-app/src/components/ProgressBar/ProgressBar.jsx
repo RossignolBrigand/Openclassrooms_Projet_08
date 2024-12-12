@@ -9,7 +9,7 @@ import './_progressBar.scss';
 export default function ProgressBar({ label, rating, color, height = "10px", backgroundColor = "#e0e0e0", }) {
 
     return (
-        <div className="progress-bar-container">
+        <div className="progress-bar-wrapper">
             {label && (
                 <span
                     className="progress-bar-label"
@@ -17,7 +17,7 @@ export default function ProgressBar({ label, rating, color, height = "10px", bac
                     {label}
                 </span>
             )}
-            <div>
+            <div className="progress-bar-container">
                 <div
                     className="progress-bar"
                     role="progressbar"
@@ -25,17 +25,6 @@ export default function ProgressBar({ label, rating, color, height = "10px", bac
                     aria-valuemin="0"
                     aria-valuemax="100"
                     aria-label={`${label || "Progress"}: ${rating}%`}
-                    style={{
-                        flexGrow: 1,
-                        height: "24px",
-                        width: "auto",
-                        backgroundColor,
-                        borderRadius: "4px",
-                        border: "double transparent",
-                        overflow: "hidden",
-                        position: "relative",
-                        marginRight: "8px",
-                    }}
                 >
                     <div
                         className={`progress-bar-filled ${color}`}

@@ -2,9 +2,14 @@
 
 //TODO: Create classes for each color of the progress bar and assign it to background color 
 
-.progress-bar-container {
+.progress-bar-wrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.progress-bar-container {
+    display: flex;
 }
 
 .progress-bar-label {
@@ -14,11 +19,20 @@
 }
 
 .progress-bar {
+    width: auto;
+    height: 1.5rem;
     flex-grow: 1;
     position: relative;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    border: double transparent;
+    border-radius: 4px;
+    margin-right: .75rem;
+
 }
 
 .progress-bar-filled {
+    border-radius: 2px;
     transition: width 0.3s ease-in-out;
 }
 

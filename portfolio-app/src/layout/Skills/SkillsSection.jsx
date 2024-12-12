@@ -21,7 +21,6 @@ function SkillsSection() {
                         <li><ProgressBar label={"JavaScript"} rating={60} color={"yellow"} /></li>
                         <li><ProgressBar label={"React"} rating={60} color={"teal"} /></li>
                         <li><ProgressBar label={"Sass"} rating={60} color={"pink"} /></li>
-
                     </ul>
                 </div>
                 <div className='skills-block'>
@@ -33,8 +32,9 @@ function SkillsSection() {
                     </ul>
                 </div>
             </div>
-            <div className='tools-block'>
+            <div className='tools-container'>
                 <h3 className='tools-block__title'>{t('block-titles.tools&tech')}</h3>
+                <div className='tools-block'>
                 <div className='tools-block__content'>
                     <h4>{t('applications.title')}</h4>
                     <ul className='tools-block__content--list'>
@@ -56,8 +56,9 @@ function SkillsSection() {
                         <li>Gulp</li>
                     </ul>
                 </div>
+                </div>
             </div>
-            <div className='learning-block'>
+            <div className='learning-container'>
                 <h4>{t('learning.title')}</h4>
                 <ul>
                     <li>Python</li>

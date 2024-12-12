@@ -17,12 +17,20 @@
             &__content {
 
                 &--list {
-                    margin-top: 1rem;
                     list-style: none;
                 }
 
             }
         }
-    }
 
+    }
+    
+    .tools-container {
+
+        .tools-block{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+    }
 }

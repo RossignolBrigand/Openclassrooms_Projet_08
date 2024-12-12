@@ -1,3 +1,27 @@
 {
-    "title": "My services"
+    "title": "My services",
+    "subtitles": {
+        "SEO": "SEO / Audits / Optimisations",
+        "static-pages": "Creation of static websites and web applications",
+        "fullstack": "Creation and management of fullstack systems"
+    },    
+    "SEOList": {
+        "1": "Performance and accessibility audits implementation.",
+        "2": "Optimization of your site's loading performance (image management and script optimization).",
+        "3": "Optimization of your SEO and local search ranking (Metadata and OpenGraph).",
+        "4": "Optimization of your site's accessibility (Semantic HTML / ARIA)."
+    },
+    "WebDev": {
+        "1": "Creation of static HTML/CSS websites with guaranteed responsiveness.",
+        "2": "Creation of custom web applications tailored to your needs.",
+        "3": "Creation of websites using CMS platforms like WordPress.",
+        "4": "Management of hosting and security."
+    },
+    "Fullstack": {
+        "1": "Project management from the frontend to database maintenance.",
+        "2": "Construction of MERN stacks (MongoDb, Express, React, Node.js).",
+        "3": "Management of project security following the OWASP10 advice.", 
+        "4": ""
+    }
+
 }

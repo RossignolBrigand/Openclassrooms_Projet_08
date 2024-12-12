@@ -14,29 +14,29 @@ export default function ServicesSection() {
             <h2>{t('title')}</h2>
             <div className="services-wrapper">
                 <div className="services-container">
-                    <h3>SEO / Optimisations/ Audits</h3>
+                    <h3>{t('subtitles.SEO')}</h3>
                     <ul>
-                        <li>Réalisation d'audits performances et accessibilité</li>
-                        <li>Optimisation des performances du chargment de votre site (Gestion des images et optimisation des scripts)</li>
-                        <li>Optimisation de votre SEO et référencement local (Métadonnées et OpenGraph)</li>
-                        <li>Optimisation de l'accessibilité de votre site (HTML sémantique / ARIA)</li>
+                        <li>{t('SEOList.1')}</li>
+                        <li>{t('SEOList.2')}</li>
+                        <li>{t('SEOList.3')}</li>
+                        <li>{t('SEOList.4')}</li>
                     </ul>
                 </div>
                 <div className="services-container">
-                    <h3>Création de sites web statiques ou d'applications web</h3>
+                    <h3>{t('subtitles.static-pages')}</h3>
                     <ul>
-                        <li>Création de sites statiques en HTML/ CSS garantis responsive.</li>
-                        <li>Création d'applications web personnalisées selon vos besoins.</li>
-                        <li>Création de sites à partir de CMS comme Wordpress.</li>
-                        <li>Gestion de l'hébergement et de la sécurité.</li>
+                        <li>{t('WebDev.1')}</li>
+                        <li>{t('WebDev.2')}</li>
+                        <li>{t('WebDev.3')}</li>
+                        <li>{t('WebDev.4')}</li>
                     </ul>
                 </div>
                 <div className="services-container">
-                    <h3>Création de systèmes fullstack</h3>
+                    <h3>{t('subtitles.fullstack')}</h3>
                     <ul>
-                        <li>Gestion de projet depuis le frontend jusqu'au maintien de la base de données.</li>
-                        <li>Construction de stacks MERN (MongoDb, Express, React, Node.js).</li>
-                        <li>Gestion de la sécurité en suivant les recommendations de l'OWASP10.</li>
+                        <li>{t('Fullstack.1')}</li>
+                        <li>{t('Fullstack.2')}</li>
+                        <li>{t('Fullstack.3')}</li>
                     </ul>
                 </div>
             </div>

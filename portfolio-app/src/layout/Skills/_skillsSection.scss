@@ -9,18 +9,10 @@
 
     .skills-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, auto);
 
         .skills-block {
             @include m.padding-standard;
-
-            &__content {
-
-                &--list {
-                    list-style: none;
-                }
-
-            }
         }
 
     }

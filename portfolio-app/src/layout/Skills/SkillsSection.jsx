@@ -16,8 +16,8 @@ function SkillsSection() {
                 <div className='skills-block' >
                     <h3 className='skills-block__title'>{t('block-titles.frontend')}</h3>
                     <ul className='skills-block__content--list'>
-                        <li><ProgressBar label={"HTML5"} rating={90} color={"blue"} /></li>
-                        <li><ProgressBar label={"CSS"} rating={80} color={"orange"} /></li>
+                        <li><ProgressBar label={"HTML5"} rating={80} color={"blue"} /></li>
+                        <li><ProgressBar label={"CSS"} rating={70} color={"orange"} /></li>
                         <li><ProgressBar label={"JavaScript"} rating={60} color={"yellow"} /></li>
                         <li><ProgressBar label={"React"} rating={60} color={"teal"} /></li>
                         <li><ProgressBar label={"Sass"} rating={60} color={"pink"} /></li>
@@ -26,8 +26,8 @@ function SkillsSection() {
                 <div className='skills-block'>
                     <h3 className='skills-block__title'>{t('block-titles.backend')}</h3>
                     <ul className='skills-block__content--list'>
-                        <li><ProgressBar label={"Node.js"} rating={40} color={"green"} /></li>
-                        <li><ProgressBar label={"Express"} rating={50} color={"teal"} /></li>
+                        <li><ProgressBar label={"Node.js"} rating={60} color={"green"} /></li>
+                        <li><ProgressBar label={"Express"} rating={60} color={"teal"} /></li>
                         <li><ProgressBar label={"Mongo.db"} rating={50} color={"green"} /></li>
                     </ul>
                 </div>

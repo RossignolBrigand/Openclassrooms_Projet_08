@@ -12,9 +12,7 @@ export default function ProjectsSection() {
             <div className="projects-section__title">
                 <h2>PROJECTS</h2>
             </div>
-
             <ProjectsContainer />
-
         </section>
     );
 }

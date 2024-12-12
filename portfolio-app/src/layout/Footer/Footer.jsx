@@ -1,29 +1,38 @@
 
+import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../../components/LanguageSwitch/LanguageSwitch';
+
 import './_footer.scss'
 
 export default function Footer() {
+
+
+    const { t } = useTranslation('footer');
+
     return (
         <footer>
             <div class="footer-container">
-                <div class="footer-links">
-                    <a href="#hero-section">About Me</a>
-                    <a href="#projects-section">Projects</a>
-                    <a href="#contact-section">Contact</a>
+                <div className='footer-top'>
+                    <div class="footer-links">
+                        <a href="#hero-section">{t('links.about')}</a>
+                        <a href="#projects-section">{t('links.projects')}</a>
+                        <a href="#contact-section">{t('links.contact')}</a>
+                    </div>
+                    <div class="footer-socials">
+                        <a href={process.env.REACT_APP_LINKEDIN_URL} target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a href={process.env.REACT_APP_GITHUB_URL} target="_blank" rel="noreferrer">GitHub</a>
+                    </div>
+                    <div className='footer-params'>
+                        <LanguageSwitcher />
+                    </div>
                 </div>
-                <div class="footer-socials">
-                    <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                </div>
-                <div className='footer-params'>
-                    <LanguageSwitcher />
-                </div>
-                <div class="footer-cta">
-                    <p>Have a project in mind? <a href="#contact-section">Let's talk!</a></p>
+                <div className="footer-cta flex-column">
+                    <p>{t('cta.question')}</p>
+                    <a href="#contact-section">{t('cta.btn')}</a>
                 </div>
                 <div class="footer-bottom">
-                    <p>This project was built with React</p>
-                    <p>© 2024 Thomas PINEAU. All rights reserved.</p>
+                    <p>{t('build')}</p>
+                    <p>{t('copyright')}</p>
                 </div>
             </div>
         </footer>

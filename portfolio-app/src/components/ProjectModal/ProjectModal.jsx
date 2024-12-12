@@ -30,20 +30,22 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
                     <FaTimes />
                 </button>
                 <div className='modal-content'>
-                    <h2>{name}</h2>
-                    <p>{detailedDescription}</p>
-                    <TagSystem data={tags} />
-                    <div className="modal-content__links">
-                        <a href={website} target="_blank" rel="noopener noreferrer">
-                            {t('visitWebsite')}
-                        </a>
-                        <a href={codebase} target="_blank" rel="noopener noreferrer">
-                            {t('visitCodebase')}
-                        </a>
+                    <div className="modal-content__text">
+                        <h2>{name}</h2>
+                        <p>{detailedDescription}</p>
+                        <TagSystem data={tags} />
+                        <div className="modal-content__links">
+                            <a href={website} target="_blank" rel="noopener noreferrer">
+                                {t('visitWebsite')}
+                            </a>
+                            <a href={codebase} target="_blank" rel="noopener noreferrer">
+                                {t('visitCodebase')}
+                            </a>
+                        </div>
                     </div>
                     <div className='modal-content__image'>
-                        {imageUrl ? 
-                        <img src={process.env.PUBLIC_URL + imageUrl} alt={imageAlt} /> : <p>Loading...</p>
+                        {imageUrl ?
+                            <img src={process.env.PUBLIC_URL + imageUrl} alt={imageAlt} /> : <p>Loading...</p>
                         }
                     </div>
                 </div>

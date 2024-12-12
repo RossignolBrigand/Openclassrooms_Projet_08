@@ -1,0 +1,24 @@
+@use '../../scss/abstracts/typography' as t;
+
+.tags-wrapper {
+
+    h4 {
+        width: 20%;
+        padding-top: 10px;
+        border-top: 1px solid black;
+        margin-bottom: 10px;
+    }
+
+    span {
+        border: 1px solid black;
+        border-radius: 0 4px 0 4px;
+        padding: 5px;
+        font-family: t.$font_title;
+    }
+
+    .tags-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}

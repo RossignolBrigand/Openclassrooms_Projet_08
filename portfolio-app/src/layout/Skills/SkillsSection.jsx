@@ -14,7 +14,7 @@ function SkillsSection() {
             <h2>{t('title')}</h2>
             <div className='skills-container'>
                 <div className='skills-block' >
-                    <h3 className='skills-block__title'>FRONTEND <DiDatabase /></h3>
+                    <h3 className='skills-block__title'>{t('block-titles.frontend')}</h3>
                     <ul className='skills-block__content--list'>
                         <li><ProgressBar label={"HTML5"} rating={90} color={"blue"} /></li>
                         <li><ProgressBar label={"CSS"} rating={80} color={"orange"} /></li>
@@ -25,7 +25,7 @@ function SkillsSection() {
                     </ul>
                 </div>
                 <div className='skills-block'>
-                    <h3 className='skills-block__title'>BACKEND</h3>
+                    <h3 className='skills-block__title'>{t('block-titles.backend')}</h3>
                     <ul className='skills-block__content--list'>
                         <li><ProgressBar label={"Node.js"} rating={40} color={"green"} /></li>
                         <li><ProgressBar label={"Express"} rating={50} color={"teal"} /></li>
@@ -34,8 +34,9 @@ function SkillsSection() {
                 </div>
             </div>
             <div className='tools-block'>
-                <h3 className='tools-block__title'>PROJECT MANAGEMENT & TOOLS</h3>
+                <h3 className='tools-block__title'>{t('block-titles.tools&tech')}</h3>
                 <div className='tools-block__content'>
+                    <h4>{t('applications.title')}</h4>
                     <ul className='tools-block__content--list'>
                         <li>Figma</li>
                         <li>Git</li>
@@ -46,19 +47,18 @@ function SkillsSection() {
                     </ul>
                 </div>
                 <div className='tools-block__content'>
-                    <h4>Technologies and dependencies I use : </h4>
+                    <h4>{t('dependencies.title')}</h4>
                     <ul className='tools-block__content--list'>
                         <li>JSONWebToken</li>
                         <li>bCrypt</li>
                         <li>Multer</li>
                         <li>Sharp</li>
                         <li>Gulp</li>
-                        <li></li>
                     </ul>
                 </div>
             </div>
-            <div>
-                <p>Je travaille actuellement sur ces compétences : / Skills i am currently learning : </p>
+            <div className='learning-block'>
+                <h4>{t('learning.title')}</h4>
                 <ul>
                     <li>Python</li>
                     <li>Next.js</li>

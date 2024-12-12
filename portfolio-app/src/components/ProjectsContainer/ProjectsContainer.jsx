@@ -35,7 +35,7 @@ export default function ProjectsContainer() {
                     key={project.id}
                     name={project.name}
                     description={project.description}
-                    imageUrl= {process.env.PUBLIC_URL + project.imageUrl}
+                    imageUrlCropped= {process.env.PUBLIC_URL + project.imageUrlCropped}
                     imageAlt={project.imageAlt}
                     onClick={() => openModal(project)}
                     tags={project.tags} // Pass the project to the Modal

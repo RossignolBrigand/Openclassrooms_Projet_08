@@ -6,13 +6,13 @@ import './_projectCard.scss';
 
 //------------------------------------------------------
 
-export default function ProjectCard({ name, description, imageUrl, imageAlt, onClick, tags}) {
+export default function ProjectCard({ name, description, imageUrlCropped, imageAlt, onClick, tags}) {
 
     return (
         <div className='card-wrapper' onClick={onClick}>
-            {imageUrl ?
+            {imageUrlCropped ?
                 < div className='card-image'>
-                    <img src={imageUrl} alt={imageAlt}></img>
+                    <img src={imageUrlCropped} alt={imageAlt}></img>
                 </div> : <p>Loading...</p>
             }
             <div className='card-content'>

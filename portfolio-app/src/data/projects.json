@@ -48,9 +48,10 @@
       "fr": ""
     },
     "tags": [
-      "HTML",
+      "SEO",
       "CSS",
-      "JS"
+      "Accessibility",
+      "Optimization"
     ],
     "website": "https://myportfolio.com",
     "codebase": "https://github.com/username/portfolio"
@@ -70,7 +71,7 @@
       "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
     },
     "imageUrl": "/assets/images/projects/3-Projet-Photographe-Carducci.png",
-    "imageUrlCropped": "/assets/images/projects/3-Projet-Photographe-Carducci.png",
+    "imageUrlCropped": "/assets/images/projects/3-Projet-Photographe-Carducci-Cropped.png",
     "imageAlt": {
       "en": "",
       "fr": ""
@@ -90,7 +91,7 @@
       "fr": "Kasa Web App"
     },
     "description": {
-      "en": "Remolding of the Kasa web app using React.",
+      "en": "Redesign of the Kasa web app using React.",
       "fr": "Refonte de l'application Kasa sous React."
     },
     "detailedDescription": {

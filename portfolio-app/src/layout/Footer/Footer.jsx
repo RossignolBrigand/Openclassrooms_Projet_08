@@ -26,7 +26,7 @@ export default function Footer() {
                         <LanguageSwitcher />
                     </div>
                 </div>
-                <div className="footer-cta flex-column">
+                <div className="footer-cta">
                     <p>{t('cta.question')}</p>
                     <a href="#contact-section">{t('cta.btn')}</a>
                 </div>

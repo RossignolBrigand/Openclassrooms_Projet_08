@@ -19,10 +19,10 @@ function HeroSection() {
     const { t } = useTranslation('heroSection');
 
     const goToGithub = () => {
-        window.location.href = process.env.REACT_APP_GITHUB_LINK
+        window.location.href = process.env.REACT_APP_GITHUB_URL
     }
     const goToLinkedin = () => {
-        window.location.href = process.env.REACT_APP_LINKEDIN_LINK
+        window.location.href = process.env.REACT_APP_LINKEDIN_URL
     }
 
     return (

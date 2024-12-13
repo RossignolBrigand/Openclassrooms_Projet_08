@@ -2,8 +2,8 @@
     "title": "Mes services",
     "subtitles": {
         "SEO": "SEO / Audits / Optimisations",
-        "static-pages": "Création de pages statiques et applications web",
-        "fullstack": "Création et gestion de systèmes fullstack"
+        "static-pages": "Création de sites web",
+        "fullstack": "Développeur fullstack"
     },
     "SEOList": {
         "1": "Réalisation d'audits performances et accessibilité",

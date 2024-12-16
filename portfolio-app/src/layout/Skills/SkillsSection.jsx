@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 
-import { DiDatabase } from "react-icons/di";
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
 
 import './_skillsSection.scss';

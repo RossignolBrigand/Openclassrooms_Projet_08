@@ -1,10 +1,8 @@
-import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { DiGithubBadge } from "react-icons/di";
-import { BsLinkedin } from "react-icons/bs";
+import { DiGithubBadge } from 'react-icons/di';
+import { BsLinkedin } from 'react-icons/bs';
 
-import ProfilePic from '../../assets/images/Profile.png';
-
+import HeroPic from '../../assets/images/Hero.jpg';
 import ImgContainer from '../../components/ImgContainer/ImgContainer';
 import Button from '../../components/Button/Button';
 
@@ -12,45 +10,38 @@ import './_hero.scss';
 
 //---------------------------------------------------------------------
 
-
-
-function HeroSection() {
-
+export default function HeroSection() {
     const { t } = useTranslation('heroSection');
 
-    const goToGithub = () => {
-        window.location.href = process.env.REACT_APP_GITHUB_URL
-    }
-    const goToLinkedin = () => {
-        window.location.href = process.env.REACT_APP_LINKEDIN_URL
-    }
-
     return (
-        <section className='heroSection' id='hero-section'>
-            <div className='about-container'>
+        <section className="heroSection" id="hero-section">
+            <div className="about-container">
                 <h2>{t('presentation')}</h2>
-                <p>{t('summary.paragraph1')}</p>
-                <p>{t('summary.paragraph2')}</p>
-                <div className='btn-container'>
+                <div className="paragraph-container">
+                    <p>{t('summary.paragraph1')}</p>
+                    <p>{t('summary.paragraph2')}</p>
+                </div>
+                <div className="btn-container">
                     {/* Button to download CV */}
                     <Button
-                        href='/portfolio-app/src/downloads/HCMS Mixing Cheatsheet.pdf'
-                        target='_blank'
+                        href="/portfolio-app/src/downloads/HCMS Mixing Cheatsheet.pdf"
+                        target="_blank"
                         download
-                        variant='default'
-                    >{t('cta.cv')}
+                        variant="default"
+                    >
+                        {t('cta.cv')}
                     </Button>
+                    <Button href="#contact-section">{t('cta.contact')}</Button>
                     <Button
-                        href='#contact-section'
-                    >{t('cta.contact')}</Button>
-                    <Button
-                        onClick={goToGithub}
+                        href={process.env.REACT_APP_GITHUB_URL}
+                        target="_blank"
                     >
                         {t('cta.github')}
                         <DiGithubBadge />
                     </Button>
                     <Button
-                        onClick={goToLinkedin}
+                        href={process.env.REACT_APP_LINKEDIN_URL}
+                        target="_blank"
                     >
                         {t('cta.linkedin')}
                         <BsLinkedin />
@@ -58,14 +49,12 @@ function HeroSection() {
                 </div>
             </div>
             <ImgContainer
-                src={ProfilePic}
-                alt={''}
-                size={''}
-                variant={'round'}
+                src={HeroPic}
+                alt={'open laptop and books on a table'}
+                variant={'default'}
+                width={'100%'}
+                height={'600px'}
             />
         </section>
     );
-
-};
-
-export default HeroSection;
+}

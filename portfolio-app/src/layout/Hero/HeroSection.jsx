@@ -53,7 +53,7 @@ export default function HeroSection() {
                 alt={'open laptop and books on a table'}
                 variant={'default'}
                 width={'100%'}
-                height={'600px'}
+                height={'800px'}
             />
         </section>
     );

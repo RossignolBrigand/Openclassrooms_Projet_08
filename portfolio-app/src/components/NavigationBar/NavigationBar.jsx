@@ -6,8 +6,15 @@ import './_navigationBar.scss';
 
 //-----------------------------------------------------------
 
-export default function NavigationBar() {
+export default function NavigationBar({ headerHeight }) {
     const { t } = useTranslation('header');
+
+    const scrollWithOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
+        const yOffset = -headerHeight - 20;
+        console.log(yOffset);
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+    };
 
     const [activeSection, setActiveSection] = useState('');
 
@@ -44,6 +51,10 @@ export default function NavigationBar() {
                         ? 'navlink active'
                         : 'navlink'
                 }
+                aria-current={
+                    activeSection === 'skills-section' ? 'true' : undefined
+                }
+                scroll={(el) => scrollWithOffset(el)}
             >
                 {t('navigation.skills')}
             </HashLink>
@@ -55,6 +66,10 @@ export default function NavigationBar() {
                         ? ' navlink active'
                         : 'navlink'
                 }
+                aria-current={
+                    activeSection === 'services-section' ? 'true' : undefined
+                }
+                scroll={(el) => scrollWithOffset(el)}
             >
                 {t('navigation.services')}
             </HashLink>
@@ -66,6 +81,10 @@ export default function NavigationBar() {
                         ? 'navlink active'
                         : 'navlink'
                 }
+                aria-current={
+                    activeSection === 'projects-section' ? 'true' : undefined
+                }
+                scroll={(el) => scrollWithOffset(el)}
             >
                 {t('navigation.projects')}
             </HashLink>
@@ -77,6 +96,10 @@ export default function NavigationBar() {
                         ? 'navlink active'
                         : 'navlink'
                 }
+                aria-current={
+                    activeSection === 'contact-section' ? 'true' : undefined
+                }
+                scroll={(el) => scrollWithOffset(el)}
             >
                 {t('navigation.contact')}
             </HashLink>

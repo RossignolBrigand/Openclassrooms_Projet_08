@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { DiGithubBadge } from 'react-icons/di';
+import { DiGithub } from 'react-icons/di';
 import { BsLinkedin } from 'react-icons/bs';
 import { BsFileEarmarkArrowDown } from 'react-icons/bs';
 
@@ -48,7 +48,7 @@ export default function HeroSection() {
                         target="_blank"
                     >
                         {t('cta.github')}
-                        <DiGithubBadge />
+                        <DiGithub />
                     </Button>
                     <Button
                         href={process.env.REACT_APP_LINKEDIN_URL}

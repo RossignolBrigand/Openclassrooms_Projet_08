@@ -6,23 +6,31 @@ import './_projectCard.scss';
 
 //------------------------------------------------------
 
-export default function ProjectCard({ name, description, imageUrlCropped, imageAlt, onClick, tags}) {
-
+export default function ProjectCard({
+    name,
+    description,
+    coverUrl,
+    coverAlt,
+    onClick,
+    tags,
+}) {
     return (
-        <div className='card-wrapper' onClick={onClick}>
-            {imageUrlCropped ?
-                < div className='card-image'>
-                    <img src={imageUrlCropped} alt={imageAlt}></img>
-                </div> : <p>Loading...</p>
-            }
-            <div className='card-content'>
+        <div className="card-wrapper" onClick={onClick}>
+            {coverUrl ? (
+                <div className="card-image">
+                    <img src={coverUrl} alt={coverAlt}></img>
+                </div>
+            ) : (
+                <p>Loading...</p>
+            )}
+            <div className="card-content">
                 <h3>{name}</h3>
                 <p>{description}</p>
                 <TagSystem data={tags} />
             </div>
-        </div >
-    )
-};
+        </div>
+    );
+}
 
 ProjectCard.propTypes = {
     name: PropTypes.string,
@@ -31,4 +39,4 @@ ProjectCard.propTypes = {
     imageAlt: PropTypes.string,
     onClick: PropTypes.func,
     tags: PropTypes.array,
-}
+};

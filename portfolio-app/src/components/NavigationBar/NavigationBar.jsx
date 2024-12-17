@@ -31,7 +31,6 @@ export default function NavigationBar({ headerHeight }) {
                 }
             });
         }, observerOptions);
-        console.log(observer);
 
         sections.forEach((section) => observer.observe(section));
 

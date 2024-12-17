@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -9,36 +8,49 @@ import ProjectModal from '../ProjectModal/ProjectModal';
 import ProjectsData from '../../data/projects.json';
 
 import './_projectsContainer.scss';
+
 //------------------------------------------------------------
 
 export default function ProjectsContainer() {
-
     const { i18n } = useTranslation();
     const language = i18n.language;
 
-    const localizedProjects = ProjectsData.map((project) => ({
-        ...project,
-        name: project.name[language],
-        description: project.description[language],
-        detailedDescription: project.detailedDescription[language],
-        imageAlt: project.imageAlt[language]
-    }));
+    const localizedProjects = ProjectsData.map((project) => {
+        const localizedImages = Object.entries(project.images).map(
+            ([key, image]) => ({
+                url: image.url,
+                alt: image.alt[language] || '',
+            }),
+        );
+
+        return {
+            ...project,
+            name: project.name[language],
+            description: project.description[language],
+            detailedDescription: project.detailedDescription[language],
+            cover: {
+                url: project.cover.url,
+                alt: project.cover.alt,
+            },
+            images: localizedImages,
+        };
+    });
 
     const [selectedProject, setSelectedProject] = useState(null);
     const openModal = (project) => setSelectedProject(project);
     const closeModal = () => setSelectedProject(null);
 
     return (
-        <div className='projects-container'>
+        <div className="projects-container">
             {localizedProjects.map((project) => (
                 <ProjectCard
                     key={project.id}
                     name={project.name}
                     description={project.description}
-                    imageUrlCropped= {process.env.PUBLIC_URL + project.imageUrlCropped}
-                    imageAlt={project.imageAlt}
-                    onClick={() => openModal(project)}
-                    tags={project.tags} // Pass the project to the Modal
+                    coverUrl={process.env.PUBLIC_URL + project.cover.url}
+                    coverAlt={project.cover.alt}
+                    onClick={() => openModal(project)} // passs the project variable to the modal
+                    tags={project.tags}
                 />
             ))}
             <ProjectModal
@@ -47,5 +59,5 @@ export default function ProjectsContainer() {
                 closeModal={closeModal}
             />
         </div>
-    )
-};
+    );
+}

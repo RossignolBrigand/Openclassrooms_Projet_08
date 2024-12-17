@@ -1,143 +1,138 @@
 [
-  {
-    "id": 1,
-    "name": {
-      "en": "Booki Landing Page",
-      "fr": "Page d'accueil de Booki"
+    {
+        "id": 1,
+        "name": {
+            "en": "Kasa Web App",
+            "fr": "Kasa Web App"
+        },
+        "description": {
+            "en": "Redesign of the Kasa web app using React.",
+            "fr": "Refonte de l'application Kasa sous React."
+        },
+        "detailedDescription": {
+            "en": "This project is built and rendered dynamically with JavaScript, has a secured, if basic, login system and a backend to handle and hold data.",
+            "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
+        },
+        "cover": {
+            "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+            "alt": {
+                "en": "",
+                "fr": ""
+            }
+        },
+        "images": {
+            "1": {
+                "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+                "alt": {
+                    "en": "",
+                    "fr": ""
+                }
+            }
+        },
+        "tags": ["HTML", "CSS", "JS"],
+        "website": "https://myportfolio.com",
+        "codebase": "https://github.com/username/portfolio"
     },
-    "description": {
-      "en": "The landing page of the renting website Booki",
-      "fr": "La page d'accueil du site de location Booki"
+    {
+        "id": 2,
+        "name": {
+            "en": "REST API and Database creation",
+            "fr": "Création d'une API REST et base de données"
+        },
+        "description": {
+            "en": "The portfolio website of the architect Sophie Bluel.",
+            "fr": "Le site portfolio de l'architecte Sophie Bluel."
+        },
+        "detailedDescription": {
+            "en": "This project is built and rendered dynamically with JavaScript, has a secured, if basic, login system and a backend to handle and hold data.",
+            "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
+        },
+        "cover": {
+            "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+            "alt": {
+                "en": "",
+                "fr": ""
+            }
+        },
+        "images": {
+            "1": {
+                "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+                "alt": {
+                    "en": "",
+                    "fr": ""
+                }
+            }
+        },
+        "tags": ["HTML", "CSS", "JS"],
+        "website": "https://myportfolio.com",
+        "codebase": "https://github.com/username/portfolio"
     },
-    "detailedDescription": {
-      "en": "This project is built with HTML and CSS and is entirely responsive",
-      "fr": "Ce projet est construit purement en HTML et CSS et est totalement responsive"
+    {
+        "id": 3,
+        "name": {
+            "en": "Architect's Portfolio",
+            "fr": "Portfolio d'architecte"
+        },
+        "description": {
+            "en": "The portfolio website of the architect Sophie Bluel.",
+            "fr": "Le site portfolio de l'architecte Sophie Bluel."
+        },
+        "detailedDescription": {
+            "en": "This project is built and rendered dynamically with JavaScript, has a secured, if basic, login system and a backend to handle and hold data.",
+            "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
+        },
+        "cover": {
+            "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+            "alt": {
+                "en": "",
+                "fr": ""
+            }
+        },
+        "images": {
+            "1": {
+                "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+                "alt": {
+                    "en": "",
+                    "fr": ""
+                }
+            }
+        },
+        "tags": ["SEO", "CSS", "Accessibility", "Optimization"],
+        "website": "https://myportfolio.com",
+        "codebase": "https://github.com/username/portfolio"
     },
-    "imageUrl": "/assets/images/projects/1-Projet-Booki-HTML-Responsive.png",
-    "imageUrlCropped": "/assets/images/projects/1-Projet-Booki-HTML-Responsive.png",
-    "imageAlt": {
-      "en": "",
-      "fr": ""
-    },
-    "tags": [
-      "HTML",
-      "CSS",
-      "Responsive Design"
-    ],
-    "website": "https://myportfolio.com",
-    "codebase": "https://github.com/username/portfolio"
-  },
-  {
-    "id": 2,
-    "name": {
-      "en": "Architect's Portfolio",
-      "fr": "Portfolio d'architecte"
-    },
-    "description": {
-      "en": "The portfolio website of the architect Sophie Bluel.",
-      "fr": "Le site portfolio de l'architecte Sophie Bluel."
-    },
-    "detailedDescription": {
-      "en": "This project is built and rendered dynamically with JavaScript, has a secured, if basic, login system and a backend to handle and hold data.",
-      "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
-    },
-    "imageUrl": "/assets/images/projects/2-Projet-Bluel-JS.png",
-    "imageUrlCropped": "/assets/images/projects/2-Projet-Bluel-JS.png",
-    "imageAlt": {
-      "en": "",
-      "fr": ""
-    },
-    "tags": [
-      "SEO",
-      "CSS",
-      "Accessibility",
-      "Optimization"
-    ],
-    "website": "https://myportfolio.com",
-    "codebase": "https://github.com/username/portfolio"
-  },
-  {
-    "id": 3,
-    "name": {
-      "en": "Photograph's Portfolio",
-      "fr": "Portfolio d'une photographe"
-    },
-    "description": {
-      "en": "The portfolio website of the architect Sophie Bluel.",
-      "fr": "Le site portfolio de l'architecte Sophie Bluel."
-    },
-    "detailedDescription": {
-      "en": "This project is built and rendered dynamically with JavaScript, has a secured, if basic, login system and a backend to handle and hold data.",
-      "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
-    },
-    "imageUrl": "/assets/images/projects/3-Projet-Photographe-Carducci.png",
-    "imageUrlCropped": "/assets/images/projects/3-Projet-Photographe-Carducci-Cropped.png",
-    "imageAlt": {
-      "en": "",
-      "fr": ""
-    },
-    "tags": [
-      "HTML",
-      "CSS",
-      "JS"
-    ],
-    "website": "https://myportfolio.com",
-    "codebase": "https://github.com/username/portfolio"
-  },
-  {
-    "id": 4,
-    "name": {
-      "en": "Kasa Web App",
-      "fr": "Kasa Web App"
-    },
-    "description": {
-      "en": "Redesign of the Kasa web app using React.",
-      "fr": "Refonte de l'application Kasa sous React."
-    },
-    "detailedDescription": {
-      "en": "This project is built and rendered dynamically with JavaScript, has a secured, if basic, login system and a backend to handle and hold data.",
-      "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
-    },
-    "imageUrl": "/assets/images/projects/4-Projet-Kasa-React-App.png",
-    "imageUrlCropped": "/assets/images/projects/4-Projet-Kasa-React-App.png",
-    "imageAlt": {
-      "en": "",
-      "fr": ""
-    },
-    "tags": [
-      "HTML",
-      "CSS",
-      "JS"
-    ],
-    "website": "https://myportfolio.com",
-    "codebase": "https://github.com/username/portfolio"
-  },
-  {
-    "id": 5,
-    "name": {
-      "en": "REST API and Database creation",
-      "fr": "Création d'une API REST et base de données"
-    },
-    "description": {
-      "en": "The portfolio website of the architect Sophie Bluel.",
-      "fr": "Le site portfolio de l'architecte Sophie Bluel."
-    },
-    "detailedDescription": {
-      "en": "This project is built and rendered dynamically with JavaScript, has a secured, if basic, login system and a backend to handle and hold data.",
-      "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
-    },
-    "imageUrl": "/assets/images/projects/5-Projet-DB-Backend.png",
-    "imageUrlCropped": "/assets/images/projects/5-Projet-DB-Backend.png",
-    "imageAlt": {
-      "en": "",
-      "fr": ""
-    },
-    "tags": [
-      "HTML",
-      "CSS",
-      "JS"
-    ],
-    "website": "https://myportfolio.com",
-    "codebase": "https://github.com/username/portfolio"
-  }
+    {
+        "id": 4,
+        "name": {
+            "en": "Photograph's Portfolio",
+            "fr": "Portfolio d'une photographe"
+        },
+        "description": {
+            "en": "The portfolio website of the architect Sophie Bluel.",
+            "fr": "Le site portfolio de l'architecte Sophie Bluel."
+        },
+        "detailedDescription": {
+            "en": "This project is built and rendered dynamically with JavaScript, has a secured, if basic, login system and a backend to handle and hold data.",
+            "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
+        },
+        "cover": {
+            "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+            "alt": {
+                "en": "",
+                "fr": ""
+            }
+        },
+        "images": {
+            "1": {
+                "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+                "alt": {
+                    "en": "",
+                    "fr": ""
+                }
+            }
+        },
+        "tags": ["HTML", "CSS", "JS"],
+        "website": "https://myportfolio.com",
+        "codebase": "https://github.com/username/portfolio"
+    }
 ]

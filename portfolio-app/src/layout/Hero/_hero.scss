@@ -8,7 +8,7 @@
     display: grid;
     grid-template-areas: none;
     grid-template-columns: 1fr 1fr;
-
+    gap: 2rem;
     .about-container {
         display: flex;
         flex-direction: column;
@@ -21,14 +21,13 @@
         }
 
         .paragraph-container {
-            padding: 1rem;
         }
 
         .btn-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            padding: 1.5rem;
+            column-gap: 2rem;
+            row-gap: 2rem;
         }
     }
 

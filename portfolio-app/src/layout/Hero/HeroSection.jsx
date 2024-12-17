@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { DiGithubBadge } from 'react-icons/di';
 import { BsLinkedin } from 'react-icons/bs';
+import { BsFileEarmarkArrowDown } from 'react-icons/bs';
 
 import HeroPic from '../../assets/images/Hero.jpg';
 import ImgContainer from '../../components/ImgContainer/ImgContainer';
@@ -32,6 +33,7 @@ export default function HeroSection() {
                         variant="default"
                     >
                         {t('cta.cv')}
+                        <BsFileEarmarkArrowDown />
                     </Button>
                     <Button
                         // href="#contact-section"

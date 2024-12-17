@@ -13,8 +13,6 @@ import './_homePage.scss';
 //-------------------------------------------------------------------
 
 function HomePage() {
-    const top = document.getElementById('hero-section');
-
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -35,6 +33,7 @@ function HomePage() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
     return (
         <div className="home-container">
             <HeroSection />

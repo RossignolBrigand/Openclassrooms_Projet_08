@@ -1,11 +1,16 @@
-import { useState, useEffect } from 'react';
-
-import './_Button.scss'
+import './_Button.scss';
 
 //------------------------------------------------
 
-export default function Button({ onClick, variant = "default", disabled = false, href = "", target = "", download, children }) {
-
+export default function Button({
+    onClick,
+    variant = 'default',
+    disabled = false,
+    href = '',
+    target = '',
+    download,
+    children,
+}) {
     const isLink = !!href;
 
     if (isLink) {
@@ -14,12 +19,12 @@ export default function Button({ onClick, variant = "default", disabled = false,
                 className={`btn btn-${variant}`}
                 href={href}
                 target={target} // Open in a new tab if target = "_blank"
-                rel={target === '_blank' ? "noopener noreferrer" : undefined} // for security purposes in new tabs 
-                download={download} // if downloading a file 
+                rel={target === '_blank' ? 'noopener noreferrer' : undefined} // for security purposes in new tabs
+                download={download} // if downloading a file
             >
                 {children}
             </a>
-        )
+        );
     }
 
     return (
@@ -31,4 +36,4 @@ export default function Button({ onClick, variant = "default", disabled = false,
             {children}
         </button>
     );
-};
+}

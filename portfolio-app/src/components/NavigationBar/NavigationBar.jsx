@@ -12,7 +12,6 @@ export default function NavigationBar({ headerHeight }) {
     const scrollWithOffset = (el) => {
         const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
         const yOffset = -headerHeight - 20;
-        console.log(yOffset);
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
     };
 

@@ -6,6 +6,8 @@ import HeroPic from '../../assets/images/Hero.jpg';
 import ImgContainer from '../../components/ImgContainer/ImgContainer';
 import Button from '../../components/Button/Button';
 
+import { scrollToElement } from '../../utils/scrollToElement';
+
 import './_hero.scss';
 
 //---------------------------------------------------------------------
@@ -31,7 +33,14 @@ export default function HeroSection() {
                     >
                         {t('cta.cv')}
                     </Button>
-                    <Button href="#contact-section">{t('cta.contact')}</Button>
+                    <Button
+                        // href="#contact-section"
+                        onClick={() =>
+                            scrollToElement('contact-section', 'smooth', 100)
+                        }
+                    >
+                        {t('cta.contact')}
+                    </Button>
                     <Button
                         href={process.env.REACT_APP_GITHUB_URL}
                         target="_blank"

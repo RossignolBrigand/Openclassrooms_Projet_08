@@ -1,28 +1,25 @@
 @use '../../scss/abstracts/mixins' as m;
 
 .skills-section {
-
-    @include m.gradient-background;
+    background-color: rgb(207, 179, 179);
     @include m.margin-sides;
     @include m.margin-bottom;
     @include m.padding-standard;
 
     .skills-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, auto);
 
         .skills-block {
             @include m.padding-standard;
-
-            &__content {
-
-                &--list {
-                    margin-top: 1rem;
-                    list-style: none;
-                }
-
-            }
         }
     }
 
+    .tools-container {
+        .tools-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+    }
 }

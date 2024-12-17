@@ -3,12 +3,9 @@
 
 .projects-section {
 
-    @include m.margin-sides;
     @include m.margin-bottom;
 
     display: grid;
-    justify-content: center;
-    align-items: center;
 
     &__title {
         background-color: v.$primary-color;

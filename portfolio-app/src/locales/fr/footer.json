@@ -1,1 +1,13 @@
-{}
+{    
+    "links": {
+        "about": "A propos",
+        "projects": "Mes projets",
+        "contact": "Contact"
+    },
+    "cta": {
+    "question": "Vous avez un projet en tête ? ",
+    "btn": "Parlons en !"
+},
+"build": "Ce projet a été réalisé avec React et Sass",
+"copyright": "© 2024 Thomas PINEAU. Tous droits réservés."
+}

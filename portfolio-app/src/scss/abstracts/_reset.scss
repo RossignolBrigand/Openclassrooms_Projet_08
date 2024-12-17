@@ -1,3 +1,5 @@
+@use './variables' as v;
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@ html {
     hanging-punctuation: first last;
     font-size: 100%;
     box-sizing: border-box;
-    // color-scheme: dark light;
+    //color-scheme: dark light;
 }
 
 body {
@@ -49,6 +51,10 @@ li {
     font-size: 1rem;
     text-wrap: balance;
     text-wrap: pretty;
+}
+
+li {
+    list-style: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {

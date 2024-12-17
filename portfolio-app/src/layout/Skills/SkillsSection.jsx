@@ -1,64 +1,86 @@
 import { useTranslation } from 'react-i18next';
 
-import { DiDatabase } from "react-icons/di";
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
+import RatingBar from '../../components/RatingBar/RatingBar';
 
 import './_skillsSection.scss';
 
 function SkillsSection() {
-
-    const { t } = useTranslation('skillSection')
+    const { t } = useTranslation('skillSection');
 
     return (
-        <section className='skills-section' id='skills-section'>
+        <section className="skills-section" id="skills-section">
             <h2>{t('title')}</h2>
-            <div className='skills-container'>
-                <div className='skills-block' >
-                    <h3 className='skills-block__title'>FRONTEND <DiDatabase /></h3>
-                    <ul className='skills-block__content--list'>
-                        <li><ProgressBar label={"HTML5"} rating={90} color={"blue"} /></li>
-                        <li><ProgressBar label={"CSS"} rating={80} color={"orange"} /></li>
-                        <li><ProgressBar label={"JavaScript"} rating={60} color={"yellow"} /></li>
-                        <li><ProgressBar label={"React"} rating={60} color={"teal"} /></li>
-                        <li><ProgressBar label={"Sass"} rating={60} color={"pink"} /></li>
-
+            <div className="skills-container">
+                <div className="skills-block">
+                    <h3 className="skills-block__title">
+                        {t('block-titles.frontend')}
+                    </h3>
+                    <ul className="skills-block__content--list">
+                        <li>
+                            <RatingBar label={'HTML'} rating={4} />
+                        </li>
+                        <li>
+                            <RatingBar label={'CSS'} rating={4} />
+                        </li>
+                        <li>
+                            <RatingBar label={'Javascript'} rating={4} />
+                        </li>
+                        <li>
+                            <RatingBar label={'React'} rating={4} />
+                        </li>
+                        <li>
+                            <RatingBar label={'Sass'} rating={3} />
+                        </li>
                     </ul>
                 </div>
-                <div className='skills-block'>
-                    <h3 className='skills-block__title'>BACKEND</h3>
-                    <ul className='skills-block__content--list'>
-                        <li><ProgressBar label={"Node.js"} rating={40} color={"green"} /></li>
-                        <li><ProgressBar label={"Express"} rating={50} color={"teal"} /></li>
-                        <li><ProgressBar label={"Mongo.db"} rating={50} color={"green"} /></li>
-                    </ul>
-                </div>
-            </div>
-            <div className='tools-block'>
-                <h3 className='tools-block__title'>PROJECT MANAGEMENT & TOOLS</h3>
-                <div className='tools-block__content'>
-                    <ul className='tools-block__content--list'>
-                        <li>Figma</li>
-                        <li>Git</li>
-                        <li>Notion</li>
-                        <li>Miro</li>
-                        <li>Postman</li>
-                        <li>Swagger</li>
-                    </ul>
-                </div>
-                <div className='tools-block__content'>
-                    <h4>Technologies and dependencies I use : </h4>
-                    <ul className='tools-block__content--list'>
-                        <li>JSONWebToken</li>
-                        <li>bCrypt</li>
-                        <li>Multer</li>
-                        <li>Sharp</li>
-                        <li>Gulp</li>
-                        <li></li>
+                <div className="skills-block">
+                    <h3 className="skills-block__title">
+                        {t('block-titles.backend')}
+                    </h3>
+                    <ul className="skills-block__content--list">
+                        <li>
+                            <RatingBar label={'Node.js'} rating={3} />
+                        </li>
+                        <li>
+                            <RatingBar label={'Express'} rating={4} />
+                        </li>
+                        <li>
+                            <RatingBar label={'MongoDB'} rating={3} />
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div>
-                <p>Je travaille actuellement sur ces compétences : / Skills i am currently learning : </p>
+            <div className="tools-container">
+                <h3 className="tools-block__title">
+                    {t('block-titles.tools&tech')}
+                </h3>
+                <div className="tools-block">
+                    <div className="tools-block__content">
+                        <h4>{t('applications.title')}</h4>
+                        <ul className="tools-block__content--list">
+                            <li>Figma</li>
+                            <li>Git</li>
+                            <li>Notion</li>
+                            <li>Miro</li>
+                            <li>Postman</li>
+                            <li>Swagger</li>
+                        </ul>
+                    </div>
+                    <div className="tools-block__content">
+                        <h4>{t('dependencies.title')}</h4>
+                        <ul className="tools-block__content--list">
+                            <li>JSONWebToken</li>
+                            <li>bCrypt</li>
+                            <li>Multer</li>
+                            <li>Sharp</li>
+                            <li>Gulp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="learning-container">
+                <h4>{t('learning.title')}</h4>
                 <ul>
                     <li>Python</li>
                     <li>Next.js</li>
@@ -66,11 +88,9 @@ function SkillsSection() {
                     <li>Debug / Testing</li>
                     <li>E-commerce</li>
                 </ul>
-
             </div>
-        </section >
+        </section>
     );
-
-};
+}
 
 export default SkillsSection;

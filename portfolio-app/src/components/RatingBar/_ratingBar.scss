@@ -1,0 +1,61 @@
+@use '../../scss/abstracts/variables' as v;
+
+.rating-bar {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    &__label {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+    &__container {
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+        border: 2px solid lightgray;
+        border-radius: 4px;
+        transition: all 150ms ease-in;
+
+        &:hover {
+        }
+    }
+}
+
+.star {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: lightgray;
+    cursor: pointer;
+
+    &.star-filled {
+        color: blue;
+        &__orange {
+            color: orange;
+        }
+        &__HTML {
+            color: v.$color_html;
+        }
+        &__CSS {
+            color: v.$color_css;
+        }
+        &__Javascript {
+            color: v.$color_js;
+        }
+        &__React {
+            color: v.$color_react;
+        }
+        &__Sass {
+            color: v.$color_sass;
+        }
+        &__Node.js {
+            color: v.$color_node;
+        }
+    }
+}

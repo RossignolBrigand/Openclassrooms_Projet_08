@@ -2,21 +2,35 @@
 @use '../../scss/abstracts/variables' as v;
 
 .heroSection {
-
     @include m.margin-bottom;
-    @include m.margin-sides;
     @include m.padding-standard;
 
     display: grid;
+    grid-template-areas: none;
     grid-template-columns: 1fr 1fr;
-    border: 5px double v.$primary-color;
-    // border-radius: 50px;
+    gap: 2rem;
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
 
-    .resume-container {}
+        h2 {
+            font-size: 3rem;
+            width: auto;
+            text-decoration: none;
+        }
 
-    .btn-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        .paragraph-container {
+        }
+
+        .btn-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+            row-gap: 2rem;
+        }
+    }
+
+    .imgContainer {
     }
 }

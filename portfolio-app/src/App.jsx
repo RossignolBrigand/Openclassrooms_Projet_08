@@ -11,13 +11,14 @@ import './utils/i18nConfig'
 function App() {
 
   return (
-    <Router basename='/Portfolio'>
+    <Router>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route path='/home' element=<HomePage /> />
+          <Route path='/' element= {<HomePage/>}/>
           <Route path='/about' element={<AboutPage />} />
           <Route path='/blog' element={<BlogPage />} />
           <Route path='/error' element={<ErrorPage />} />
+          <Route path='*' element={ <Navigate to='/error'/>}/>
         </Route>
       </Routes>
     </Router>

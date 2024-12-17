@@ -4,7 +4,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 // Import translations
 
-// English (Default)
+// English 
 import headerEn from '../locales/en/header.json';
 import footerEn from '../locales/en/footer.json';
 import heroSectionEn from '../locales/en/heroSection.json';
@@ -13,7 +13,7 @@ import serviceSectionEn from '../locales/en/services.json';
 import projectSectionEn from '../locales/en/services.json';
 import contactSectionEn from '../locales/en/contact.json';
 
-// French 
+// French (Default)
 import headerFr from '../locales/fr/header.json';
 import footerFr from '../locales/fr/footer.json';
 import heroSectionFr from '../locales/fr/heroSection.json';
@@ -53,7 +53,7 @@ i18n
                 contactSection: contactSectionFr,
             },
         },
-        fallbackLng: 'en', // Default language
+        fallbackLng: 'fr', // Default language
         ns: ['header', 'footer', 'heroSection', 'skillSection', 'serviceSection', 'projectSection', 'contactSection'], // Define namespaces
         defaultNS: 'header', // Default namespace
         interpolation: { escapeValue: false }, // React already escapes

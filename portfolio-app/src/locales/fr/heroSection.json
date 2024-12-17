@@ -1,8 +1,13 @@
 {
-    "presentation": "Je m'appelle Thomas PINEAU et je suis développeur web fullstack",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "presentation": "Bonjour, je m'appelle Thomas et je suis développeur web fullstack.",
+    "summary": {
+        "paragraph1": "Passionné par le code depuis plusieurs années, j'ai terminé ma formation de développeur web en 2024 et je propose mes services en tant que développeur freelance, spécialisé dans la stack MERN et l'audit de performances et accessibilité.",
+        "paragraph2": "Je suis à votre écoute pour développer ensemble votre projet, que ce soit une page statique ou une application web complète. Je travaille sur Rennes et alentours et suis disponible pour travailler en distanciel."
+    },
     "cta": {
         "cv": "Voir mon CV",
-        "contact": "Contactez moi"
+        "contact": "Contactez moi",
+        "github": "Mon Github",
+        "linkedin": "Mon Linkedin"
     }
 }

@@ -1,1 +1,12 @@
-{}
+{
+    "title": "Contact",
+    "mailBark": "Voilà mon mail!",
+    "formBark": "Ou si vous préférez un formulaire : ",
+    "clipboard": "Copié dans le presse-papier!",
+    "form": {
+        "name": "Nom:",
+        "email": "Email:",
+        "message": "Message:",
+        "submit": "Valider"
+    }
+}

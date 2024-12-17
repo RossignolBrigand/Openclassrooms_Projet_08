@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
-  "homepage": "https://rossignolbrigand.github.io/Portfolio/home",
+  "homepage": "https://rossignolbrigand.github.io/",
   "dependencies": {
     "@tanstack/react-query": "4",
     "@testing-library/jest-dom": "^5.14.1",
@@ -13,6 +13,7 @@
     "gh-pages": "^6.2.0",
     "i18next": "^24.0.0",
     "i18next-browser-languagedetector": "^8.0.0",
+    "prettier": "^3.4.2",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -55,6 +56,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "",
     "@tanstack/eslint-plugin-query": "4",
     "react-snap": "^1.23.0"
   }

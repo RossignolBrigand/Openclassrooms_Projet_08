@@ -1,11 +1,15 @@
-.imgContainer {
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    img {
+        object-fit: cover;
+    }
 
-    &--round {
+    &.img--round {
         img {
-            object-fit: cover;
             border-radius: 50px;
         }
-
     }
 }

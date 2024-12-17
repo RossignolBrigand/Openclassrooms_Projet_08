@@ -6,8 +6,6 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 import Button from '../../components/Button/Button';
 
 import './_contactSection.scss';
-import { use } from 'react';
-
 
 //-----------------------------------------
 
@@ -26,18 +24,18 @@ export default function ContactSection() {
 
     return (
         <section className='contact-section' id='contact-section' >
-            <h2 className='contact-section__title' >CONTACT</h2>
+            <h2 className='contact-section__title' >{t('title')}</h2>
             <div>
-                <p> Voilà mon mail ! </p>
+                <h3>{t('mailBark')}</h3>
                 <Button
                     onClick={copyToClipboard}
                 >
                     {"thomas.pineau.webdev@protonmail.com"}
                     <SlNote />
                 </Button>
-                {isButtonClicked ? <span>Copié dans le presse-papier !</span> : null}
+                {isButtonClicked ? <span>{t('clipboard')}</span> : null}
             </div>
-            <p> Où si vous préférez un formulaire ! </p>
+            <h3>{t('formBark')}</h3>
             <ContactForm />
         </section>
     )

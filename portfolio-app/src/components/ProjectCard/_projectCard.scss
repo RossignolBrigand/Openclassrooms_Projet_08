@@ -9,10 +9,6 @@
     filter: grayscale(0.8);
     transition: all 250ms ease;
 
-    animation-name: FadeIn;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
-
     &:hover {
         box-shadow: rgba(50, 50, 93, 0.30) 0px 30px 60px -12px, rgba(0, 0, 0, 0.35) 0px 18px 36px -18px;
         filter: grayscale(0);
@@ -28,13 +24,25 @@
         }
     }
 
+    &.visible {
+        animation-name: FadeIn;
+        animation-duration: 1000ms;
+        animation-iteration-count: 1;
+    }
+
 }
 
 @keyframes FadeIn {
     0% { 
         display: none;
         opacity: 0; 
-        transform: translateY(-150);}
+        transform: translateY(-50px);
+    }
+    50% {
+        display:grid;
+        transform: translateY(0);
+        opacity: 0.5;
+    }
     100% {
         display: grid;
         opacity: 1; 

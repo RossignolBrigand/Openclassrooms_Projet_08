@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import useOnScreen from '../../hooks/useOnScreen';
 
 import TagSystem from '../TagSystem/TagSystem';
 
@@ -16,10 +17,10 @@ export default function ProjectCard({
     tags,
 }) {
 
-    const [isVisible, setIsVisible] = useState(false);
+    const [ref, isVisible] = useOnScreen(0.1)
 
     return (
-        <div className="card-wrapper" onClick={onClick}>
+        <div className={`card-wrapper ${isVisible ? "visible" : ""}`} onClick={onClick} ref={ref}>
             {coverUrl ? (
                 <div className="card-image">
                     <img src={coverUrl} alt={coverAlt}></img>

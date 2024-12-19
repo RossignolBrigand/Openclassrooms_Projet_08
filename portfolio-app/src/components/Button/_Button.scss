@@ -35,3 +35,31 @@
         opacity: 1;
     }
 }
+
+.btn-carousel{
+    position: absolute;
+    top: 50%;
+    padding:0.5rem;
+    box-shadow: none;
+    border: none;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0.5;
+    transition: all 250ms ease-in;
+
+    &:hover{
+        opacity: 1;
+    }
+    
+    & svg{
+        color: lightgray;
+    }
+    
+    &__prev{
+        @extend .btn-carousel;
+        left: 5%;
+    }
+    &__next{
+        @extend .btn-carousel;
+        right: 5%;
+    }
+}

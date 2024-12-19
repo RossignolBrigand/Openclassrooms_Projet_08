@@ -26,10 +26,17 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
             className={'modal-projects'}
         >
             <div className="modal-wrapper">
-                <button className="close-button" onClick={closeModal}>
+                <button className="btn-close-modal" onClick={closeModal}>
                     <FaTimes />
                 </button>
                 <div className="modal-content">
+                    <div className="modal-content__image">
+                        {images ? (
+                            <ImgCarousel images={images} />
+                        ) : (
+                            <p>Loading...</p>
+                        )}
+                    </div>
                     <div className="modal-content__text">
                         <h2>{name}</h2>
                         <p>{detailedDescription}</p>
@@ -51,13 +58,7 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
                             </a>
                         </div>
                     </div>
-                    <div className="modal-content__image">
-                        {images ? (
-                            <ImgCarousel images={images} />
-                        ) : (
-                            <p>Loading...</p>
-                        )}
-                    </div>
+
                 </div>
             </div>
         </Modal>

@@ -21,7 +21,7 @@ export default function NavigationBar({ headerHeight }) {
         const sections = document.querySelectorAll('section');
         const observerOptions = {
             root: null,
-            threshold: 0.25,
+            threshold: 0.40,
         };
 
         const observer = new IntersectionObserver((entries) => {

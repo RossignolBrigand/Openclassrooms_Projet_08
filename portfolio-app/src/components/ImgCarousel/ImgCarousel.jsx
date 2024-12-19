@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
+
 import Button from '../Button/Button';
+import { BsArrowBarRight, BsArrowBarLeft } from "react-icons/bs";
 
 import './_imgCarousel.scss';
 
@@ -17,26 +19,27 @@ export default function ImgCarousel({ images }) {
     return (
         <div className="carousel-container">
             {images.length > 1 ? (
-                <Button variant="btn-carousel" onClick={previousImage} />
+                <Button variant="carousel__prev" onClick={previousImage}>
+                    <BsArrowBarLeft />
+                </Button>
             ) : null}
             <div className="carousel-images">
                 {images.map((image, index) => (
-                    <>
+                    <div className={`${activeImage === index ? 'carousel-image' : 'carousel-image__hidden'}`} key={`Image ${index}`}>
                         <img
                             key={index}
                             alt={image.alt}
                             src={image.url}
-                            style={{
-                                display:
-                                    index === activeImage ? 'block' : 'none',
-                            }}
+                            loading='lazy'
                         />
-                        {console.log(` Modal : ${image.url}`)}
-                    </>
+                        {images.length > 1 ? (<span className='carousel-image__counter'>{index + 1}/{images.length}</span>) : null}
+                    </div>
                 ))}
             </div>
             {images.length > 1 ? (
-                <Button variant="btn-carousel" onClick={nextImage} />
+                <Button variant="carousel__next" onClick={nextImage}>
+                    <BsArrowBarRight />
+                </Button>
             ) : null}
         </div>
     );

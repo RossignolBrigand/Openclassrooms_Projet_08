@@ -82,20 +82,48 @@
             "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
         },
         "cover": {
-            "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+            "url": "/assets/images/projects/Carducci/PhotographPortfolioCover.webp",
             "alt": {
-                "en": "",
-                "fr": ""
+                "en": "landing page of a photographer's portfolio with some portraits.",
+                "fr": "page d'accueil du portfolio d'une photographe avec plusieurs portraits."
             }
         },
         "images": {
             "1": {
-                "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+                "url": "/assets/images/projects/Carducci/PhotographPortfolio1.webp",
                 "alt": {
                     "en": "",
                     "fr": ""
                 }
-            }
+            },
+            "2": {
+              "url": "/assets/images/projects/Carducci/PhotographPortfolio2.webp",
+              "alt": {
+                  "en": "",
+                  "fr": ""
+              }
+            },
+            "3": {
+              "url": "/assets/images/projects/Carducci/PhotographPortfolio3.webp",
+              "alt": {
+                  "en": "",
+                  "fr": ""
+              }
+          },
+            "4": {
+              "url": "/assets/images/projects/Carducci/PhotographPortfolio4.webp",
+              "alt": {
+                  "en": "",
+                  "fr": ""
+              }
+          },          
+            "5": {
+              "url": "/assets/images/projects/Carducci/PhotographPortfolio5.webp",
+              "alt": {
+                  "en": "",
+                  "fr": ""
+              }
+          }
         },
         "tags": ["SEO", "CSS", "Accessibility", "Optimization"],
         "website": "https://myportfolio.com",

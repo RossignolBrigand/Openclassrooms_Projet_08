@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
 import TagSystem from '../TagSystem/TagSystem';
@@ -14,6 +15,9 @@ export default function ProjectCard({
     onClick,
     tags,
 }) {
+
+    const [isVisible, setIsVisible] = useState(false);
+
     return (
         <div className="card-wrapper" onClick={onClick}>
             {coverUrl ? (

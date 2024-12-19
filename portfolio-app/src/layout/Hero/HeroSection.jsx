@@ -27,7 +27,7 @@ export default function HeroSection() {
                 <div className="btn-container">
                     {/* Button to download CV */}
                     <Button
-                        href="/portfolio-app/src/downloads/HCMS Mixing Cheatsheet.pdf"
+                        href="/portfolio-app/src/downloads/Thomas-PINEAU_CV.pdf"
                         target="_blank"
                         download
                         variant="default"

@@ -8,7 +8,7 @@ export default function Footer() {
 
     return (
         <footer>
-            <div class="footer-container">
+            <div className="footer-container">
                 <div className="footer-top">
                     <div className="footer-links">
                         <a href="#hero-section">{t('links.about')}</a>
@@ -19,14 +19,14 @@ export default function Footer() {
                         <a
                             href={process.env.REACT_APP_LINKEDIN_URL}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noreferrer noopener"
                         >
                             LinkedIn
                         </a>
                         <a
                             href={process.env.REACT_APP_GITHUB_URL}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noreferrer noopener"
                         >
                             GitHub
                         </a>

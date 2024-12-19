@@ -1,8 +1,10 @@
 @use '../../scss/abstracts/mixins' as m;
+@use '../../scss/abstracts/variables' as v;
+
 
 .skills-section {
-    background-color: rgb(207, 179, 179);
-    @include m.margin-sides;
+    
+    background-color: v.$tertiary-color;
     @include m.margin-bottom;
     @include m.padding-standard;
 

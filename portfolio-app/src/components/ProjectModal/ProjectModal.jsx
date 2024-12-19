@@ -1,3 +1,4 @@
+
 import { FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import Modal from 'react-modal';
@@ -10,6 +11,7 @@ import './_projectModal.scss';
 //-------------------------------------------------
 
 export default function ProjectModal({ isOpen, project, closeModal }) {
+
     const { t } = useTranslation('modal');
 
     if (!project) return null;
@@ -26,13 +28,15 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
             className={'modal-projects'}
         >
             <div className="modal-wrapper">
-                <button className="btn-close-modal" onClick={closeModal}>
-                    <FaTimes />
-                </button>
+                <div className='modal-topbar'>
+                    <button className="btn-close-modal" onClick={closeModal}>
+                        <FaTimes />
+                    </button>
+                </div>
                 <div className="modal-content">
                     <div className="modal-content__image">
                         {images ? (
-                            <ImgCarousel images={images} />
+                            <ImgCarousel images={images} isOpen={isOpen} />
                         ) : (
                             <p>Loading...</p>
                         )}
@@ -61,6 +65,6 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
 
                 </div>
             </div>
-        </Modal>
+        </Modal >
     );
 }

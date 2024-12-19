@@ -5,7 +5,8 @@ import { BsArrowBarRight, BsArrowBarLeft } from "react-icons/bs";
 
 import './_imgCarousel.scss';
 
-export default function ImgCarousel({ images }) {
+export default function ImgCarousel({ images }, isOpen) {
+
     const [activeImage, setActiveImage] = useState(0);
 
     const nextImage = () => {
@@ -15,6 +16,16 @@ export default function ImgCarousel({ images }) {
     const previousImage = () => {
         setActiveImage(activeImage === 0 ? images.length - 1 : activeImage - 1);
     };
+
+    // Auto roll of images every 3 sec
+    useEffect(() => {
+        if (isOpen) {
+            const timer = setInterval(() => {
+                setActiveImage((activeImage === images.length - 1 ? 0 : activeImage + 1))
+            }, 3000);
+            return () => clearInterval(timer);
+        }
+    }, [isOpen, activeImage, images.length])
 
     return (
         <div className="carousel-container">

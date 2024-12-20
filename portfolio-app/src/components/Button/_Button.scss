@@ -1,4 +1,5 @@
 @use '../../scss/abstracts/mixins' as m;
+@use '../../scss/abstracts/variables' as v;
 
 .btn {
     width: auto;
@@ -15,10 +16,16 @@
     font-size: 1.5rem;
     transition: all 150ms ease-out;
 
-    &:hover {
+    &:hover,
+    &:focus {
+        border-radius: 4px;
+        box-shadow: none;
+        background-color: v.$color_black;
+        color: white;
         scale: 1.025;
         font-weight: 600;
     }
+
     svg {
         @include m.icon-size_medium;
     }
@@ -29,6 +36,9 @@
     bottom: 10%;
     right: 5%;
     opacity: 0.3;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 4px 4px 0px 0px black;
     transition: all 200ms ease;
 
     &:hover {
@@ -36,29 +46,29 @@
     }
 }
 
-.btn-carousel{
+.btn-carousel {
     position: absolute;
     top: 50%;
-    padding:0.5rem;
+    padding: 0.5rem;
     box-shadow: none;
     border: none;
     text-shadow: 2px 2px 2px black;
     opacity: 0.5;
     transition: all 250ms ease-in;
 
-    &:hover{
+    &:hover {
         opacity: 1;
     }
-    
-    & svg{
+
+    & svg {
         color: lightgray;
     }
-    
-    &__prev{
+
+    &__prev {
         @extend .btn-carousel;
         left: 5%;
     }
-    &__next{
+    &__next {
         @extend .btn-carousel;
         right: 5%;
     }

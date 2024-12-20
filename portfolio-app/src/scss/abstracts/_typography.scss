@@ -57,6 +57,7 @@ a:active {
     font-family: $font_title;
     text-decoration: none;
     color: inherit;
+    width: max-content;
 
     &:hover {
         font-weight: 600;

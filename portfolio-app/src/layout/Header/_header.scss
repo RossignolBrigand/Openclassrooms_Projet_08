@@ -7,7 +7,7 @@ header {
     top: 0;
     height: 6rem;
     width: 100%;
-    background-color: v.$primary_color;
+    background-color: v.$color_black;
     color: white;
     display: flex;
     flex-direction: row;
@@ -24,7 +24,6 @@ header {
             text-transform: uppercase;
             margin-top: 1rem;
         }
-
     }
 
     .header-content {

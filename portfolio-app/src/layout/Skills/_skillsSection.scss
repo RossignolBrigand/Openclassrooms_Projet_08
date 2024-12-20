@@ -1,19 +1,20 @@
 @use '../../scss/abstracts/mixins' as m;
 @use '../../scss/abstracts/variables' as v;
 
-
 .skills-section {
-    
     background-color: v.$tertiary-color;
     @include m.margin-bottom;
     @include m.padding-standard;
 
     .skills-container {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-
         .skills-block {
             @include m.padding-standard;
+
+            &__content--list {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                row-gap: 1rem;
+            }
         }
     }
 
@@ -22,6 +23,13 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
+            &__content--list {
+                display: flex;
+                gap: 1rem;
+                svg {
+                    @include m.icon-size-medium;
+                }
+            }
         }
     }
 }

@@ -10,7 +10,7 @@ import footerEn from '../locales/en/footer.json';
 import heroSectionEn from '../locales/en/heroSection.json';
 import skillSectionEn from '../locales/en/skills.json';
 import serviceSectionEn from '../locales/en/services.json';
-import projectSectionEn from '../locales/en/services.json';
+import projectSectionEn from '../locales/en/projects.json';
 import contactSectionEn from '../locales/en/contact.json';
 import modalEn from '../locales/en/modal.json';
 

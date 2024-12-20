@@ -4,9 +4,13 @@
     @include m.margin-bottom;
     @include m.margin-sides;
 
-    h2{
+    h2 {
         border-top: 2px solid inherit;
     }
+    h3 {
+        width: auto;
+    }
+
     .services-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

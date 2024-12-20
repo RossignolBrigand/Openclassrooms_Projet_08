@@ -1,17 +1,24 @@
 import { BsSquareFill } from 'react-icons/bs';
+
 import './_ratingBar.scss';
 
-const DEFAULT_MAX_COUNT = 5;
-const DEFAULT_ACTIVE_COLOR = 'orange';
+//-------------------------------------------------------------------
 
-export default function RatingBar({ rating, label, count }) {
+export default function RatingBar({ rating, label, count, icon }) {
+
+    const DEFAULT_MAX_COUNT = 5;
+    const DEFAULT_ACTIVE_COLOR = 'orange';
+
     return (
         <>
-            <div className="rating-bar__wrapper">
-                <div className="rating-bar__label">
-                    <h4>{label}:</h4>
+            <div className='rating-bar__container'>
+                <div className='rating-bar__container--icon'>
+                    {icon}
                 </div>
-                <div className="rating-bar__container">
+                <div className="rating-bar__container--label">
+                    <h5>{label}</h5>
+                </div>
+                <div className="rating-bar__container--bar">
                     {[...Array(count || DEFAULT_MAX_COUNT)].map((_, index) => {
                         const starValue = index + 1;
                         return (
@@ -21,7 +28,6 @@ export default function RatingBar({ rating, label, count }) {
                             />
                         );
                     })}
-                    <div></div>
                 </div>
             </div>
         </>

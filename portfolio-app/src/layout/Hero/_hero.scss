@@ -3,7 +3,7 @@
 
 .heroSection {
     @include m.margin-bottom;
-    @include m.padding-standard;
+    @include m.margin-sides;
 
     display: grid;
     grid-template-areas: none;

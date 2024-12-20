@@ -1,5 +1,6 @@
-nav {
+@use '../../scss/abstracts/variables' as v;
 
+nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -10,16 +11,11 @@ nav {
         &:hover {
             text-decoration: underline;
         }
+        &.active {
+            color: v.$primary_color;
+            font-weight: 600;
+        }
     }
 }
 
-// remnants of nav link to delete most likely on clean up 
-.active {
-    color: inherit;
-    font-weight: 600;
-}
-
-.pending {
-    color: inherit;
-    text-decoration: none;
-}
+// remnants of nav link to delete most likely on clean up

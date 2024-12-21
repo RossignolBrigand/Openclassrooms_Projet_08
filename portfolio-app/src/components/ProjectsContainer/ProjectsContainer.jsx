@@ -18,7 +18,7 @@ export default function ProjectsContainer() {
     const localizedProjects = ProjectsData.map((project) => {
         const localizedImages = Object.entries(project.images).map(
             ([key, image]) => ({
-                url: image.url,
+                url: process.env.PUBLIC_URL + image.url,
                 alt: image.alt[language] || '',
             }),
         );

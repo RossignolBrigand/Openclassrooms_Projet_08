@@ -14,7 +14,7 @@
             "fr": "Pour ce projet j'ai du suivre une maquette dynamique réalisée avec Figma et récréer le frontend de l'application sous React avec create-react-app. J'ai du eu recours à différents hooks et à react-router pour gérer l'architecture de l'application de façon optimale. L'application est également responsive. Je suis actuellement en train de retravailler le projet afin d'intégrer un backend et une base de données ainsi qu'un système de login pour pouvoir poster des annonces."
         },
         "cover": {
-            "url": "/assets/images/projects/Kasa/Kasa-Cover.webp",
+            "url": "/assets/images/projects/Kasa/Kasa-cover.webp",
             "alt": {
                 "en": "Homepage of the Kasa real estate rental application ",
                 "fr": "page d'accueil de l'application de location immobilière Kasa"
@@ -84,7 +84,7 @@
                 }
             }
         },
-        "tags": ["HTML", "CSS", "JS"],
+        "tags": ["Node.js", "Express", "MongoDB", "REST", "CRUD"],
         "website": "https://rossignolbrigand.github.io/Openclassrooms_Projet_06/",
         "codebase": "https://github.com/RossignolBrigand/Openclassrooms_Projet_06"
     },
@@ -201,7 +201,7 @@
                 }
             }
         },
-        "tags": ["SEO", "CSS", "Accessibility", "Optimization", "Debug"],
+        "tags": ["SEO", "Accessibility", "Optimization", "Debugging"],
         "website": "https://rossignolbrigand.github.io/Openclassrooms_Projet_04/",
         "codebase": "https://github.com/RossignolBrigand/Openclassrooms_Projet_04"
     }

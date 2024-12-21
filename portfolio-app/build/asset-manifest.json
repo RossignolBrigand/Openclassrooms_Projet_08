@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/Openclassrooms_Projet_08/static/css/main.f855e6bc.css",
-    "main.js": "/Openclassrooms_Projet_08/static/js/main.c6ff7e67.js",
-    "static/js/453.f4fbaa6d.chunk.js": "/Openclassrooms_Projet_08/static/js/453.f4fbaa6d.chunk.js",
-    "index.html": "/Openclassrooms_Projet_08/index.html",
-    "main.f855e6bc.css.map": "/Openclassrooms_Projet_08/static/css/main.f855e6bc.css.map",
-    "main.c6ff7e67.js.map": "/Openclassrooms_Projet_08/static/js/main.c6ff7e67.js.map",
-    "453.f4fbaa6d.chunk.js.map": "/Openclassrooms_Projet_08/static/js/453.f4fbaa6d.chunk.js.map"
+    "main.css": "/static/css/main.8381cd34.css",
+    "main.js": "/static/js/main.a1240e4d.js",
+    "static/js/453.f4fbaa6d.chunk.js": "/static/js/453.f4fbaa6d.chunk.js",
+    "static/media/Hero.jpg": "/static/media/Hero.4d0b8ee14ce67aa922dd.jpg",
+    "static/media/postman-icon-svgrepo-com.svg": "/static/media/postman-icon-svgrepo-com.c74cd48d00339ba03ff2e6ed3f9d0c4d.svg",
+    "static/media/swagger-svgrepo-com.svg": "/static/media/swagger-svgrepo-com.54f4b61e9d44e6dd8f6283065838ac0b.svg",
+    "index.html": "/index.html",
+    "static/media/express-svgrepo-com.svg": "/static/media/express-svgrepo-com.076c798a78385ade2dc698f1a1d92613.svg",
+    "main.8381cd34.css.map": "/static/css/main.8381cd34.css.map",
+    "main.a1240e4d.js.map": "/static/js/main.a1240e4d.js.map",
+    "453.f4fbaa6d.chunk.js.map": "/static/js/453.f4fbaa6d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.c6ff7e67.js"
+    "static/css/main.8381cd34.css",
+    "static/js/main.a1240e4d.js"
   ]
 }

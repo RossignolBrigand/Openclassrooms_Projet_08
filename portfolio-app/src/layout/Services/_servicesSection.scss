@@ -1,0 +1,32 @@
+@use '../../scss/abstracts/mixins' as m;
+
+.services-section {
+    @include m.margin-bottom;
+    @include m.margin-sides;
+
+    h2 {
+        border-top: 2px solid inherit;
+    }
+    h3 {
+        width: auto;
+    }
+
+    .services-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+
+        .services-container {
+            padding: 1rem;
+            background-color: rgb(228, 228, 228);
+            border-radius: 4px;
+
+            ul {
+                li {
+                    list-style: inside;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}

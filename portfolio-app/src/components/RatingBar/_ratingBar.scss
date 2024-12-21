@@ -1,0 +1,106 @@
+@use '../../scss/abstracts/variables' as v;
+@use '../../scss/abstracts/mixins' as m;
+
+.rating-bar {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1rem;
+        gap: 0.5rem;
+
+        &--label {
+            font-size: 1.5rem;
+            padding-right: 1rem;
+        }
+
+        &--icon {
+            @include m.icon_size_large;
+        }
+
+        &--bar {
+            width: max-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            gap: 5px;
+            border: 2px solid lightgray;
+            border-radius: 4px;
+            transition: all 150ms ease-in;
+        }
+    }
+}
+
+.star {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: lightgray;
+
+    &.star-filled {
+        color: blue;
+        &__orange {
+            color: orange;
+        }
+        &__HTML {
+            color: v.$color_html;
+        }
+        &__CSS {
+            color: v.$color_css;
+        }
+        &__Javascript {
+            color: v.$color_js;
+        }
+        &__React {
+            color: v.$color_react;
+        }
+        &__Sass {
+            color: v.$color_sass;
+        }
+        &__Node {
+            color: v.$color_node;
+        }
+        &__MongoDB {
+            color: v.$color_mongo;
+        }
+        &__Express {
+            color: v.$color_express;
+        }
+    }
+}
+
+.svg {
+    &__HTML {
+        color: v.$color_html;
+    }
+    &__CSS {
+        color: v.$color_css;
+    }
+    &__JS {
+        color: v.$color_js;
+    }
+    &__React {
+        color: v.$color_react;
+    }
+    &__Sass {
+        color: v.$color_sass;
+    }
+    &__Node {
+        color: v.$color_node;
+    }
+    &__MongoDB {
+        color: v.$color_mongo;
+    }
+    &__Gulp {
+        color: v.$color_gulp;
+    }
+    &__Git {
+        color: v.$color_git;
+    }
+    &__Npm {
+        color: v.$color_npm;
+    }
+    &__Express {
+        color: v.$color_express;
+    }
+}

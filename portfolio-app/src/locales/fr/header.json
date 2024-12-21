@@ -1,0 +1,13 @@
+{
+    "welcome": "Bienvenue ! ",
+    "navigation": {
+        "home": "Accueil",
+        "contact": "Contact",
+        "about": "A propos",
+        "blog": "Blog",
+        "services": "Services",
+        "projects": "Réalisations",
+        "skills": "Compétences"
+    },
+    "language": "sélection de la langue"
+}

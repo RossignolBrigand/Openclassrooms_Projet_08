@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 
 import './_layout.scss'
 
@@ -10,7 +10,8 @@ function Layout({ children }) {
         <>
             <Header />
             <main>
-                {children}
+                <Outlet />
+                {/* {children} */}
             </main>
             <Footer />
         </>

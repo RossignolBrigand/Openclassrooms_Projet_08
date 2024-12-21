@@ -1,0 +1,13 @@
+{
+    "welcome": "Welcome!",
+    "navigation": {
+        "home": "Home",
+        "contact": "Contact",
+        "about": "About",
+        "blog": "Blog",
+        "services": "Services",
+        "projects": "Projects",
+        "skills": "Skills"
+    },
+    "language": "language selection"
+}

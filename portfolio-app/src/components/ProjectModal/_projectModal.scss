@@ -1,0 +1,80 @@
+@use '../../scss/abstracts/variables' as v;
+@use '../../scss/abstracts/mixins' as m;
+@use '../../scss/abstracts/animations' as *;
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+
+    .modal-wrapper {
+        width: 70vw;
+        max-width: 800px;
+        height: 70vh;
+        background-color: v.$tertiary-color;
+        padding: 1rem;
+        border: 1px solid v.$font-black;
+        border-radius: 1rem;
+        position: relative;
+        overflow: hidden;
+        animation: fadeInFromTop 250ms ease-in;
+
+        .modal-topbar {
+            display: flex;
+            justify-content: end;
+            margin-bottom: 1rem;
+
+            .btn-close-modal {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include m.icon-size-medium;
+            }
+        }
+
+        .modal-content {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            padding: 32px;
+            border-radius: 8px;
+            width: 100%;
+            overflow-y: auto;
+
+            &__image {
+                width: 100%;
+                max-height: 40%;
+                height: 400px;
+                margin-bottom: 1rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 4px;
+                    object-fit: cover;
+                }
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 1rem;
+                margin-bottom: 2rem;
+            }
+            &__links {
+                display: flex;
+                margin-top: auto;
+                margin-bottom: 2rem;
+                gap: 2rem;
+            }
+        }
+    }
+}

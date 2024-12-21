@@ -1,0 +1,208 @@
+[
+    {
+        "id": 1,
+        "name": {
+            "en": "Kasa Web App",
+            "fr": "Kasa Web App"
+        },
+        "description": {
+            "en": "Redesign of the Kasa web app using React.",
+            "fr": "Refonte de l'application Kasa sous React."
+        },
+        "detailedDescription": {
+            "en": "For this project I had to follow a dynamic mock-up made with Figma and recreate the frontend of the application in React with create-react-app. I had to use different hooks and react-router to manage the architecture of the application in an optimal way. The app is also responsive. I am currently reworking the project to integrate a backend and a database as well as a login system to be able to post rentals.",
+            "fr": "Pour ce projet j'ai du suivre une maquette dynamique réalisée avec Figma et récréer le frontend de l'application sous React avec create-react-app. J'ai du eu recours à différents hooks et à react-router pour gérer l'architecture de l'application de façon optimale. L'application est également responsive. Je suis actuellement en train de retravailler le projet afin d'intégrer un backend et une base de données ainsi qu'un système de login pour pouvoir poster des annonces."
+        },
+        "cover": {
+            "url": "/assets/images/projects/Kasa/Kasa-cover.webp",
+            "alt": {
+                "en": "Homepage of the Kasa real estate rental application ",
+                "fr": "page d'accueil de l'application de location immobilière Kasa"
+            }
+        },
+        "images": {
+            "1": {
+                "url": "/assets/images/projects/Kasa/Kasa-cover.webp",
+                "alt": {
+                    "en": "Homepage of the Kasa real estate rental application ",
+                    "fr": "page d'accueil de l'application de location immobilière Kasa"
+                }
+            },
+            "2": {
+                "url": "/assets/images/projects/Kasa/Kasa-logements.webp",
+                "alt": {
+                    "en": "A rental property page displaying all the information related to it.",
+                    "fr": "page d'un logement en location affichant toutes les informations relatives à celui-ci."
+                }
+            },
+            "3": {
+                "url": "/assets/images/projects/Kasa/Kasa-about.webp",
+                "alt": {
+                    "en": "An About page containing various pieces of information in collapsible panels. ",
+                    "fr": "page à propos contenant diverses informations dans des panneaux déroulants."
+                }
+            },
+            "4": {
+                "url": "/assets/images/projects/Kasa/Kasa-mobile.webp",
+                "alt": {
+                    "en": "Mobile version of Kasa's homepage, a real estate rental application ",
+                    "fr": "Version mobile de la page d'accueil de l'application de location immobilière Kasa"
+                }
+            }
+        },
+        "tags": ["React", "Sass", "Figma"],
+        "website": "https://rossignolbrigand.github.io/OpenClassrooms_Projet_05/",
+        "codebase": "https://github.com/RossignolBrigand/OpenClassrooms_Projet_05"
+    },
+    {
+        "id": 2,
+        "name": {
+            "en": "REST API and Database creation",
+            "fr": "Création d'API REST et base de données"
+        },
+        "description": {
+            "en": "The portfolio website of the architect Sophie Bluel.",
+            "fr": "Le site portfolio de l'architecte Sophie Bluel."
+        },
+        "detailedDescription": {
+            "en": "This project is built and rendered dynamically with JavaScript, has a secured, if basic, login system and a backend to handle and hold data.",
+            "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
+        },
+        "cover": {
+            "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+            "alt": {
+                "en": "",
+                "fr": ""
+            }
+        },
+        "images": {
+            "1": {
+                "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+                "alt": {
+                    "en": "",
+                    "fr": ""
+                }
+            }
+        },
+        "tags": ["Node.js", "Express", "MongoDB", "REST", "CRUD"],
+        "website": "https://rossignolbrigand.github.io/Openclassrooms_Projet_06/",
+        "codebase": "https://github.com/RossignolBrigand/Openclassrooms_Projet_06"
+    },
+    {
+        "id": 3,
+        "name": {
+            "en": "Photograph's portfolio",
+            "fr": "Portfolio d'une photographe"
+        },
+        "description": {
+            "en": "The portfolio website of the architect Sophie Bluel. It has a connection system and a token-secured administrator mode that allows you to add or delete files.",
+            "fr": "Le site portfolio de l'architecte Sophie Bluel. Il possède un système de connexion et un mode administrateur sécurisé par token qui permet d'ajouter ou supprimer des travaux."
+        },
+        "detailedDescription": {
+            "en": "This project is built dynamically with JavaScript and has a token-secured connection system and a backend that allows data to be retrieved and stored. My mission was multiple: Retrieve the data stored in the database and filter the works according to their categories, manage the secure connection system via authentication token recovery and create a modal to view and modify the files present in the database live. All in pure Javascript. This project was very formative and it is currently being redesigned.",
+            "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion sécurisé par token et un backend qui permet de récupérer et stocker des données. Ma mission était multiple : Récupérer les données stockées dans la base de données et filtrer les travaux selon leurs catégories, gérer le système de connexion sécurisé via récupération de token d'authentification et créer une modale permettant de visualiser et de modifier en direct les fichiers présents dans la base de données. Le tout en pur Javascript. Ce projet a été très formatteur et il est actuellement en refonte."
+        },
+        "cover": {
+            "url": "/assets/images/projects/Bluel/Bluel-cover.webp",
+            "alt": {
+                "en": "Homepage of an architect's portfolio.",
+                "fr": "Page d'accueil du portfolio d'une architecte."
+            }
+        },
+        "images": {
+            "1": {
+                "url": "/assets/images/projects/Bluel/Bluel-login.webp",
+                "alt": {
+                    "en": "Login page of the architect's portfolio.",
+                    "fr": "Page de connexion du portfolio de l'architecte"
+                }
+            },
+            "2": {
+                "url": "/assets/images/projects/Bluel/Bluel-admin.webp",
+                "alt": {
+                    "en": "Homepage in admin mode with new buttons labeled modify here and there.",
+                    "fr": "Page d'accueil en mode administrateur avec l'apparition de boutons labelisés modifier."
+                }
+            },
+            "3": {
+                "url": "/assets/images/projects/Bluel/Bluel-modal.webp",
+                "alt": {
+                    "en": "The admin modal showing all the pictures in the database and a button to delete them. There is also a button to upload a new picture.",
+                    "fr": "La modale administrateur qui affiche toutes les images présentes dans la base de données avec un bouton pour les supprimer. Il y'a aussi un bouton pour téléverser un nouveau fichier."
+                }
+            },
+            "4": {
+                "url": "/assets/images/projects/Bluel/Bluel-modal2.webp",
+                "alt": {
+                    "en": "The admin modal showing the form to uplaod new files to the database.",
+                    "fr": "La modale administrateur qui affiche le formulaire pour téléverser un ouveau fichier."
+                }
+            }
+        },
+        "tags": ["HTML", "CSS", "JS"],
+        "website": "https://rossignolbrigand.github.io/OpenClassrooms_Projet_03/FrontEnd/index.html",
+        "codebase": "https://github.com/RossignolBrigand/OpenClassrooms_Projet_03"
+    },
+    {
+        "id": 4,
+        "name": {
+            "en": "Optimisation of a client's portfolio",
+            "fr": "Optimisation du portfolio d'une cliente"
+        },
+        "description": {
+            "en": "Debugging and optimization of a photographer's portfolio, which was bugged and contained no metadata and had accessibility issues.",
+            "fr": "Débogage et optimisation du portfolio d'une photographe, qui avait des bugs, ne contenait aucunes metadonnées et avait des problèmes d'accessibilité."
+        },
+        "detailedDescription": {
+            "en": "The objective of this project was to identify bugs in the CSS created by the client and then optimize the site's performance, accessibility, and local SEO. At the time, I wasn't familiar with Bootstrap, and it was interesting to work through code that I hadn't written myself. I had to create several metadata elements to optimize local SEO and address a number of accessibility issues, particularly related to buttons and empty alt attributes on images.",
+            "fr": "L'objectif de ce projet était trouver des bugs dans le CSS créé par la cliente puis d'optimiser les performances du site, son accessibilité ainsi que son réferencement local. À l'époque je ne connaissais pas bootstrap et il était intéressant de parcourir du code que l'on a pas conçu soi-même. J'ai du créer un certain nombre de métadonnées pour optimiser le réferencement local et gérer un certain nombre de problèmes d'accessibilité notamment dus à des boutons et des alt vides sur les images."
+        },
+        "cover": {
+            "url": "/assets/images/projects/Carducci/PhotographPortfolioCover-small.webp",
+            "alt": {
+                "en": "landing page of a photographer's portfolio with some portraits.",
+                "fr": "page d'accueil du portfolio d'une photographe avec plusieurs portraits."
+            }
+        },
+        "images": {
+            "1": {
+                "url": "/assets/images/projects/Carducci/PhotographPortfolio1.webp",
+                "alt": {
+                    "en": "image gallery of the portfolio",
+                    "fr": "gallerie d'images du portfolio"
+                }
+            },
+            "2": {
+                "url": "/assets/images/projects/Carducci/PhotographPortfolio2.webp",
+                "alt": {
+                    "en": "lighthouse report showing the website's performances on load",
+                    "fr": "rapport de performances lighhouse montrant les performances du site au chargement"
+                }
+            },
+            "3": {
+                "url": "/assets/images/projects/Carducci/PhotographPortfolio3.webp",
+                "alt": {
+                    "en": "Wave accessibility report showing the website's optimisation",
+                    "fr": "Rapport d'accessibilité wave montrant l'optimisation du site"
+                }
+            },
+            "4": {
+                "url": "/assets/images/projects/Carducci/PhotographPortfolio4.webp",
+                "alt": {
+                    "en": "Section of the website and a preview of the openGraph card demonstrating the metadata embedded in the website",
+                    "fr": "Section du site et une prévisualisation du système de partage openGraph utilisant les métadonnées insérées dans le site"
+                }
+            },
+            "5": {
+                "url": "/assets/images/projects/Carducci/PhotographPortfolio5.webp",
+                "alt": {
+                    "en": "Google business report showing the enriched data present in the website and shared to robots",
+                    "fr": "Rapport de données Google Business montrant les données enrichies récupérées par les robots."
+                }
+            }
+        },
+        "tags": ["SEO", "Accessibility", "Optimization", "Debugging"],
+        "website": "https://rossignolbrigand.github.io/Openclassrooms_Projet_04/",
+        "codebase": "https://github.com/RossignolBrigand/Openclassrooms_Projet_04"
+    }
+]

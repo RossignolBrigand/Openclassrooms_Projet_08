@@ -1,0 +1,26 @@
+{
+    "title": "Mes services",
+    "subtitles": {
+        "SEO": "SEO / Audits / Optimisations",
+        "static-pages": "Création de sites web",
+        "fullstack": "Développeur fullstack"
+    },
+    "SEOList": {
+        "1": "Réalisation d'audits performances et accessibilité",
+        "2": "Optimisation des performances du chargement de votre site (Gestion des images et optimisation des scripts)",
+        "3": "Optimisation de votre SEO et référencement local (Métadonnées et OpenGraph)",
+        "4": "Optimisation de l'accessibilité de votre site (HTML sémantique / ARIA)"
+    },
+    "WebDev": {
+        "1": "Création de sites statiques en HTML/ CSS garantis responsive.",
+        "2": "Création d'applications web personnalisées selon vos besoins.",
+        "3": "Création de sites à partir de CMS comme Wordpress.",
+        "4": "Gestion de l'hébergement et de la sécurité."
+    },
+    "Fullstack": {
+        "1": "Gestion de projet depuis le frontend jusqu'au maintien de la base de données.",
+        "2": "Construction de stacks MERN (MongoDb, Express, React, Node.js).",
+        "3": "Gestion de la sécurité en suivant les recommendations de l'OWASP10.", 
+        "4": ""
+    }
+}

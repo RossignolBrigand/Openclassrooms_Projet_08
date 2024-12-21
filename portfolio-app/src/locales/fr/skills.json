@@ -1,0 +1,17 @@
+{
+    "title": "Mes compétences",
+    "block-titles": {
+        "technologies": "TECHNOLOGIES ET LANGAGES",
+        "tools": "GESTION DE PROJET ET OUTILS"
+    },
+    "applications": {
+        "title": "Applications :"
+    },
+    "dependencies": {
+        "title": "Librairies :"
+    },
+    "learning": {
+        "title": "APPRENTISSAGE",
+        "para": "Je suis actuellement en train de travailler ces compétences :"
+    }
+}

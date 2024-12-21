@@ -1,0 +1,13 @@
+{
+    "presentation": "Bonjour, je m'appelle <strong>Thomas</strong> et je suis développeur web <strong>fullstack</strong>.",
+    "summary": {
+        "paragraph1": "Passionné par le code depuis plusieurs années, j'ai terminé ma formation de développeur web en 2024 et je propose mes services en tant que développeur freelance, spécialisé dans la stack MERN et l'audit de performances et accessibilité.",
+        "paragraph2": "Je suis à votre écoute pour développer ensemble votre projet, que ce soit une page statique ou une application web complète. Je travaille sur Rennes et alentours et suis disponible pour travailler en distanciel."
+    },
+    "cta": {
+        "cv": "Voir mon CV",
+        "contact": "Contactez moi",
+        "github": "Mon Github",
+        "linkedin": "Mon Linkedin"
+    }
+}

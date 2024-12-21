@@ -1,0 +1,39 @@
+@use '../../scss/abstracts/variables' as v;
+@use '../../scss/abstracts/mixins' as m;
+
+header {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    height: 6rem;
+    width: 100%;
+    background-color: v.$color_black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    transition: all 0.3s ease-in-out;
+
+    .header-title {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            text-transform: uppercase;
+            margin-top: 1rem;
+        }
+    }
+
+    .header-content {
+        display: flex;
+        gap: 1rem;
+
+        nav {
+            gap: 0.5rem;
+        }
+    }
+
+    @include m.margin-bottom;
+}

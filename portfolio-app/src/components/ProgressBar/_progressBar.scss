@@ -1,0 +1,43 @@
+@use '../../scss/abstracts/typography' as t;
+
+//TODO: Create classes for each color of the progress bar and assign it to background color 
+
+.progress-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.progress-bar-container {
+    display: flex;
+}
+
+.progress-bar-label {
+    font-family: t.$font-title;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    width: auto;
+    height: 1.5rem;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    border: double transparent;
+    border-radius: 4px;
+    margin-right: .75rem;
+
+}
+
+.progress-bar-filled {
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out;
+}
+
+.progress-bar-rating {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 8px;
+}

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { useTranslation } from 'react-i18next';
+import useWindowSize from '../../hooks/useWindowSize';
+
 import './_navigationBar.scss';
 
 //-----------------------------------------------------------
@@ -44,6 +46,7 @@ export default function NavigationBar({ headerHeight }) {
 
 
     // Hamburger menu set-up
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -52,6 +55,7 @@ export default function NavigationBar({ headerHeight }) {
 
     return (
         <nav>
+
             <div className='nav-links'>
                 <HashLink
                     smooth

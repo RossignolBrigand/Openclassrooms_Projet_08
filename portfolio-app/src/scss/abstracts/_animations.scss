@@ -1,9 +1,11 @@
 @keyframes fadeInFromTop {
     0% {
         opacity: 0;
+        visibility: hidden;
         transform: translateY(-150px);
     }
     50% {
+        visibility: visible;
         opacity: 0.75;
     }
     100% {
@@ -14,17 +16,16 @@
 
 @keyframes fadeInCard {
     0% {
-        display: none;
+        visibility: hidden;
         opacity: 0;
         transform: translateY(-50px);
     }
     50% {
-        display: grid;
         transform: translateY(0);
         opacity: 0.5;
     }
     100% {
-        display: grid;
+        visibility: visible;
         opacity: 1;
         transform: translateY(0);
     }

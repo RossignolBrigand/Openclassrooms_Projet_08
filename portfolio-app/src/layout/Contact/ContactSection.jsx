@@ -19,7 +19,7 @@ export default function ContactSection() {
         const copyText = 'thomas.pineau.webdev@protonmail.com'
         navigator.clipboard.writeText(copyText);
         setButtonClicked(true);
-        setTimeout(() => setButtonClicked(false), 2000);
+        setTimeout(() => setButtonClicked(false), 2500);
     }
 
     return (

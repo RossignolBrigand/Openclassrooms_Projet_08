@@ -3,12 +3,13 @@
 import { useState, useRef, useEffect } from "react";
 
 //---------------------------------------------------------------------
-const useOnScreen = (threshold = 0.1) => {
+const useOnScreen = (threshold = [0.1, 0.25, 0.5]) => {
 
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef(null);
 
     useEffect(() => {
+        const currentRef = ref.current;
         const observer = new IntersectionObserver(
             ([entry]) => {
                 setIsVisible(entry.isIntersecting);
@@ -20,9 +21,10 @@ const useOnScreen = (threshold = 0.1) => {
         }
 
         return () => {
-            if (ref.current) {
-                observer.disconnect();
+            if (currentRef) {
+                observer.unobserve(currentRef);
             }
+            observer.disconnect(); // Disconnect the observer
         };
     }, [threshold]);
 

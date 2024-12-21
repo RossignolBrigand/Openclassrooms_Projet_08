@@ -27,8 +27,8 @@ import modalFr from '../locales/fr/modal.json';
 
 // Log all available languages as a const
 export const languages = [
-  { code: 'en', name: 'English' },
   { code: 'fr', name: 'Français' },
+  { code: 'en', name: 'English' },
 ];
 
 i18n
@@ -60,5 +60,5 @@ i18n
     fallbackLng: 'fr', // Default language
     ns: ['header', 'footer', 'heroSection', 'skillSection', 'serviceSection', 'projectSection', 'contactSection', 'modal'], // Define namespaces
     defaultNS: 'header', // Default namespace
-    interpolation: { escapeValue: true }, // React already escapes
+    interpolation: { escapeValue: true }, //// React already escapes
   });

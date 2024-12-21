@@ -43,15 +43,18 @@ export default function ProjectsContainer() {
     return (
         <div className="projects-container">
             {localizedProjects.map((project) => (
-                <ProjectCard
-                    key={project.id}
-                    name={project.name}
-                    description={project.description}
-                    coverUrl={process.env.PUBLIC_URL + project.cover.url}
-                    coverAlt={project.cover.alt}
-                    onClick={() => openModal(project)} // passs the project variable to the modal
-                    tags={project.tags}
-                />
+                <>
+                    {console.log(project)}
+                    <ProjectCard
+                        key={project.id}
+                        name={project.name}
+                        description={project.description}
+                        coverUrl={process.env.PUBLIC_URL + project.cover.url}
+                        coverAlt={project.cover.alt}
+                        onClick={() => openModal(project)} // pass the project variable to the modal
+                        tags={project.tags}
+                    />
+                </>
             ))}
             <ProjectModal
                 isOpen={!!selectedProject}

@@ -6,6 +6,7 @@ import { BsArrowBarRight, BsArrowBarLeft } from "react-icons/bs";
 import './_imgCarousel.scss';
 
 export default function ImgCarousel({ images }, isOpen) {
+    console.log(images);
 
     const [activeImage, setActiveImage] = useState(0);
 

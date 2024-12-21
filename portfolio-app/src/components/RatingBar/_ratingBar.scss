@@ -15,7 +15,7 @@
         }
 
         &--icon {
-            @include m.icon_size_medium;
+            @include m.icon_size_large;
         }
 
         &--bar {
@@ -28,9 +28,6 @@
             border: 2px solid lightgray;
             border-radius: 4px;
             transition: all 150ms ease-in;
-        }
-
-        &:hover {
         }
     }
 }
@@ -60,8 +57,50 @@
         &__Sass {
             color: v.$color_sass;
         }
-        &__Node.js {
+        &__Node {
             color: v.$color_node;
         }
+        &__MongoDB {
+            color: v.$color_mongo;
+        }
+        &__Express {
+            color: v.$color_express;
+        }
+    }
+}
+
+.svg {
+    &__HTML {
+        color: v.$color_html;
+    }
+    &__CSS {
+        color: v.$color_css;
+    }
+    &__JS {
+        color: v.$color_js;
+    }
+    &__React {
+        color: v.$color_react;
+    }
+    &__Sass {
+        color: v.$color_sass;
+    }
+    &__Node {
+        color: v.$color_node;
+    }
+    &__MongoDB {
+        color: v.$color_mongo;
+    }
+    &__Gulp {
+        color: v.$color_gulp;
+    }
+    &__Git {
+        color: v.$color_git;
+    }
+    &__Npm {
+        color: v.$color_npm;
+    }
+    &__Express {
+        color: v.$color_express;
     }
 }

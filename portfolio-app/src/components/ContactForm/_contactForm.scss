@@ -1,5 +1,61 @@
-form {
-    display: flex;
-    flex-direction: column;
+@use '../../scss/abstracts/animations' as *;
+@use '../../scss/abstracts/' as v;
 
+.contact-section {
+    &__clipboard {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        h3 {
+            justify-self: center;
+        }
+    }
+    .contact-form {
+        &__block {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+
+            input,
+            textarea {
+                padding: 1rem;
+            }
+        }
+        &__submit {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            input {
+                padding: 1rem 2rem;
+                background-color: transparent;
+                border: 1px solid v.$color_black;
+                border-radius: 4px;
+                box-shadow: none;
+                cursor: pointer;
+                transition: all 200ms ease-in;
+                font-family: v.$font-title;
+
+                &:hover,
+                &:focus {
+                    box-shadow: inset 10rem 1px 1px 1px v.$color_black;
+                    color: v.$color_white;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    h3 {
+        align-self: center;
+    }
+}
+
+.errorMsg {
+    color: #e40d0d;
+    font-family: monospace;
+    font-weight: 700;
+    animation: fadeIn 150ms ease;
 }

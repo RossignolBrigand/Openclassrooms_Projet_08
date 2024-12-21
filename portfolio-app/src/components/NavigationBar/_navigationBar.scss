@@ -9,7 +9,7 @@ nav {
         padding: 0.8rem;
 
         &:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
         &.active {
             color: v.$primary_color;

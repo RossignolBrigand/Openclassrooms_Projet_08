@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { DiGithub } from 'react-icons/di';
 import { BsLinkedin } from 'react-icons/bs';
 import { BsFileEarmarkArrowDown } from 'react-icons/bs';
@@ -19,7 +19,7 @@ export default function HeroSection() {
     return (
         <section className="heroSection" id="hero-section">
             <div className="about-container">
-                <h2>{t('presentation')}</h2>
+                <h2>{<Trans i18nKey={t("presentation")} components={{ strong: <strong /> }} />}</h2>
                 <div className="paragraph-container">
                     <p>{t('summary.paragraph1')}</p>
                     <p>{t('summary.paragraph2')}</p>

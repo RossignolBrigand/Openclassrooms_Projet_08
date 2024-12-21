@@ -3,12 +3,4 @@
 .home-container {
     width: auto;
     height: auto;
-
-    @include m.margin-bottom;
-
-    h1,
-    h2 {
-        color: black;
-    }
-
 }

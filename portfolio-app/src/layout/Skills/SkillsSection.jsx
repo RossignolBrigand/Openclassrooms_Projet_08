@@ -14,7 +14,6 @@ import { DiNodejsSmall } from "react-icons/di";
 import { DiGit } from "react-icons/di";
 import { DiGulp } from "react-icons/di";
 import { DiNpm } from "react-icons/di";
-import { ReactComponent as MiroIcon } from '../../assets/icons/miro-svgrepo-com.svg';
 import { ReactComponent as PostmanIcon } from '../../assets/icons/postman-icon-svgrepo-com.svg';
 import { ReactComponent as SwaggerIcon } from '../../assets/icons/swagger-svgrepo-com.svg';
 import { ReactComponent as ExpressIcon } from '../../assets/icons/express-svgrepo-com.svg';
@@ -31,6 +30,7 @@ export default function SkillsSection() {
             <h2>{t('title')}</h2>
             <div className="skills-container">
                 <div className="skills-block">
+                    <h3>{t('block-titles.technologies')}</h3>
                     <ul className="skills-block__content--list">
                         <li>
                             <RatingBar label={'HTML'} rating={4} icon={<DiHtml5 className='svg__HTML' />} />
@@ -48,33 +48,29 @@ export default function SkillsSection() {
                             <RatingBar label={'Sass'} rating={3} icon={<DiSass className='svg__Sass' />} />
                         </li>
                         <li>
-                            <RatingBar label={'Node.js'} rating={3} icon={<DiNodejsSmall className='svg__Node' />} />
+                            <RatingBar label={'Node'} rating={3} icon={<DiNodejsSmall className='svg__Node' />} />
                         </li>
                         <li>
                             <RatingBar label={'Express'} rating={4} icon={<ExpressIcon className='svg__Express' />} />
                         </li>
                         <li>
-                            <RatingBar label={'MongoDB'} rating={3} icon={<DiMongodb className='svg__Mongo' />} />
+                            <RatingBar label={'MongoDB'} rating={3} icon={<DiMongodb className='svg__MongoDB' />} />
                         </li>
                     </ul>
                 </div>
-
             </div>
             <div className="tools-container">
-                <h3 className="tools-block__title">
-                    {t('block-titles.tools&tech')}
-                </h3>
                 <div className="tools-block">
+                    <h3 className="tools-block__title">{t('block-titles.tools')}</h3>
                     <div className="tools-block__content">
                         <h4>{t('applications.title')}</h4>
                         <ul className="tools-block__content--list">
-                            <li><FaFigma className='svg__Figma' /></li>
-                            <li><DiGit className='svg__Git' /></li>
-                            <li><DiGulp className='svg__Gulp' /></li>
-                            <li><MiroIcon className='svg__Miro' /></li>
-                            <li><PostmanIcon /></li>
-                            <li><SwaggerIcon /></li>
-                            <li><DiNpm /></li>
+                            <li><FaFigma className='svg__Figma' />Figma</li>
+                            <li><DiGit className='svg__Git' />Git</li>
+                            <li><DiGulp className='svg__Gulp' />Gulp</li>
+                            <li><PostmanIcon className='svg__Postman' />Postman</li>
+                            <li><SwaggerIcon className='svg__Swagger' />Swagger</li>
+                            <li><DiNpm className='svg__Npm' />Npm</li>
                         </ul>
                     </div>
                     <div className="tools-block__content">
@@ -84,19 +80,20 @@ export default function SkillsSection() {
                             <li>bCrypt</li>
                             <li>Multer</li>
                             <li>Sharp</li>
-                            <li>Gulp</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div className="learning-container">
-                <h4>{t('learning.title')}</h4>
+                <h3>{t('learning.title')}</h3>
+                <h4>{t('learning.para')}</h4>
                 <ul>
                     <li>Python</li>
                     <li>Next.js</li>
                     <li>PHP/ MySQL</li>
                     <li>Debug / Testing</li>
                     <li>E-commerce</li>
+                    <li>Wordpress</li>
                 </ul>
             </div>
         </section>

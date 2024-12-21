@@ -1,5 +1,6 @@
 @use '../../scss/abstracts/variables' as v;
 @use '../../scss/abstracts/mixins' as m;
+@use '../../scss/abstracts/animations' as *;
 
 .modal-overlay {
     position: fixed;
@@ -23,17 +24,18 @@
         border-radius: 1rem;
         position: relative;
         overflow: hidden;
+        animation: fadeInFromTop 250ms ease-in;
 
-        .modal-topbar{
+        .modal-topbar {
             display: flex;
             justify-content: end;
             margin-bottom: 1rem;
 
-            .btn-close-modal{
+            .btn-close-modal {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                @include m.icon-size-medium
+                @include m.icon-size-medium;
             }
         }
 
@@ -59,7 +61,7 @@
                     object-fit: cover;
                 }
             }
-        
+
             &__text {
                 display: flex;
                 flex-direction: column;
@@ -72,9 +74,7 @@
                 margin-top: auto;
                 margin-bottom: 2rem;
                 gap: 2rem;
-
             }
-
         }
     }
 }

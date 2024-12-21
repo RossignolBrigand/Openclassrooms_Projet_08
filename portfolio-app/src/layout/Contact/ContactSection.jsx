@@ -25,7 +25,7 @@ export default function ContactSection() {
     return (
         <section className='contact-section' id='contact-section' >
             <h2 className='contact-section__title' >{t('title')}</h2>
-            <div>
+            <div className='contact-section__clipboard'>
                 <h3>{t('mailBark')}</h3>
                 <Button
                     onClick={copyToClipboard}

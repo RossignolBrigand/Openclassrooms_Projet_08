@@ -1,8 +1,12 @@
+@use '../../scss/abstracts/animations' as *;
+
 .card-wrapper {
     display: grid;
     padding: 1rem;
     gap: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     border-radius: 8px;
     margin-bottom: 2rem;
     cursor: pointer;
@@ -10,14 +14,16 @@
     transition: all 250ms ease;
 
     &:hover {
-        box-shadow: rgba(50, 50, 93, 0.30) 0px 30px 60px -12px, rgba(0, 0, 0, 0.35) 0px 18px 36px -18px;
+        box-shadow:
+            rgba(50, 50, 93, 0.3) 0px 30px 60px -12px,
+            rgba(0, 0, 0, 0.35) 0px 18px 36px -18px;
         filter: grayscale(0);
     }
 
     .card-image img {
         width: 100%;
         height: 425px;
-        img{
+        img {
             object-fit: contain;
             width: 100%;
             height: 100%;
@@ -25,27 +31,8 @@
     }
 
     &.visible {
-        animation-name: FadeIn;
+        animation-name: fadeInCard;
         animation-duration: 1000ms;
         animation-iteration-count: 1;
-    }
-
-}
-
-@keyframes FadeIn {
-    0% { 
-        display: none;
-        opacity: 0; 
-        transform: translateY(-50px);
-    }
-    50% {
-        display:grid;
-        transform: translateY(0);
-        opacity: 0.5;
-    }
-    100% {
-        display: grid;
-        opacity: 1; 
-        transform: translateY(0);
     }
 }

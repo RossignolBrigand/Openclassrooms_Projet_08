@@ -67,7 +67,7 @@ $breakpoints-down: (
 }
 
 @mixin margin-bottom {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 // Paddings
@@ -80,4 +80,8 @@ $breakpoints-down: (
 @mixin icon-size_medium {
     width: 2rem;
     height: 2rem;
+}
+@mixin icon-size_large {
+    width: 3rem;
+    height: 3rem;
 }

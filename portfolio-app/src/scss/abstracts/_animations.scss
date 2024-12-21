@@ -1,0 +1,40 @@
+@keyframes fadeInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    50% {
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInCard {
+    0% {
+        display: none;
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    50% {
+        display: grid;
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    100% {
+        display: grid;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

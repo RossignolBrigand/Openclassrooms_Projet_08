@@ -4,6 +4,7 @@
 //Fonts
 $font_body: 'Crimson Text', 'Courier New', Courier, monospace;
 $font_title: 'Montserrat', Arial, sans-serif;
+$font_code: 'Monospace';
 $font_sizes: (
     small: f.rem(16),
     medium: f.rem(20),
@@ -43,10 +44,16 @@ h2 {
     font-size: map-get($font_sizes, 'xlarge');
     margin-bottom: 1rem;
     text-decoration: underline;
+    text-transform: uppercase;
 }
 
 h3 {
     font-size: map-get($font_sizes, 'large');
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 
@@ -81,4 +88,9 @@ span {
 em,
 strong {
     font-size: map-get($font-sizes, 'medium');
+}
+
+label {
+    font-family: $font-title;
+    font-weight: 600;
 }

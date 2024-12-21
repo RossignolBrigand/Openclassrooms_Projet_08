@@ -1,17 +1,17 @@
 {
     "title": "Mes compétences",
     "block-titles": {
-        "frontend": "FRONTEND",
-        "backend": "BACKEND",
-        "tools&tech": "GESTION DE PROJET ET OUTILS"
+        "technologies": "TECHNOLOGIES ET LANGAGES",
+        "tools": "GESTION DE PROJET ET OUTILS"
     },
     "applications": {
         "title": "Applications :"
     },
-    "dependencies" : {
+    "dependencies": {
         "title": "Librairies :"
     },
     "learning": {
-        "title": "Je suis actuellement en train de travailler ces compétences :"
+        "title": "APPRENTISSAGE",
+        "para": "Je suis actuellement en train de travailler ces compétences :"
     }
 }

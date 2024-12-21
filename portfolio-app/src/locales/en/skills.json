@@ -1,17 +1,17 @@
 {
     "title": "My skills",
     "block-titles": {
-        "frontend": "FRONTEND",
-        "backend": "BACKEND",
-        "tools&tech": "PROJECT MANAGEMENT AND TOOLS"
+        "technologies": "TECHNOLOGIES AND LANGUAGES",
+        "tools": "PROJECT MANAGEMENT AND TOOLS"
     },
     "applications": {
         "title": "Applications :"
     },
-    "dependencies" : {
+    "dependencies": {
         "title": "Libraries :"
     },
     "learning": {
-        "title": "I'm currently learning those technologies :"
+        "title": "LEARNING",
+        "para": "I am currently learning those technologies :"
     }
 }

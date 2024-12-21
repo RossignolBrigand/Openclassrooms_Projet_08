@@ -60,5 +60,5 @@ i18n
     fallbackLng: 'fr', // Default language
     ns: ['header', 'footer', 'heroSection', 'skillSection', 'serviceSection', 'projectSection', 'contactSection', 'modal'], // Define namespaces
     defaultNS: 'header', // Default namespace
-    interpolation: { escapeValue: false }, // React already escapes
+    interpolation: { escapeValue: true }, // React already escapes
   });

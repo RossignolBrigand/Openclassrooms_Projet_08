@@ -33,7 +33,7 @@ export default function HeroSection() {
                 <div className="btn-container">
                     {/* Button to download CV */}
                     <Button
-                        href="/assets/Thomas-PINEAU-CV.pdf"
+                        href="./assets/Thomas-PINEAU-CV.pdf"
                         target="_blank"
                         download
                         variant="default"

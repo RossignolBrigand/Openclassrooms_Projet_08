@@ -26,7 +26,7 @@ export default function Header() {
     return (
         <header className={`header`} ref={headerRef}>
             <div className="header-title">
-                <a href="/">
+                <a href=".">
                     <h1>Thomas PINEAU</h1>
                 </a>
             </div>

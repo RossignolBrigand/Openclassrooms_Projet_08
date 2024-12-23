@@ -19,6 +19,7 @@ import { DiCode } from 'react-icons/di';
 import { ReactComponent as PostmanIcon } from '../../assets/icons/postman-icon-svgrepo-com.svg';
 import { ReactComponent as SwaggerIcon } from '../../assets/icons/swagger-svgrepo-com.svg';
 import { ReactComponent as ExpressIcon } from '../../assets/icons/express-svgrepo-com.svg';
+import { ReactComponent as WebpackIcon } from '../../assets/icons/webpack-svgrepo-com.svg';
 import { DiW3C } from 'react-icons/di';
 import { DiVisualstudio } from 'react-icons/di';
 
@@ -137,12 +138,16 @@ export default function SkillsSection() {
                                 Npm
                             </li>
                             <li>
+                                <DiVisualstudio className="svg__Visualstudio" />
+                                VS Code
+                            </li>
+                            <li>
                                 <DiW3C className="svg__W3C" />
                                 W3C
                             </li>
                             <li>
-                                <DiVisualstudio className="svg__Visualstudio" />
-                                VS Code
+                                <WebpackIcon className="svg__Webpack" />
+                                Webpack
                             </li>
                             <li>
                                 <DiCode />

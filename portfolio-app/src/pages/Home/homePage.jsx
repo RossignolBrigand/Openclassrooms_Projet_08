@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+import Header from '../../layout/Header/Header';
+import Footer from '../../layout/Footer/Footer';
 import HeroSection from '../../layout/Hero/HeroSection';
 import SkillsSection from '../../layout/Skills/SkillsSection';
 import ServicesSection from '../../layout/Services/ServicesSection';
@@ -36,23 +38,27 @@ function HomePage() {
 
     return (
         <div className="home-container">
-            <HeroSection />
-            <SkillsSection />
-            <ServicesSection />
-            <ProjectsSection />
-            <ContactSection />
-            {isScrolled ? (
-                <Button
-                    onClick={() =>
-                        window.scrollTo({
-                            top: 0,
-                            behavior: 'smooth',
-                        })
-                    }
-                    children={<BsArrowUp />}
-                    variant="toTop"
-                />
-            ) : null}
+            <Header />
+            <main>
+                <HeroSection />
+                <SkillsSection />
+                <ServicesSection />
+                <ProjectsSection />
+                <ContactSection />
+                {isScrolled ? (
+                    <Button
+                        onClick={() =>
+                            window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth',
+                            })
+                        }
+                        children={<BsArrowUp />}
+                        variant="toTop"
+                    />
+                ) : null}
+            </main>
+            <Footer />
         </div>
     );
 }

@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import LanguageSwitcher from '../../components/LanguageSwitch/LanguageSwitch';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
+import useWindowSize from '../../hooks/useWindowSize';
 
 import './_header.scss';
 
 export default function Header() {
+    // Check the header height and pass it as a prop to the NavigationBar component
     const headerRef = useRef(null);
     const [headerHeight, setHeaderHeight] = useState('');
 
@@ -23,6 +25,7 @@ export default function Header() {
         };
     }, []);
 
+    const windowSize = useWindowSize();
     return (
         <header className={`header`} ref={headerRef}>
             <div className="header-title">
@@ -31,7 +34,10 @@ export default function Header() {
                 </a>
             </div>
             <div className="header-content">
-                <NavigationBar headerHeight={headerHeight} />
+                <NavigationBar
+                    headerHeight={headerHeight}
+                    windowSize={windowSize}
+                />
                 <LanguageSwitcher />
             </div>
         </header>

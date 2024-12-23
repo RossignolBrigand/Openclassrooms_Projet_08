@@ -5,6 +5,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
 
+    // Desktop navigation links
     a {
         padding: 0.8rem;
 
@@ -16,6 +17,75 @@ nav {
             font-weight: 600;
         }
     }
-}
 
-// remnants of nav link to delete most likely on clean up
+    // Hamburger menu button (visible on mobile only)
+    .hamburger-menu {
+        display: none; // Hidden on larger screens
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+            display: block; // Visible only on mobile
+        }
+    }
+
+    // Sidebar for mobile navigation
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 80%; // Sidebar width
+        background-color: #fff; // Sidebar background
+        box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1); // Shadow effect
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+        transform: translateX(100%); // Hidden by default (off-screen)
+        transition: transform 0.3s ease-in-out;
+
+        &.open {
+            transform: translateX(0); // Slide into view when open
+        }
+
+        .close-btn {
+            align-self: flex-end; // Align close button to the top right
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sidebar-links {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            a {
+                padding: 10px 0;
+                font-size: 18px;
+                text-decoration: none;
+                color: #333;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &.active {
+                    font-weight: bold;
+                    color: v.$primary_color;
+                }
+            }
+        }
+    }
+
+    // Hide desktop navigation on smaller screens
+    .nav-links {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}

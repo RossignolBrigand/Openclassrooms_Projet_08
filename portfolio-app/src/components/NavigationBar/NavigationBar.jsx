@@ -1,14 +1,12 @@
 import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { useTranslation } from 'react-i18next';
-import useWindowSize from '../../hooks/useWindowSize';
 
 import './_navigationBar.scss';
 
 //-----------------------------------------------------------
 
-export default function NavigationBar({ headerHeight }) {
-
+export default function NavigationBar({ headerHeight, windowSize }) {
     // Localization
     const { t } = useTranslation('header');
 
@@ -26,7 +24,7 @@ export default function NavigationBar({ headerHeight }) {
         const sections = document.querySelectorAll('section');
         const observerOptions = {
             root: null,
-            threshold: 0.40,
+            threshold: 0.4,
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -44,9 +42,9 @@ export default function NavigationBar({ headerHeight }) {
         };
     }, []);
 
+    // Hamburger menu set-up for mobile (windowSize < 768px)
 
-    // Hamburger menu set-up
-
+    const mobileSize = 768;
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -55,68 +53,134 @@ export default function NavigationBar({ headerHeight }) {
 
     return (
         <nav>
+            <div className="nav-btn">
+                {windowSize.width < mobileSize && (
+                    <button
+                        className="hamburger-menu"
+                        onClick={toggleMenu}
+                        aria-label="Toggle navigation menu"
+                    >
+                        ☰
+                    </button>
+                )}
+            </div>
+            <div className="nav-links">
+                <div className="nav-links desktop-only">
+                    <HashLink
+                        smooth
+                        to="#skills-section"
+                        className={
+                            activeSection === 'skills-section'
+                                ? 'navlink active'
+                                : 'navlink'
+                        }
+                        scroll={(el) => scrollWithOffset(el)}
+                    >
+                        {t('navigation.skills')}
+                    </HashLink>
+                    <HashLink
+                        smooth
+                        to="#services-section"
+                        className={
+                            activeSection === 'services-section'
+                                ? 'navlink active'
+                                : 'navlink'
+                        }
+                        scroll={(el) => scrollWithOffset(el)}
+                    >
+                        {t('navigation.services')}
+                    </HashLink>
+                    <HashLink
+                        smooth
+                        to="#projects-section"
+                        className={
+                            activeSection === 'projects-section'
+                                ? 'navlink active'
+                                : 'navlink'
+                        }
+                        scroll={(el) => scrollWithOffset(el)}
+                    >
+                        {t('navigation.projects')}
+                    </HashLink>
+                    <HashLink
+                        smooth
+                        to="#contact-section"
+                        className={
+                            activeSection === 'contact-section'
+                                ? 'navlink active'
+                                : 'navlink'
+                        }
+                        scroll={(el) => scrollWithOffset(el)}
+                    >
+                        {t('navigation.contact')}
+                    </HashLink>
+                </div>
 
-            <div className='nav-links'>
-                <HashLink
-                    smooth
-                    to="#skills-section"
-                    className={
-                        activeSection === 'skills-section'
-                            ? 'navlink active'
-                            : 'navlink'
-                    }
-                    aria-current={
-                        activeSection === 'skills-section' ? 'true' : undefined
-                    }
-                    scroll={(el) => scrollWithOffset(el)}
-                >
-                    {t('navigation.skills')}
-                </HashLink>
-                <HashLink
-                    smooth
-                    to="#services-section"
-                    className={
-                        activeSection === 'services-section'
-                            ? ' navlink active'
-                            : 'navlink'
-                    }
-                    aria-current={
-                        activeSection === 'services-section' ? 'true' : undefined
-                    }
-                    scroll={(el) => scrollWithOffset(el)}
-                >
-                    {t('navigation.services')}
-                </HashLink>
-                <HashLink
-                    smooth
-                    to="#projects-section"
-                    className={
-                        activeSection === 'projects-section'
-                            ? 'navlink active'
-                            : 'navlink'
-                    }
-                    aria-current={
-                        activeSection === 'projects-section' ? 'true' : undefined
-                    }
-                    scroll={(el) => scrollWithOffset(el)}
-                >
-                    {t('navigation.projects')}
-                </HashLink>
-                <HashLink
-                    smooth
-                    to="#contact-section"
-                    className={
-                        activeSection === 'contact-section'
-                            ? 'navlink active'
-                            : 'navlink'
-                    }
-                    aria-current={
-                        activeSection === 'contact-section' ? 'true' : undefined
-                    }
-                    scroll={(el) => scrollWithOffset(el)}
-                >
-                    {t('navigation.contact')}
-                </HashLink>
+                {isMenuOpen && (
+                    <div className="sidebar">
+                        <button
+                            className="close-btn"
+                            onClick={toggleMenu}
+                            aria-label="Close navigation menu"
+                        >
+                            ✖
+                        </button>
+                        <div className="sidebar-links">
+                            <HashLink
+                                smooth
+                                to="#skills-section"
+                                className={
+                                    activeSection === 'skills-section'
+                                        ? 'navlink active'
+                                        : 'navlink'
+                                }
+                                onClick={toggleMenu}
+                                scroll={(el) => scrollWithOffset(el)}
+                            >
+                                {t('navigation.skills')}
+                            </HashLink>
+                            <HashLink
+                                smooth
+                                to="#services-section"
+                                className={
+                                    activeSection === 'services-section'
+                                        ? 'navlink active'
+                                        : 'navlink'
+                                }
+                                onClick={toggleMenu}
+                                scroll={(el) => scrollWithOffset(el)}
+                            >
+                                {t('navigation.services')}
+                            </HashLink>
+                            <HashLink
+                                smooth
+                                to="#projects-section"
+                                className={
+                                    activeSection === 'projects-section'
+                                        ? 'navlink active'
+                                        : 'navlink'
+                                }
+                                onClick={toggleMenu}
+                                scroll={(el) => scrollWithOffset(el)}
+                            >
+                                {t('navigation.projects')}
+                            </HashLink>
+                            <HashLink
+                                smooth
+                                to="#contact-section"
+                                className={
+                                    activeSection === 'contact-section'
+                                        ? 'navlink active'
+                                        : 'navlink'
+                                }
+                                onClick={toggleMenu}
+                                scroll={(el) => scrollWithOffset(el)}
+                            >
+                                {t('navigation.contact')}
+                            </HashLink>
+                        </div>
+                    </div>
+                )}
             </div>
         </nav>
     );

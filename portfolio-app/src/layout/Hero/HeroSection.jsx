@@ -6,7 +6,7 @@ import { BsFileEarmarkArrowDown } from 'react-icons/bs';
 import HeroPic from '../../assets/images/Hero.jpg';
 import ImgContainer from '../../components/ImgContainer/ImgContainer';
 import Button from '../../components/Button/Button';
-
+import CV from '../../assets/Thomas-PINEAU-CV.pdf';
 import { scrollToElement } from '../../utils/scrollToElement';
 
 import './_hero.scss';
@@ -19,7 +19,14 @@ export default function HeroSection() {
     return (
         <section className="heroSection" id="hero-section">
             <div className="about-container">
-                <h2>{<Trans i18nKey={t("presentation")} components={{ strong: <strong /> }} />}</h2>
+                <h2>
+                    {
+                        <Trans
+                            i18nKey={t('presentation')}
+                            components={{ strong: <strong /> }}
+                        />
+                    }
+                </h2>
                 <div className="paragraph-container">
                     <p>{t('summary.paragraph1')}</p>
                     <p>{t('summary.paragraph2')}</p>
@@ -27,7 +34,7 @@ export default function HeroSection() {
                 <div className="btn-container">
                     {/* Button to download CV */}
                     <Button
-                        href="/portfolio-app/src/downloads/Thomas-PINEAU_CV.pdf"
+                        href={CV}
                         target="_blank"
                         download
                         variant="default"

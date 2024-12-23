@@ -6,7 +6,6 @@ import { BsFileEarmarkArrowDown } from 'react-icons/bs';
 import HeroPic from '../../assets/images/Hero.jpg';
 import ImgContainer from '../../components/ImgContainer/ImgContainer';
 import Button from '../../components/Button/Button';
-import CV from '../../assets/Thomas-PINEAU-CV.pdf';
 import { scrollToElement } from '../../utils/scrollToElement';
 
 import './_hero.scss';
@@ -34,7 +33,7 @@ export default function HeroSection() {
                 <div className="btn-container">
                     {/* Button to download CV */}
                     <Button
-                        href={CV}
+                        href="/assets/Thomas-PINEAU-CV.pdf"
                         target="_blank"
                         download
                         variant="default"

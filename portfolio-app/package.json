@@ -56,7 +56,6 @@
     },
     "devDependencies": {
         "@babel/plugin-proposal-private-property-in-object": "",
-        "@tanstack/eslint-plugin-query": "4",
-        "react-snap": "^1.23.0"
+        "@tanstack/eslint-plugin-query": "4"
     }
 }

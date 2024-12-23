@@ -15,7 +15,7 @@ import './utils/i18nConfig';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/Portfolio">
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route path="/" element={<HomePage />} />

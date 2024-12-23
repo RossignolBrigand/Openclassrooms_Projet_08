@@ -45,79 +45,30 @@ export default function NavigationBar({ headerHeight, windowSize }) {
     // Hamburger menu set-up for mobile (windowSize < 768px)
 
     const mobileSize = 768;
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= mobileSize);
+
+    const [isMenuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsMenuOpen((prev) => !prev);
+        setMenuOpen(!isMenuOpen);
     };
 
     return (
         <nav>
-            <div className="nav-btn">
-                {windowSize.width < mobileSize && (
-                    <button
-                        className="hamburger-menu"
-                        onClick={toggleMenu}
-                        aria-label="Toggle navigation menu"
-                    >
-                        ☰
-                    </button>
-                )}
-            </div>
-            <div className="nav-links">
-                <div className="nav-links desktop-only">
-                    <HashLink
-                        smooth
-                        to="#skills-section"
-                        className={
-                            activeSection === 'skills-section'
-                                ? 'navlink active'
-                                : 'navlink'
-                        }
-                        scroll={(el) => scrollWithOffset(el)}
-                    >
-                        {t('navigation.skills')}
-                    </HashLink>
-                    <HashLink
-                        smooth
-                        to="#services-section"
-                        className={
-                            activeSection === 'services-section'
-                                ? 'navlink active'
-                                : 'navlink'
-                        }
-                        scroll={(el) => scrollWithOffset(el)}
-                    >
-                        {t('navigation.services')}
-                    </HashLink>
-                    <HashLink
-                        smooth
-                        to="#projects-section"
-                        className={
-                            activeSection === 'projects-section'
-                                ? 'navlink active'
-                                : 'navlink'
-                        }
-                        scroll={(el) => scrollWithOffset(el)}
-                    >
-                        {t('navigation.projects')}
-                    </HashLink>
-                    <HashLink
-                        smooth
-                        to="#contact-section"
-                        className={
-                            activeSection === 'contact-section'
-                                ? 'navlink active'
-                                : 'navlink'
-                        }
-                        scroll={(el) => scrollWithOffset(el)}
-                    >
-                        {t('navigation.contact')}
-                    </HashLink>
-                </div>
-
-                {isMenuOpen && (
-                    <div className="sidebar">
+            {/* Mobile navigation */}
+            {isMobile && (
+                <>
+                    <div className="nav-btn">
+                        <button
+                            className="hamburger-menu"
+                            onClick={toggleMenu}
+                            aria-label="Toggle navigation menu"
+                        >
+                            ☰
+                        </button>
+                    </div>
+                    <div className={isMenuOpen ? 'nav-sidebar open' : 'nav-sidebar'}>
                         <button
                             className="close-btn"
                             onClick={toggleMenu}
@@ -125,7 +76,7 @@ export default function NavigationBar({ headerHeight, windowSize }) {
                         >
                             ✖
                         </button>
-                        <div className="sidebar-links">
+                        <div className="sidebar-links" aria-hidden={!isMenuOpen}>
                             <HashLink
                                 smooth
                                 to="#skills-section"
@@ -180,8 +131,66 @@ export default function NavigationBar({ headerHeight, windowSize }) {
                             </HashLink>
                         </div>
                     </div>
-                )}
-            </div>
+                </>
+            )
+            }
+            {/* Desktop navigation */}
+            {
+                !isMobile && (
+                    <div className="nav-links">
+                        <div className="nav-links desktop-only">
+                            <HashLink
+                                smooth
+                                to="#skills-section"
+                                className={
+                                    activeSection === 'skills-section'
+                                        ? 'navlink active'
+                                        : 'navlink'
+                                }
+                                scroll={(el) => scrollWithOffset(el)}
+                            >
+                                {t('navigation.skills')}
+                            </HashLink>
+                            <HashLink
+                                smooth
+                                to="#services-section"
+                                className={
+                                    activeSection === 'services-section'
+                                        ? 'navlink active'
+                                        : 'navlink'
+                                }
+                                scroll={(el) => scrollWithOffset(el)}
+                            >
+                                {t('navigation.services')}
+                            </HashLink>
+                            <HashLink
+                                smooth
+                                to="#projects-section"
+                                className={
+                                    activeSection === 'projects-section'
+                                        ? 'navlink active'
+                                        : 'navlink'
+                                }
+                                scroll={(el) => scrollWithOffset(el)}
+                            >
+                                {t('navigation.projects')}
+                            </HashLink>
+                            <HashLink
+                                smooth
+                                to="#contact-section"
+                                className={
+                                    activeSection === 'contact-section'
+                                        ? 'navlink active'
+                                        : 'navlink'
+                                }
+                                scroll={(el) => scrollWithOffset(el)}
+                            >
+                                {t('navigation.contact')}
+                            </HashLink>
+                        </div>
+                    </div>
+                )
+            }
         </nav>
     );
 }

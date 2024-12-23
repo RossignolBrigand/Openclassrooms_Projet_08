@@ -17,7 +17,9 @@
     transition: all 150ms ease-out;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
+        padding: 1rem;
         border-radius: 4px;
         box-shadow: none;
         background-color: v.$color_black;
@@ -61,7 +63,8 @@
     opacity: 0.5;
     transition: all 250ms ease-in;
 
-    &:hover {
+    &:hover,
+    &:active {
         opacity: 1;
     }
 

@@ -6,11 +6,15 @@ $font_body: 'Crimson Text', 'Courier New', Courier, monospace;
 $font_title: 'Montserrat', Arial, sans-serif;
 $font_code: 'Monospace';
 $font_sizes: (
-    small: f.rem(16),
-    medium: f.rem(20),
-    large: f.rem(24),
-    xlarge: f.rem(32),
-    xxlarge: f.rem(36),
+    xxsmall: f.rem(4),
+    xsmall: f.rem(8),
+    small: f.rem(12),
+    medium: f.rem(16),
+    large: f.rem(20),
+    xlarge: f.rem(28),
+    xxlarge: f.rem(40),
+    xxxlarge: f.rem(60),
+    xxxxlarge: f.rem(100),
 );
 
 h1,
@@ -30,18 +34,17 @@ h3 {
     line-height: 1.2;
     font-weight: 600;
     width: max-content;
-    // font-size: map-get($font_sizes, xlarge);
 }
 
 h1 {
     text-transform: uppercase;
-    font-size: map-get($font_sizes, 'xxlarge');
+    font-size: map-get($font_sizes, 'xxxlarge');
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 h2 {
-    font-size: map-get($font_sizes, 'xlarge');
+    font-size: map-get($font_sizes, 'xxlarge');
     margin-bottom: 1rem;
     text-decoration: underline;
     text-transform: uppercase;
@@ -64,7 +67,6 @@ a:active {
     font-family: $font_title;
     text-decoration: none;
     color: inherit;
-    width: max-content;
 
     &:hover {
         font-weight: 600;
@@ -76,21 +78,22 @@ option,
 button {
     color: inherit;
     font-family: $font_title;
-    font-size: 1rem;
+    font-size: map-get($font-sizes, 'medium');
 }
 
 p,
 span {
-    font-size: map-get($font-sizes, 'small');
+    font-size: map-get($font-sizes, 'medium');
     color: v.$font-black;
 }
 
 em,
 strong {
-    font-size: map-get($font-sizes, 'medium');
+    font-size: map-get($font-sizes, 'large');
 }
 
 label {
     font-family: $font-title;
     font-weight: 600;
+    font-size: map-get($font-sizes, 'medium');
 }

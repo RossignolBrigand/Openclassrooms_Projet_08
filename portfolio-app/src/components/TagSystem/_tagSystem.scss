@@ -1,6 +1,7 @@
 @use '../../scss/abstracts/typography' as t;
 
 .tags-wrapper {
+    width: 100%;
     h4 {
         width: 20%;
         padding-top: 10px;
@@ -24,6 +25,7 @@
     .tags-container {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        column-gap: 1rem;
+        row-gap: 0.875rem;
     }
 }

@@ -1,10 +1,15 @@
 @use '../../scss/abstracts/mixins' as m;
 
 .projects-container {
+    width: 100%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
     column-gap: 4rem;
-    padding: 1rem;
+    padding: 60px;
+    box-sizing: border-box;
 
-    @include m.margin-sides;
+    @include m.respond-to('laptop') {
+        grid-template-columns: 1fr;
+    }
 }

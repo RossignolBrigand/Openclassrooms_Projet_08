@@ -46,6 +46,8 @@ $breakpoints-down: (
         @media only screen and (max-width: 1280px) {
             @content;
         }
+    } @else {
+        @warn "Unknown breakpoint: #{$breakpoint}";
     }
 }
 
@@ -62,8 +64,8 @@ $breakpoints-down: (
 // Margins
 
 @mixin margin-sides {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 @mixin margin-bottom {
@@ -80,6 +82,15 @@ $breakpoints-down: (
 @mixin icon-size_medium {
     width: 2rem;
     height: 2rem;
+
+    @include respond-to('tablet') {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    @include respond-to('mobile') {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
 }
 @mixin icon-size_large {
     width: 3rem;

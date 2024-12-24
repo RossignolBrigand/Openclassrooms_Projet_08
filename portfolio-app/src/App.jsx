@@ -13,7 +13,7 @@ import './utils/i18nConfig';
 
 function App() {
     return (
-        <Router basename="/Portfolio">
+        <Router basename={process.env.PUBLIC_URL || '/Portfolio'}>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />

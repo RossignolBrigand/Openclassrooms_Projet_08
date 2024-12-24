@@ -1,21 +1,25 @@
 import Button from '../../components/Button/Button';
+import { useTranslation } from 'react-i18next';
+
+import './_errorPage.scss';
+import Header from '../../layout/Header/Header';
 
 function ErrorPage() {
+    const { t } = useTranslation('errorPage');
+
     return (
-        <>
+        <div className="error-page-container">
             <div className="page-title-container">
-                <h1>404 : ERROR</h1>
+                <h1>{t('title')}</h1>
             </div>
             <div className="page-content">
-                <h2>
-                    Either you shouldn't be here or something wrong happened.
-                </h2>
-                <h3>I invite you to go back to the homepage.</h3>
+                <h2>{t('warning')}</h2>
+                <h3>{t('invitation')}</h3>
             </div>
-            <Button href="/" variant="back-home">
-                Back to homepage
+            <Button href="/Portfolio" variant="back-home">
+                {t('back')}
             </Button>
-        </>
+        </div>
     );
 }
 

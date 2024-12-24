@@ -6,12 +6,12 @@
             "fr": "Kasa Web App"
         },
         "description": {
-            "en": "Redesign of the Kasa web app using React.",
-            "fr": "Refonte de l'application Kasa sous React."
+            "en": "Redesign of a web app using React and Figma.",
+            "fr": "Refonte d'une application web avec React et Figma."
         },
         "detailedDescription": {
-            "en": "For this project I had to follow a dynamic mock-up made with Figma and recreate the frontend of the application in React with create-react-app. I had to use different hooks and react-router to manage the architecture of the application in an optimal way. The app is also responsive. I am currently reworking the project to integrate a backend and a database as well as a login system to be able to post rentals.",
-            "fr": "Pour ce projet j'ai du suivre une maquette dynamique réalisée avec Figma et récréer le frontend de l'application sous React avec create-react-app. J'ai eu recours à différents hooks et à react-router pour gérer l'architecture de l'application de façon optimale. L'application est également responsive. Je suis actuellement en train de retravailler le projet afin d'intégrer un backend et une base de données ainsi qu'un système de login pour pouvoir poster des annonces."
+            "en": "For this project I had to follow a dynamic mock-up made with Figma and recreate the frontend of the application in React with create-react-app. I had to use different hooks and react-router to manage the architecture of the application in an optimal way. The app is also responsive. I am currently refactoring the project to integrate a backend and a database as well as a login system to be able to fetch and store new content.",
+            "fr": "Pour ce projet j'ai du suivre un mock-up dynamique réalisé avec Figma et recréer le frontend de l'application en React avec create-react-app. J'ai du utiliser différents hooks et react-router pour gérer l'architecture de l'application de façon optimale. L'application est également responsive. Je suis actuellement en train de refactoriser le projet pour intégrer un backend et une base de données ainsi qu'un système de connexion pour pouvoir récupérer et stocker de nouveaux contenus."
         },
         "cover": {
             "url": "/assets/images/projects/Kasa/Kasa-cover.webp",
@@ -61,12 +61,12 @@
             "fr": "Création d'API REST et base de données"
         },
         "description": {
-            "en": "The portfolio website of the architect Sophie Bluel.",
-            "fr": "Le site portfolio de l'architecte Sophie Bluel."
+            "en": "Creation and management of a secure backend system with a REST API and a MongoDB database.",
+            "fr": "Création et gestion d'un système backend sécurisé avec une API REST et une base de données MongoDB."
         },
         "detailedDescription": {
-            "en": "This project is built and rendered dynamically with JavaScript, has a secured, if basic, login system and a backend to handle and hold data.",
-            "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
+            "en": "For this project I had to build a Nodejs / Express server and link it to a MongoDb database. After that I also had to create an authentication system and a CRUD system to manage the data stored in the database. I also had to ensure the seurity of the data stored witihn the database using hashing methods which with today's security standards. This project was very formative and I learned a lot about the backend and data management and security. I intend to refactor this project to integrate it into a frontend and create a fullstack application with new possibilities for users such as sharing a book or comment them.",
+            "fr": "Pour ce projet j'ai du construire un serveur Nodejs/Express et le relier à une base de données MongoDb. Après cela j'ai du également créer un système d'authentification et un système CRUD pour gérer les données stockées dans la base de données. J'ai également du m'assurer de la sécurité des données stockées au sein de la base de données en utilisant des méthodes de hashage conformes aux standards de sécurité actuels. Ce projet a été très formateur et j'ai beaucoup appris sur le backend et la gestion des données et de la sécurité. Je compte refactoriser ce projet pour l'intégrer à un frontend et créer une application fullstack avec de nouvelles possibilités pour les utilisateurs telles que le partage d'un livre ou les commenter."
         },
         "cover": {
             "url": "/assets/images/projects/Grimoire/Grimoire-cover.webp",
@@ -123,8 +123,8 @@
             "fr": "Portfolio d'une photographe"
         },
         "description": {
-            "en": "The portfolio website of the architect Sophie Bluel. It has a connection system and a token-secured administrator mode that allows you to add or delete files.",
-            "fr": "Le site portfolio de l'architecte Sophie Bluel. Il possède un système de connexion et un mode administrateur sécurisé par token qui permet d'ajouter ou supprimer des travaux."
+            "en": "The portfolio website of an architect. The website is mostly generated dynamically with Javascript and has a secure connexion to a Node server.",
+            "fr": "Le site portfolio d'une architecte. Le site est généré de façon dynamique avec Javascript et possède une connexion sécurisée à un serveur N ode."
         },
         "detailedDescription": {
             "en": "This project is built dynamically with JavaScript and has a token-secured connection system and a backend that allows data to be retrieved and stored. My mission was multiple: Retrieve the data stored in the database and filter the works according to their categories, manage the secure connection system via authentication token recovery and create a modal to view and modify the files present in the database live. All in pure Javascript. This project was very formative and it is currently being redesigned.",
@@ -183,7 +183,7 @@
         },
         "detailedDescription": {
             "en": "The objective of this project was to identify bugs in the CSS created by the client and then optimize the site's performance, accessibility, and local SEO. At the time, I wasn't familiar with Bootstrap, and it was interesting to work through code that I hadn't written myself. I had to create several metadata elements to optimize local SEO and address a number of accessibility issues, particularly related to buttons and empty alt attributes on images.",
-            "fr": "L'objectif de ce projet était trouver des bugs dans le CSS créé par la cliente puis d'optimiser les performances du site, son accessibilité ainsi que son réferencement local. À l'époque je ne connaissais pas bootstrap et il était intéressant de parcourir du code que l'on a pas conçu soi-même. J'ai du créer un certain nombre de métadonnées pour optimiser le réferencement local et gérer un certain nombre de problèmes d'accessibilité notamment dus à des boutons et des alt vides sur les images."
+            "fr": "L'objectif de ce projet était trouver des bugs dans le CSS créé par la cliente puis d'optimiser les performances du site, son accessibilité ainsi que son réferencement local. À l'époque je ne connaissais pas bootstrap et il était intéressant de parcourir du code que l'on a pas conçu soi-même. J'ai du créer un certain nombre de métadonnées pour optimiser le réferencement local et gérer un certain nombre de problèmes d'accessibilité notamment dus à des boutons et des balises alt vides sur les images."
         },
         "cover": {
             "url": "/assets/images/projects/Carducci/PhotographPortfolioCover-small.webp",

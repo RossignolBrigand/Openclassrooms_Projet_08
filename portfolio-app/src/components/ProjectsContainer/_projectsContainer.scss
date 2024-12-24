@@ -1,7 +1,11 @@
+@use '../../scss/abstracts/mixins' as m;
+
 .projects-container {
     display: grid;
     align-items: stretch;
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
     padding: 1rem;
+
+    @include m.margin-sides;
 }

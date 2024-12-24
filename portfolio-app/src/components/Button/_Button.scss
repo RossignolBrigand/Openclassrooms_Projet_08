@@ -16,6 +16,14 @@
     font-size: 1.5rem;
     transition: all 150ms ease-out;
 
+    @include m.respond-to('tablet') {
+        font-size: 1.125rem;
+        padding: 0.875rem;
+    }
+    @include m.respond-to('mobile') {
+        font-size: 0.875rem;
+    }
+
     &:hover,
     &:focus,
     &:active {

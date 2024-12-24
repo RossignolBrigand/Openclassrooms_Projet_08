@@ -4,8 +4,6 @@
 .projects-section {
     @include m.margin-bottom;
 
-    display: grid;
-
     &__title {
         background-color: v.$color_black;
         padding: 1rem;

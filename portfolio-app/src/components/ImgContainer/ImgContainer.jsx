@@ -13,7 +13,7 @@ export default function ImgContainer({
     return (
         <div className={`img-container img--${width}${height}${variant}`}>
             <img
-                src={src}
+                src={process.env.PUBLIC_URL + src}
                 alt={alt}
                 loading={loading}
                 style={{

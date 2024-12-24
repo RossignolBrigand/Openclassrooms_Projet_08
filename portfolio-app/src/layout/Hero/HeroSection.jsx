@@ -3,7 +3,6 @@ import { DiGithub } from 'react-icons/di';
 import { BsLinkedin } from 'react-icons/bs';
 import { BsFileEarmarkArrowDown } from 'react-icons/bs';
 
-import HeroPic from '../../assets/images/Hero.jpg';
 import ImgContainer from '../../components/ImgContainer/ImgContainer';
 import Button from '../../components/Button/Button';
 import { scrollToElement } from '../../utils/scrollToElement';
@@ -66,7 +65,7 @@ export default function HeroSection() {
                 </div>
             </div>
             <ImgContainer
-                src={HeroPic}
+                src="/assets/images/Hero.jpg"
                 alt={'open laptop and books on a table'}
                 variant={'default'}
                 width={'100%'}

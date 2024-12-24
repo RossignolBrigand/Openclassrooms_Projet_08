@@ -13,8 +13,12 @@
 
             &__content--list {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                row-gap: 1rem;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+
+                @include m.respond-to('tablet') {
+                    grid-template-columns: 1fr;
+                }
             }
         }
     }
@@ -30,8 +34,9 @@
                 margin-bottom: 1rem;
             }
             &__content--list {
-                display: flex;
-                gap: 2rem;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+                gap: 2.5rem;
 
                 li {
                     display: flex;
@@ -51,7 +56,7 @@
         padding: 1rem;
         ul {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             gap: 1rem;
             padding: 1rem;
         }

@@ -11,7 +11,7 @@
         },
         "detailedDescription": {
             "en": "For this project I had to follow a dynamic mock-up made with Figma and recreate the frontend of the application in React with create-react-app. I had to use different hooks and react-router to manage the architecture of the application in an optimal way. The app is also responsive. I am currently reworking the project to integrate a backend and a database as well as a login system to be able to post rentals.",
-            "fr": "Pour ce projet j'ai du suivre une maquette dynamique réalisée avec Figma et récréer le frontend de l'application sous React avec create-react-app. J'ai du eu recours à différents hooks et à react-router pour gérer l'architecture de l'application de façon optimale. L'application est également responsive. Je suis actuellement en train de retravailler le projet afin d'intégrer un backend et une base de données ainsi qu'un système de login pour pouvoir poster des annonces."
+            "fr": "Pour ce projet j'ai du suivre une maquette dynamique réalisée avec Figma et récréer le frontend de l'application sous React avec create-react-app. J'ai eu recours à différents hooks et à react-router pour gérer l'architecture de l'application de façon optimale. L'application est également responsive. Je suis actuellement en train de retravailler le projet afin d'intégrer un backend et une base de données ainsi qu'un système de login pour pouvoir poster des annonces."
         },
         "cover": {
             "url": "/assets/images/projects/Kasa/Kasa-cover.webp",
@@ -50,7 +50,7 @@
                 }
             }
         },
-        "tags": ["React", "Sass", "Figma"],
+        "tags": ["React", "Sass", "Figma", "Responsive", "React-router"],
         "website": "https://rossignolbrigand.github.io/OpenClassrooms_Projet_05/",
         "codebase": "https://github.com/RossignolBrigand/OpenClassrooms_Projet_05"
     },
@@ -69,22 +69,50 @@
             "fr": "Ce projet est construit de façon dynamique avec JavaScript et possède un système de connexion basique mais sécurisé et un backend qui permet de récupérer et stocker des données."
         },
         "cover": {
-            "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+            "url": "/assets/images/projects/Grimoire/Grimoire-cover.webp",
             "alt": {
-                "en": "",
-                "fr": ""
+                "en": "homepage of the website Mon Vieux Grimoire.",
+                "fr": "page d'accueil du site Mon Vieux Grimoire."
             }
         },
         "images": {
             "1": {
-                "url": "/assets/images/projects/2-Projet-Bluel-JS.png",
+                "url": "/assets/images/projects/Grimoire/Grimoire-cover.webp",
                 "alt": {
-                    "en": "",
-                    "fr": ""
+                    "en": "homepage of the website Mon Vieux Grimoire.",
+                    "fr": "page d'accueil du site Mon Vieux Grimoire."
+                }
+            },
+            "2": {
+                "url": "/assets/images/projects/Grimoire/Grimoire-book.webp",
+                "alt": {
+                    "en": "File upload form from the Mon Vieux Grimoire website.",
+                    "fr": "Formulaire d'ajout de fichier du site Mon Vieux Grimoire."
+                }
+            },
+            "3": {
+                "url": "/assets/images/projects/Grimoire/Grimoire-login.webp",
+                "alt": {
+                    "en": "Login page of the Mon Vieux Grimoire website.",
+                    "fr": "Page de connexion du site Mon Vieux Grimoire."
+                }
+            },
+            "4": {
+                "url": "/assets/images/projects/Grimoire/Grimoire-routes.webp",
+                "alt": {
+                    "en": "Screenshot of some of the CRUD routes of the server.",
+                    "fr": "Capture d'écran de certaines des routes CRUD du serveur."
+                }
+            },
+            "5": {
+                "url": "/assets/images/projects/Grimoire/Grimoire-auth.webp",
+                "alt": {
+                    "en": "Screenshot of the authentication routes within the server featuring bcrypt and jsonwebtoken.",
+                    "fr": "Capture d'écran des routes d'authentification au sein du serveur avec bcrypt et jsonwebtoken."
                 }
             }
         },
-        "tags": ["Node.js", "Express", "MongoDB", "REST", "CRUD"],
+        "tags": ["Node.js", "Express", "MongoDB", "REST", "CRUD", "Security"],
         "website": "https://rossignolbrigand.github.io/Openclassrooms_Projet_06/",
         "codebase": "https://github.com/RossignolBrigand/Openclassrooms_Projet_06"
     },
@@ -201,7 +229,13 @@
                 }
             }
         },
-        "tags": ["SEO", "Accessibility", "Optimization", "Debugging"],
+        "tags": [
+            "SEO",
+            "Accessibility",
+            "Optimization",
+            "Debugging",
+            "Metadata"
+        ],
         "website": "https://rossignolbrigand.github.io/Openclassrooms_Projet_04/",
         "codebase": "https://github.com/RossignolBrigand/Openclassrooms_Projet_04"
     }

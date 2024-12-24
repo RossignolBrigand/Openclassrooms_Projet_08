@@ -39,13 +39,6 @@ export default function SkillsSection() {
                     <ul className="skills-block__content--list">
                         <li>
                             <RatingBar
-                                label={'HTML'}
-                                rating={4}
-                                icon={<DiHtml5 className="svg__HTML" />}
-                            />
-                        </li>
-                        <li>
-                            <RatingBar
                                 label={'CSS'}
                                 rating={4}
                                 icon={<DiCss3 className="svg__CSS" />}
@@ -53,9 +46,37 @@ export default function SkillsSection() {
                         </li>
                         <li>
                             <RatingBar
+                                label={'Express'}
+                                rating={4}
+                                icon={<ExpressIcon className="svg__Express" />}
+                            />
+                        </li>
+                        <li>
+                            <RatingBar
+                                label={'HTML'}
+                                rating={4}
+                                icon={<DiHtml5 className="svg__HTML" />}
+                            />
+                        </li>
+                        <li>
+                            <RatingBar
                                 label={'Javascript'}
                                 rating={4}
                                 icon={<DiJsBadge className="svg__JS" />}
+                            />
+                        </li>
+                        <li>
+                            <RatingBar
+                                label={'MongoDB'}
+                                rating={3}
+                                icon={<DiMongodb className="svg__MongoDB" />}
+                            />
+                        </li>
+                        <li>
+                            <RatingBar
+                                label={'Node'}
+                                rating={3}
+                                icon={<DiNodejsSmall className="svg__Node" />}
                             />
                         </li>
                         <li>
@@ -70,27 +91,6 @@ export default function SkillsSection() {
                                 label={'Sass'}
                                 rating={3}
                                 icon={<DiSass className="svg__Sass" />}
-                            />
-                        </li>
-                        <li>
-                            <RatingBar
-                                label={'Node'}
-                                rating={3}
-                                icon={<DiNodejsSmall className="svg__Node" />}
-                            />
-                        </li>
-                        <li>
-                            <RatingBar
-                                label={'Express'}
-                                rating={4}
-                                icon={<ExpressIcon className="svg__Express" />}
-                            />
-                        </li>
-                        <li>
-                            <RatingBar
-                                label={'MongoDB'}
-                                rating={3}
-                                icon={<DiMongodb className="svg__MongoDB" />}
                             />
                         </li>
                         <li>
@@ -111,8 +111,23 @@ export default function SkillsSection() {
                         {t('block-titles.tools')}
                     </h3>
                     <div className="tools-block__content">
-                        <h4>{t('applications.title')}</h4>
                         <ul className="tools-block__content--list">
+                            <li>
+                                <DiCode />
+                                bCrypt
+                            </li>
+                            <li>
+                                <DiCode />
+                                JSONWebToken
+                            </li>
+                            <li>
+                                <DiCode />
+                                Multer
+                            </li>
+                            <li>
+                                <DiCode />
+                                Sharp
+                            </li>
                             <li>
                                 <FaFigma className="svg__Figma" />
                                 Figma
@@ -126,16 +141,16 @@ export default function SkillsSection() {
                                 Gulp
                             </li>
                             <li>
+                                <DiNpm className="svg__Npm" />
+                                Npm
+                            </li>
+                            <li>
                                 <PostmanIcon className="svg__Postman" />
                                 Postman
                             </li>
                             <li>
                                 <SwaggerIcon className="svg__Swagger" />
                                 Swagger
-                            </li>
-                            <li>
-                                <DiNpm className="svg__Npm" />
-                                Npm
                             </li>
                             <li>
                                 <DiVisualstudio className="svg__Visualstudio" />
@@ -149,22 +164,6 @@ export default function SkillsSection() {
                                 <WebpackIcon className="svg__Webpack" />
                                 Webpack
                             </li>
-                            <li>
-                                <DiCode />
-                                JSONWebToken
-                            </li>
-                            <li>
-                                <DiCode />
-                                bCrypt
-                            </li>
-                            <li>
-                                <DiCode />
-                                Multer
-                            </li>
-                            <li>
-                                <DiCode />
-                                Sharp
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -173,11 +172,11 @@ export default function SkillsSection() {
                 <h3>{t('learning.title')}</h3>
                 <h4>{t('learning.para')}</h4>
                 <ul>
-                    <li>Python</li>
-                    <li>Next.js</li>
-                    <li>PHP/ MySQL</li>
                     <li>Debug / Testing</li>
                     <li>E-commerce</li>
+                    <li>Next.js</li>
+                    <li>PHP/ MySQL</li>
+                    <li>Python</li>
                     <li>Wordpress</li>
                 </ul>
             </div>

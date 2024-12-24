@@ -2,7 +2,7 @@
 @use './functions' as f;
 
 //Fonts
-$font_body: 'Crimson Text', 'Courier New', Courier, monospace;
+$font_body: 'Montserrat', 'Courier New', Courier, monospace;
 $font_title: 'Montserrat', Arial, sans-serif;
 $font_code: 'Monospace';
 $font_sizes: (
@@ -24,6 +24,15 @@ h4,
 h5,
 h6 {
     font-family: $font_title;
+}
+
+p,
+li,
+span,
+input,
+em,
+strong {
+    font-family: $font_body;
 }
 
 h1,

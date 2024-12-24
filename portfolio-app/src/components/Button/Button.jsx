@@ -1,19 +1,22 @@
+//------------------------------------------------
+
 import './_Button.scss';
 
-//------------------------------------------------
+const DEFAULT_VARIANT = 'default';
 
 export default function Button({
     onClick,
-    variant = 'default',
+    variant = DEFAULT_VARIANT,
     disabled = false,
     href = '',
     target = '',
     download,
     children,
 }) {
-    const isLink = !!href;
+    // Determine if the element should be an anchor element
+    const isAnchorElement = !!href;
 
-    if (isLink) {
+    if (isAnchorElement) {
         return (
             <a
                 className={`btn btn-${variant}`}

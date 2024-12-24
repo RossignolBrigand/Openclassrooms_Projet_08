@@ -66,6 +66,9 @@
         &__Express {
             color: v.$color_express;
         }
+        &__Wordpress {
+            color: v.$color_wordpress;
+        }
     }
 }
 
@@ -102,5 +105,8 @@
     }
     &__Express {
         color: v.$color_express;
+    }
+    &__Wordpress {
+        color: v.$color_wordpress;
     }
 }

@@ -65,6 +65,6 @@ export default function ProjectModal({ isOpen, project, closeModal }) {
 
                 </div>
             </div>
-        </Modal >
+        </Modal>
     );
 }
